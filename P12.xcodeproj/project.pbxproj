@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		FF01CDC323845A7E0081E16D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF01CDC223845A7E0081E16D /* AppDelegate.swift */; };
-		FF01CDC723845A7E0081E16D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF01CDC623845A7E0081E16D /* ViewController.swift */; };
 		FF01CDCA23845A7E0081E16D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF01CDC823845A7E0081E16D /* Main.storyboard */; };
 		FF01CDCF23845A800081E16D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF01CDCE23845A800081E16D /* Assets.xcassets */; };
 		FF01CDD223845A800081E16D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF01CDD023845A800081E16D /* LaunchScreen.storyboard */; };
 		FF01CDDD23845A800081E16D /* P12Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF01CDDC23845A800081E16D /* P12Tests.swift */; };
+		FF01CDEB238463110081E16D /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF01CDEA238463110081E16D /* SearchViewController.swift */; };
+		FF01CDED2384634B0081E16D /* YourGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF01CDEC2384634B0081E16D /* YourGameViewController.swift */; };
+		FF01CDEF238463690081E16D /* GameNowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF01CDEE238463690081E16D /* GameNowViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +30,6 @@
 /* Begin PBXFileReference section */
 		FF01CDBF23845A7E0081E16D /* P12.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = P12.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF01CDC223845A7E0081E16D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FF01CDC623845A7E0081E16D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FF01CDC923845A7E0081E16D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FF01CDCE23845A800081E16D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF01CDD123845A800081E16D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +37,9 @@
 		FF01CDD823845A800081E16D /* P12Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = P12Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF01CDDC23845A800081E16D /* P12Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P12Tests.swift; sourceTree = "<group>"; };
 		FF01CDDE23845A800081E16D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF01CDEA238463110081E16D /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		FF01CDEC2384634B0081E16D /* YourGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourGameViewController.swift; sourceTree = "<group>"; };
+		FF01CDEE238463690081E16D /* GameNowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameNowViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,9 +81,10 @@
 		FF01CDC123845A7E0081E16D /* P12 */ = {
 			isa = PBXGroup;
 			children = (
+				FF01CDE72384622D0081E16D /* Model */,
+				FF01CDE8238462390081E16D /* View */,
+				FF01CDE9238462400081E16D /* Controller */,
 				FF01CDC223845A7E0081E16D /* AppDelegate.swift */,
-				FF01CDC623845A7E0081E16D /* ViewController.swift */,
-				FF01CDC823845A7E0081E16D /* Main.storyboard */,
 				FF01CDCE23845A800081E16D /* Assets.xcassets */,
 				FF01CDD023845A800081E16D /* LaunchScreen.storyboard */,
 				FF01CDD323845A800081E16D /* Info.plist */,
@@ -94,6 +99,31 @@
 				FF01CDDE23845A800081E16D /* Info.plist */,
 			);
 			path = P12Tests;
+			sourceTree = "<group>";
+		};
+		FF01CDE72384622D0081E16D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FF01CDE8238462390081E16D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FF01CDC823845A7E0081E16D /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FF01CDE9238462400081E16D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FF01CDEA238463110081E16D /* SearchViewController.swift */,
+				FF01CDEC2384634B0081E16D /* YourGameViewController.swift */,
+				FF01CDEE238463690081E16D /* GameNowViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,8 +227,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF01CDC723845A7E0081E16D /* ViewController.swift in Sources */,
+				FF01CDEB238463110081E16D /* SearchViewController.swift in Sources */,
 				FF01CDC323845A7E0081E16D /* AppDelegate.swift in Sources */,
+				FF01CDED2384634B0081E16D /* YourGameViewController.swift in Sources */,
+				FF01CDEF238463690081E16D /* GameNowViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
