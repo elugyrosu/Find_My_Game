@@ -13,8 +13,11 @@
 		FF01CDD223845A800081E16D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF01CDD023845A800081E16D /* LaunchScreen.storyboard */; };
 		FF01CDDD23845A800081E16D /* P12Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF01CDDC23845A800081E16D /* P12Tests.swift */; };
 		FF01CDEB238463110081E16D /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF01CDEA238463110081E16D /* SearchViewController.swift */; };
-		FF01CDED2384634B0081E16D /* YourGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF01CDEC2384634B0081E16D /* YourGameViewController.swift */; };
+		FF01CDED2384634B0081E16D /* FindMyGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF01CDEC2384634B0081E16D /* FindMyGameViewController.swift */; };
 		FF01CDEF238463690081E16D /* GameNowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF01CDEE238463690081E16D /* GameNowViewController.swift */; };
+		FF31EE342396639C007297A0 /* QuizzViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31EE332396639C007297A0 /* QuizzViewController.swift */; };
+		FF4B3EE1238EAA7500DB762E /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4B3EE0238EAA7500DB762E /* FormViewController.swift */; };
+		FFFD75242395642100AEE8FD /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFD75232395642100AEE8FD /* PageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +41,11 @@
 		FF01CDDC23845A800081E16D /* P12Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P12Tests.swift; sourceTree = "<group>"; };
 		FF01CDDE23845A800081E16D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF01CDEA238463110081E16D /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
-		FF01CDEC2384634B0081E16D /* YourGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourGameViewController.swift; sourceTree = "<group>"; };
+		FF01CDEC2384634B0081E16D /* FindMyGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMyGameViewController.swift; sourceTree = "<group>"; };
 		FF01CDEE238463690081E16D /* GameNowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameNowViewController.swift; sourceTree = "<group>"; };
+		FF31EE332396639C007297A0 /* QuizzViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizzViewController.swift; sourceTree = "<group>"; };
+		FF4B3EE0238EAA7500DB762E /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
+		FFFD75232395642100AEE8FD /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,8 +126,11 @@
 			isa = PBXGroup;
 			children = (
 				FF01CDEA238463110081E16D /* SearchViewController.swift */,
-				FF01CDEC2384634B0081E16D /* YourGameViewController.swift */,
+				FF01CDEC2384634B0081E16D /* FindMyGameViewController.swift */,
 				FF01CDEE238463690081E16D /* GameNowViewController.swift */,
+				FF4B3EE0238EAA7500DB762E /* FormViewController.swift */,
+				FFFD75232395642100AEE8FD /* PageViewController.swift */,
+				FF31EE332396639C007297A0 /* QuizzViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -228,8 +237,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF01CDEB238463110081E16D /* SearchViewController.swift in Sources */,
+				FFFD75242395642100AEE8FD /* PageViewController.swift in Sources */,
 				FF01CDC323845A7E0081E16D /* AppDelegate.swift in Sources */,
-				FF01CDED2384634B0081E16D /* YourGameViewController.swift in Sources */,
+				FF01CDED2384634B0081E16D /* FindMyGameViewController.swift in Sources */,
+				FF31EE342396639C007297A0 /* QuizzViewController.swift in Sources */,
+				FF4B3EE1238EAA7500DB762E /* FormViewController.swift in Sources */,
 				FF01CDEF238463690081E16D /* GameNowViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -322,7 +334,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -376,7 +388,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
