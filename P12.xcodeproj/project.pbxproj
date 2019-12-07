@@ -16,6 +16,7 @@
 		FF01CDED2384634B0081E16D /* FindMyGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF01CDEC2384634B0081E16D /* FindMyGameViewController.swift */; };
 		FF01CDEF238463690081E16D /* GameNowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF01CDEE238463690081E16D /* GameNowViewController.swift */; };
 		FF31EE342396639C007297A0 /* QuizzViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31EE332396639C007297A0 /* QuizzViewController.swift */; };
+		FF3A45C023972A9300C35A14 /* QuizzCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3A45BF23972A9300C35A14 /* QuizzCollectionViewController.swift */; };
 		FF4B3EE1238EAA7500DB762E /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4B3EE0238EAA7500DB762E /* FormViewController.swift */; };
 		FFFD75242395642100AEE8FD /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFD75232395642100AEE8FD /* PageViewController.swift */; };
 /* End PBXBuildFile section */
@@ -44,6 +45,7 @@
 		FF01CDEC2384634B0081E16D /* FindMyGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMyGameViewController.swift; sourceTree = "<group>"; };
 		FF01CDEE238463690081E16D /* GameNowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameNowViewController.swift; sourceTree = "<group>"; };
 		FF31EE332396639C007297A0 /* QuizzViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizzViewController.swift; sourceTree = "<group>"; };
+		FF3A45BF23972A9300C35A14 /* QuizzCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizzCollectionViewController.swift; sourceTree = "<group>"; };
 		FF4B3EE0238EAA7500DB762E /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
 		FFFD75232395642100AEE8FD /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -131,6 +133,7 @@
 				FF4B3EE0238EAA7500DB762E /* FormViewController.swift */,
 				FFFD75232395642100AEE8FD /* PageViewController.swift */,
 				FF31EE332396639C007297A0 /* QuizzViewController.swift */,
+				FF3A45BF23972A9300C35A14 /* QuizzCollectionViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -238,6 +241,7 @@
 			files = (
 				FF01CDEB238463110081E16D /* SearchViewController.swift in Sources */,
 				FFFD75242395642100AEE8FD /* PageViewController.swift in Sources */,
+				FF3A45C023972A9300C35A14 /* QuizzCollectionViewController.swift in Sources */,
 				FF01CDC323845A7E0081E16D /* AppDelegate.swift in Sources */,
 				FF01CDED2384634B0081E16D /* FindMyGameViewController.swift in Sources */,
 				FF31EE342396639C007297A0 /* QuizzViewController.swift in Sources */,
