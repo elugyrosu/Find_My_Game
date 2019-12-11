@@ -27,13 +27,14 @@ class IGDBService {
     private var questionTask : URLSessionDataTask?
     private var questionSession : URLSession
     
+    var apiKey = ""
     func getResult(callback: @escaping (Bool, [Game]?) -> Void){
         guard let url = searchUrl else{return}
         
         var requestHeader = URLRequest.init(url: url)
         requestHeader.httpBody = "fields *, cover.image_id, screenshots.image_id, age_ratings.* ; where platforms = (48,49,130) & total_rating > 70 & themes = (34) & genres = (13) & age_ratings.rating = (1,2,6,8,9); limit 100;".data(using: .utf8, allowLossyConversion: false)
         requestHeader.httpMethod = "POST"
-        requestHeader.setValue("80ca31547be4ba48345df656c1c7c264", forHTTPHeaderField: "user-key")
+        requestHeader.setValue(apiKey, forHTTPHeaderField: "user-key")
         requestHeader.setValue("application/json", forHTTPHeaderField: "Accept")
         
         questionTask?.cancel()
