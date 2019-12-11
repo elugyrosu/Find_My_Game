@@ -1,14 +1,15 @@
 //
-//  GameNowViewController.swift
+//  DetailViewController.swift
 //  P12
 //
-//  Created by Jordan MOREAU on 19/11/2019.
+//  Created by Jordan MOREAU on 09/12/2019.
 //  Copyright © 2019 Jordan MOREAU. All rights reserved.
 //
 
 import UIKit
 
-class GameNowViewController: UIViewController {
+class DetailViewController: UIViewController {
+    var game: Game?
 
     override func viewDidLoad() {
         super.viewDidLoad()
