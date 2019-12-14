@@ -9,30 +9,23 @@
 import UIKit
 
 class QuizzViewController: UIViewController {
-//    let progress = Progress(totalUnitCount: 5)
-    @IBOutlet weak var imageView: UIImageView!
-    
 
     private let igdbService = IGDBService()
     private var gameList = [Game]()
     private var gameListCount = 0
  
     @IBOutlet weak var questionOneButtons: UIButton!
-    
     @IBOutlet weak var scrollView: UIScrollView!
-    
     @IBOutlet weak var gestresultsButton: UIButton!
-    
+    @IBOutlet weak var progressView: UIProgressView!
+    @IBOutlet weak var imageView: UIImageView!
+
     @IBAction func getResults(_ sender: Any) {
         gamesCall()
     }
     
-    @IBOutlet weak var progressView: UIProgressView!
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
 
     /*
@@ -59,7 +52,6 @@ class QuizzViewController: UIViewController {
             }else{
                 self.presentAlert(message: "Network error")
             }
-            
         }
     }
     
@@ -69,14 +61,12 @@ class QuizzViewController: UIViewController {
             resultVC.gameList = self.gameList
         }
     }
-    
 }
+
 extension QuizzViewController: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let pageWidth = scrollView.bounds.width
         let pageFraction = (scrollView.contentOffset.x/pageWidth)
         progressView.setProgress(Float(pageFraction/6), animated: false)
-
-//        pageControl.currentPage = Int((round(pageFraction)))
     }
 }

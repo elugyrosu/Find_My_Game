@@ -10,11 +10,24 @@ import UIKit
 
 class DetailViewController: UIViewController {
     var game: Game?
-
+    
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var releaseDateLabel: UILabel!
+    @IBOutlet weak var coverImageView: UIImageView!
+    @IBOutlet weak var summaryLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        updateViews()
+        
+    }
+    
+    private func updateViews(){
+        guard let game = game else{return}
+        titleLabel.text = game.name
+        summaryLabel.text = game.summary
+
     }
     
 

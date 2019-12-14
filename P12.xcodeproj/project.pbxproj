@@ -15,17 +15,18 @@
 		FF01CDEB238463110081E16D /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF01CDEA238463110081E16D /* SearchViewController.swift */; };
 		FF14CA22239C42190099FA25 /* IGDBService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF14CA21239C42190099FA25 /* IGDBService.swift */; };
 		FF14CA24239D092C0099FA25 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF14CA23239D092C0099FA25 /* Game.swift */; };
-		FF14CA27239E3A4E0099FA25 /* ResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF14CA25239E3A4E0099FA25 /* ResultsTableViewController.swift */; };
 		FF14CA2B239E3B100099FA25 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF14CA29239E3B100099FA25 /* CustomCell.swift */; };
 		FF14CA2C239E3B100099FA25 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF14CA2A239E3B100099FA25 /* CustomCell.xib */; };
 		FF14CA2F239E5C780099FA25 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF14CA2E239E5C780099FA25 /* UIViewController.swift */; };
 		FF14CA31239E60D40099FA25 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF14CA30239E60D40099FA25 /* DetailViewController.swift */; };
+		FF307AC923A3DD5000C24198 /* GameForYouViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF307AC823A3DD5000C24198 /* GameForYouViewController.swift */; };
 		FF31EE342396639C007297A0 /* QuizzViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31EE332396639C007297A0 /* QuizzViewController.swift */; };
 		FF62B221239ED4C100D49985 /* FindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF62B220239ED4C100D49985 /* FindViewController.swift */; };
 		FF706432239FF3B40000EC61 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF706431239FF3B40000EC61 /* CollectionViewController.swift */; };
 		FF706435239FFB7F0000EC61 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF706433239FFB7F0000EC61 /* CustomCollectionViewCell.swift */; };
 		FF706436239FFB7F0000EC61 /* CustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF706434239FFB7F0000EC61 /* CustomCollectionViewCell.xib */; };
 		FF70643823A026040000EC61 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF70643723A026040000EC61 /* String.swift */; };
+		FFF985F423A2C3AF00431D2C /* Form.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF985F323A2C3AF00431D2C /* Form.swift */; };
 		FFFD75242395642100AEE8FD /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFD75232395642100AEE8FD /* PageViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,17 +53,18 @@
 		FF01CDEA238463110081E16D /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		FF14CA21239C42190099FA25 /* IGDBService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGDBService.swift; sourceTree = "<group>"; };
 		FF14CA23239D092C0099FA25 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
-		FF14CA25239E3A4E0099FA25 /* ResultsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsTableViewController.swift; sourceTree = "<group>"; };
 		FF14CA29239E3B100099FA25 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		FF14CA2A239E3B100099FA25 /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
 		FF14CA2E239E5C780099FA25 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		FF14CA30239E60D40099FA25 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		FF307AC823A3DD5000C24198 /* GameForYouViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameForYouViewController.swift; sourceTree = "<group>"; };
 		FF31EE332396639C007297A0 /* QuizzViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizzViewController.swift; sourceTree = "<group>"; };
 		FF62B220239ED4C100D49985 /* FindViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindViewController.swift; sourceTree = "<group>"; };
 		FF706431239FF3B40000EC61 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		FF706433239FFB7F0000EC61 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
 		FF706434239FFB7F0000EC61 /* CustomCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCollectionViewCell.xib; sourceTree = "<group>"; };
 		FF70643723A026040000EC61 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		FFF985F323A2C3AF00431D2C /* Form.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Form.swift; sourceTree = "<group>"; };
 		FFFD75232395642100AEE8FD /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -131,6 +133,7 @@
 			children = (
 				FF14CA21239C42190099FA25 /* IGDBService.swift */,
 				FF14CA23239D092C0099FA25 /* Game.swift */,
+				FFF985F323A2C3AF00431D2C /* Form.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -151,12 +154,12 @@
 			isa = PBXGroup;
 			children = (
 				FF31EE332396639C007297A0 /* QuizzViewController.swift */,
-				FF14CA25239E3A4E0099FA25 /* ResultsTableViewController.swift */,
 				FF01CDEA238463110081E16D /* SearchViewController.swift */,
 				FFFD75232395642100AEE8FD /* PageViewController.swift */,
 				FF14CA30239E60D40099FA25 /* DetailViewController.swift */,
 				FF62B220239ED4C100D49985 /* FindViewController.swift */,
 				FF706431239FF3B40000EC61 /* CollectionViewController.swift */,
+				FF307AC823A3DD5000C24198 /* GameForYouViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -275,14 +278,15 @@
 			files = (
 				FF706432239FF3B40000EC61 /* CollectionViewController.swift in Sources */,
 				FF14CA31239E60D40099FA25 /* DetailViewController.swift in Sources */,
+				FFF985F423A2C3AF00431D2C /* Form.swift in Sources */,
 				FF01CDEB238463110081E16D /* SearchViewController.swift in Sources */,
+				FF307AC923A3DD5000C24198 /* GameForYouViewController.swift in Sources */,
 				FF706435239FFB7F0000EC61 /* CustomCollectionViewCell.swift in Sources */,
 				FF70643823A026040000EC61 /* String.swift in Sources */,
 				FFFD75242395642100AEE8FD /* PageViewController.swift in Sources */,
 				FF14CA22239C42190099FA25 /* IGDBService.swift in Sources */,
 				FF14CA2F239E5C780099FA25 /* UIViewController.swift in Sources */,
 				FF14CA2B239E3B100099FA25 /* CustomCell.swift in Sources */,
-				FF14CA27239E3A4E0099FA25 /* ResultsTableViewController.swift in Sources */,
 				FF62B221239ED4C100D49985 /* FindViewController.swift in Sources */,
 				FF01CDC323845A7E0081E16D /* AppDelegate.swift in Sources */,
 				FF14CA24239D092C0099FA25 /* Game.swift in Sources */,

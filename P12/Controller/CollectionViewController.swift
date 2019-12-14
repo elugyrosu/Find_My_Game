@@ -17,13 +17,8 @@ class CollectionViewController: UICollectionViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-        // Register cell classes
         let nib = UINib(nibName: reuseIdentifier, bundle: nil)
         self.collectionView.register(nib, forCellWithReuseIdentifier: reuseIdentifier)
-//        collectionView.dataSource = self
-        // Do any additional setup after loading the view.
         collectionView.contentInset = UIEdgeInsets(top: 23, left: 16, bottom: 10, right: 16)
         
     }
@@ -59,7 +54,6 @@ class CollectionViewController: UICollectionViewController {
         self.game = gameList[indexPath.row]
         cell.game = game
         
-        
         guard let imageId = game?.cover?.image_id else {
             cell.coverImageView.image = UIImage(named: "co1rxc")
             return cell
@@ -77,11 +71,22 @@ class CollectionViewController: UICollectionViewController {
         }
         cell.coverImageView.contentMode = .scaleAspectFill
         return cell
-        
-//        cell.layer.borderColor = #colorLiteral(red: 0.05882352963, green: 0.180392161, blue: 0.2470588237, alpha: 1)
-//        cell.layer.borderWidth = 2
-        // Configure the cell
     }
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.game = gameList[indexPath.row]
+        performSegue(withIdentifier: "segueToDetail", sender: indexPath)
+    }
+    
+
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "segueToDetail"{
+            guard let detailVC = segue.destination as? DetailViewController else {return}
+            detailVC.game = game
+        }
+    }
+    
     
 //    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
 //      let itemSize = (collectionView.frame.width - (collectionView.contentInset.left + collectionView.contentInset.right + 10)) / 2
@@ -117,8 +122,5 @@ class CollectionViewController: UICollectionViewController {
     
     }
     */
-    
-
-    
 
 }

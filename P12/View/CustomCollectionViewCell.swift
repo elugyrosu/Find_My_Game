@@ -29,5 +29,7 @@ class CustomCollectionViewCell: UICollectionViewCell {
         containerView.layer.cornerRadius = 6
         containerView.layer.masksToBounds = true
     }
+    
+
 
 }
