@@ -26,10 +26,11 @@ struct Game: Decodable {
     let ageRatings: [AgeRating]?
     let genres: [Int]?
     let platforms: [Int]?
-    let totalRating: Double?
+    let total_rating: Double?
     let themes: [Int]?
     let gameModes: [Int]?
     let screenshots: [Cover]?
+    let first_release_date: Int?
 }
 
 struct AgeRating: Decodable {

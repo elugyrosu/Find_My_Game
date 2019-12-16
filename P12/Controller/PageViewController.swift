@@ -18,15 +18,14 @@ class PageViewController: UIPageViewController {
         ]
     }()
     
-    fileprivate func getViewController(withIdentifier identifier: String) -> UIViewController
-    {
+    fileprivate func getViewController(withIdentifier identifier: String) -> UIViewController {
         return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: identifier)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.dataSource = self
-        self.delegate = self
+        dataSource = self
+        delegate = self
         // set first viewController of the UIPageViewController from the first index of the array
         if let firstVC = pages.first{
             setViewControllers([firstVC], direction: .forward, animated: true, completion: nil)

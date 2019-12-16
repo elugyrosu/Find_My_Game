@@ -8,21 +8,38 @@
 
 import UIKit
 
-private let reuseIdentifier = "CustomCollectionViewCell"
 
-class CollectionViewController: UICollectionViewController {
+class CollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     private let imageCache = NSCache<NSString, UIImage>()
     var gameList = [Game]()
     var game: Game?
     
+
+    
+    private let spacing:CGFloat = 20.0
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        let nib = UINib(nibName: reuseIdentifier, bundle: nil)
-        self.collectionView.register(nib, forCellWithReuseIdentifier: reuseIdentifier)
-        collectionView.contentInset = UIEdgeInsets(top: 23, left: 16, bottom: 10, right: 16)
+        let nib = UINib(nibName: CustomCollectionViewCell.identifier, bundle: nil)
+        self.collectionView.register(nib, forCellWithReuseIdentifier: CustomCollectionViewCell.identifier)
+        collectionView.contentInset = UIEdgeInsets(top: 25, left: 20, bottom: 10, right: 20)
+        
         
     }
-
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let numberOfItemsPerRow:CGFloat = 2
+            let spacingBetweenCells:CGFloat = 20
+            
+            let totalSpacing = (2 * self.spacing) + ((numberOfItemsPerRow - 1) * spacingBetweenCells) //Amount of total spacing in a row
+            
+            if let collection = self.collectionView{
+                let width = (collection.bounds.width - totalSpacing)/numberOfItemsPerRow
+                return CGSize(width: width, height: width*3/2)
+            }else{
+                return CGSize(width: 0, height: 0)
+            }
+        }
     /*
     // MARK: - Navigation
 
@@ -45,11 +62,11 @@ class CollectionViewController: UICollectionViewController {
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return self.gameList.count
+        return gameList.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as? CustomCollectionViewCell else {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CustomCollectionViewCell.identifier, for: indexPath) as? CustomCollectionViewCell else {
             return CustomCollectionViewCell()}
         self.game = gameList[indexPath.row]
         cell.game = game
@@ -66,7 +83,7 @@ class CollectionViewController: UICollectionViewController {
             guard let image = UIImage(data: imageData) else {
                 return cell
             }
-            self.imageCache.setObject(image, forKey: NSString(string: imageStringUrl))
+            imageCache.setObject(image, forKey: NSString(string: imageStringUrl))
             cell.coverImageView.image = image
         }
         cell.coverImageView.contentMode = .scaleAspectFill
@@ -74,12 +91,11 @@ class CollectionViewController: UICollectionViewController {
     }
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        self.game = gameList[indexPath.row]
+        game = gameList[indexPath.row]
         performSegue(withIdentifier: "segueToDetail", sender: indexPath)
     }
     
-
-    
+ 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "segueToDetail"{
             guard let detailVC = segue.destination as? DetailViewController else {return}
@@ -122,5 +138,6 @@ class CollectionViewController: UICollectionViewController {
     
     }
     */
+
 
 }
