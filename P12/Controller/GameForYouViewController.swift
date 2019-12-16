@@ -170,19 +170,22 @@ class GameForYouViewController: UIViewController {
     
     
     private func gamesCall(platforms: String, themes: String, genres: String, ageRating: String) {
-        igdbService.getResult(platforms: platforms, themes: themes, genres: genres, ageRating: ageRating) { success, igdbResults in
-            if success {
-                guard let games = igdbResults else { return }
-                self.gameList = games
+        igdbService.getResult(platforms: platforms, themes: themes, genres: genres, ageRating: ageRating) { (result: Result<[Game], Error>) in
+            
+            switch result {
+            case .success(let data):
+                self.gameList = data
                 print(self.gameList)
-                self.gameListCount = games.count
+                self.gameListCount = data.count
                 if self.gameListCount >= 1{
                     self.performSegue(withIdentifier: "segueToCollectionViewController", sender: self)
                 }else{
                     self.presentAlert(message: "We have no recipe for your search, check your ingredients")
                 }
-            }else{
+            case .failure(let error):
+                print(error.localizedDescription)
                 self.presentAlert(message: "Network error")
+
             }
         }
     }
