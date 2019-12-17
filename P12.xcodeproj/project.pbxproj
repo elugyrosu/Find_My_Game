@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D6661A06C39F95B8D9592332 /* libPods-P12.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09B8B29C91F38C2B4E992297 /* libPods-P12.a */; };
 		FF01CDC323845A7E0081E16D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF01CDC223845A7E0081E16D /* AppDelegate.swift */; };
 		FF01CDCA23845A7E0081E16D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF01CDC823845A7E0081E16D /* Main.storyboard */; };
 		FF01CDCF23845A800081E16D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF01CDCE23845A800081E16D /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 		FF14CA31239E60D40099FA25 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF14CA30239E60D40099FA25 /* DetailViewController.swift */; };
 		FF307AC923A3DD5000C24198 /* GameForYouViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF307AC823A3DD5000C24198 /* GameForYouViewController.swift */; };
 		FF62B221239ED4C100D49985 /* FindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF62B220239ED4C100D49985 /* FindViewController.swift */; };
+		FF65709423A93A300068FB7F /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = FF65709323A93A300068FB7F /* Podfile */; };
 		FF706432239FF3B40000EC61 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF706431239FF3B40000EC61 /* CollectionViewController.swift */; };
 		FF706435239FFB7F0000EC61 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF706433239FFB7F0000EC61 /* CustomCollectionViewCell.swift */; };
 		FF706436239FFB7F0000EC61 /* CustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF706434239FFB7F0000EC61 /* CustomCollectionViewCell.xib */; };
@@ -41,6 +43,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09B8B29C91F38C2B4E992297 /* libPods-P12.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-P12.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A8521716B4F39566884F651 /* Pods-P12.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-P12.release.xcconfig"; path = "Target Support Files/Pods-P12/Pods-P12.release.xcconfig"; sourceTree = "<group>"; };
+		D3C1D8EE0186581983502E23 /* Pods-P12.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-P12.debug.xcconfig"; path = "Target Support Files/Pods-P12/Pods-P12.debug.xcconfig"; sourceTree = "<group>"; };
 		FF01CDBF23845A7E0081E16D /* P12.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = P12.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF01CDC223845A7E0081E16D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF01CDC923845A7E0081E16D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -57,6 +62,7 @@
 		FF14CA30239E60D40099FA25 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		FF307AC823A3DD5000C24198 /* GameForYouViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameForYouViewController.swift; sourceTree = "<group>"; };
 		FF62B220239ED4C100D49985 /* FindViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindViewController.swift; sourceTree = "<group>"; };
+		FF65709323A93A300068FB7F /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		FF706431239FF3B40000EC61 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		FF706433239FFB7F0000EC61 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
 		FF706434239FFB7F0000EC61 /* CustomCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -73,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6661A06C39F95B8D9592332 /* libPods-P12.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,12 +93,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		619C931D1348EA2DA6011B9A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D3C1D8EE0186581983502E23 /* Pods-P12.debug.xcconfig */,
+				6A8521716B4F39566884F651 /* Pods-P12.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F4A1D431D0B704AE3AA72747 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				09B8B29C91F38C2B4E992297 /* libPods-P12.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FF01CDB623845A7E0081E16D = {
 			isa = PBXGroup;
 			children = (
+				FF65709323A93A300068FB7F /* Podfile */,
 				FF01CDC123845A7E0081E16D /* P12 */,
 				FF01CDDB23845A800081E16D /* P12Tests */,
 				FF01CDC023845A7E0081E16D /* Products */,
+				619C931D1348EA2DA6011B9A /* Pods */,
+				F4A1D431D0B704AE3AA72747 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -180,6 +207,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FF01CDE123845A800081E16D /* Build configuration list for PBXNativeTarget "P12" */;
 			buildPhases = (
+				EFD8470F9AE9ED18D0F34444 /* [CP] Check Pods Manifest.lock */,
 				FF01CDBB23845A7E0081E16D /* Sources */,
 				FF01CDBC23845A7E0081E16D /* Frameworks */,
 				FF01CDBD23845A7E0081E16D /* Resources */,
@@ -254,6 +282,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF65709423A93A300068FB7F /* Podfile in Resources */,
 				FF01CDD223845A800081E16D /* LaunchScreen.storyboard in Resources */,
 				FF01CDCF23845A800081E16D /* Assets.xcassets in Resources */,
 				FF706436239FFB7F0000EC61 /* CustomCollectionViewCell.xib in Resources */,
@@ -270,6 +299,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EFD8470F9AE9ED18D0F34444 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-P12-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FF01CDBB23845A7E0081E16D /* Sources */ = {
@@ -448,6 +502,7 @@
 		};
 		FF01CDE223845A800081E16D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3C1D8EE0186581983502E23 /* Pods-P12.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -466,6 +521,7 @@
 		};
 		FF01CDE323845A800081E16D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A8521716B4F39566884F651 /* Pods-P12.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

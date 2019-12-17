@@ -13,21 +13,24 @@ class CustomCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var coverImageView: UIImageView!
-    @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var releaseDateLabel: UILabel!
     
+    @IBOutlet weak var ratingLabel: UILabel!
     var game: Game? {
         didSet {
-            guard let game = game else{return}
-            nameLabel.text = game.name
+            guard let rating = game?.total_rating else {return}
+            ratingLabel.text = String(Int(rating))
         }
     }
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        containerView.layer.cornerRadius = 6
-        containerView.layer.masksToBounds = true
+        coverImageView.layer.cornerRadius = 15
+        coverImageView.layer.masksToBounds = true
+        ratingLabel.layer.cornerRadius = ratingLabel.frame.size.height/2
+        ratingLabel.layer.masksToBounds = true
+
+
     }
     
 

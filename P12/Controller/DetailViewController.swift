@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class DetailViewController: UIViewController {
     var game: Game?
@@ -39,8 +40,7 @@ class DetailViewController: UIViewController {
     func getImage() {
         guard let imageId = game?.cover?.image_id else {return}
         let imageStringUrl = "https://images.igdb.com/igdb/image/upload/t_cover_big/\(imageId).jpg"
-        guard let imageData = imageStringUrl.data else { return }
-        coverImageView.image = UIImage(data: imageData)
+        coverImageView.sd_setImage(with: URL(string: imageStringUrl), placeholderImage: UIImage(named: "co1rxc.png"))
     }
     
     func createDateTime(timestamp: Int) -> String {

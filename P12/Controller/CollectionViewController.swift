@@ -7,35 +7,36 @@
 //
 
 import UIKit
+import SDWebImage
 
 
 class CollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
-    private let imageCache = NSCache<NSString, UIImage>()
+
     var gameList = [Game]()
     var game: Game?
     
 
     
-    private let spacing:CGFloat = 20.0
+    private let spacing:CGFloat = 15
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
         let nib = UINib(nibName: CustomCollectionViewCell.identifier, bundle: nil)
         self.collectionView.register(nib, forCellWithReuseIdentifier: CustomCollectionViewCell.identifier)
-        collectionView.contentInset = UIEdgeInsets(top: 25, left: 20, bottom: 10, right: 20)
+        collectionView.contentInset = UIEdgeInsets(top: 20, left: 15, bottom: 20, right: 15)
         
         
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let numberOfItemsPerRow:CGFloat = 2
-            let spacingBetweenCells:CGFloat = 20
+        let numberOfItemsPerRow:CGFloat = 3
+            let spacingBetweenCells:CGFloat = 15
             
             let totalSpacing = (2 * self.spacing) + ((numberOfItemsPerRow - 1) * spacingBetweenCells) //Amount of total spacing in a row
             
             if let collection = self.collectionView{
                 let width = (collection.bounds.width - totalSpacing)/numberOfItemsPerRow
-                return CGSize(width: width, height: width*3/2)
+                return CGSize(width: width, height: width*4/3)
             }else{
                 return CGSize(width: 0, height: 0)
             }
@@ -71,23 +72,11 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
         self.game = gameList[indexPath.row]
         cell.game = game
         
-        guard let imageId = game?.cover?.image_id else {
-            cell.coverImageView.image = UIImage(named: "co1rxc")
-            return cell
-        }
+        guard let imageId = game?.cover?.image_id else{return cell}
         let imageStringUrl = "https://images.igdb.com/igdb/image/upload/t_cover_big/\(imageId).jpg"
-        if let cachedImage = imageCache.object(forKey:NSString(string:imageStringUrl)) {
-            cell.coverImageView.image = cachedImage
-        }else{
-            guard let imageData = imageStringUrl.data else { return cell}
-            guard let image = UIImage(data: imageData) else {
-                return cell
-            }
-            imageCache.setObject(image, forKey: NSString(string: imageStringUrl))
-            cell.coverImageView.image = image
-        }
-        cell.coverImageView.contentMode = .scaleAspectFill
-        return cell
+        cell.coverImageView.sd_setImage(with: URL(string: imageStringUrl), placeholderImage: UIImage(named: "co1rxc.png"))
+            
+    return cell
     }
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {

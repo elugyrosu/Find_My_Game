@@ -175,7 +175,6 @@ class GameForYouViewController: UIViewController {
             switch result {
             case .success(let data):
                 self.gameList = data
-                print(self.gameList)
                 self.gameListCount = data.count
                 if self.gameListCount >= 1{
                     self.performSegue(withIdentifier: "segueToCollectionViewController", sender: self)

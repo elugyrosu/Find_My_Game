@@ -24,7 +24,7 @@ struct Game: Decodable {
     let name: String?
     let summary: String?
     let ageRatings: [AgeRating]?
-    let genres: [Int]?
+    let genres: [Genre]?
     let platforms: [Int]?
     let total_rating: Double?
     let themes: [Int]?
@@ -42,4 +42,6 @@ struct Cover: Decodable {
     let image_id: String?
 }
 
-
+struct Genre: Decodable {
+    let name: String?
+}
