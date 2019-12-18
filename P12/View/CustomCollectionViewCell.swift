@@ -25,7 +25,7 @@ class CustomCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        coverImageView.layer.cornerRadius = 15
+        coverImageView.layer.cornerRadius = 6
         coverImageView.layer.masksToBounds = true
         ratingLabel.layer.cornerRadius = ratingLabel.frame.size.height/2
         ratingLabel.layer.masksToBounds = true

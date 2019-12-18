@@ -9,19 +9,31 @@
 import UIKit
 import SDWebImage
 
-class DetailViewController: UIViewController {
+class DetailViewController: UIViewController, UICollectionViewDelegate {
+    
     var game: Game?
+    var screenshot: Cover?
+    var screenshots = [Cover]()
     
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var releaseDateLabel: UILabel!
     @IBOutlet weak var coverImageView: UIImageView!
     @IBOutlet weak var summaryLabel: UILabel!
+    
     @IBOutlet weak var scoreLabel: UILabel!
     
+    @IBOutlet weak var collectionView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        let nib = UINib(nibName: ScreenshotCollectionViewCell.identifier, bundle: nil)
+        self.collectionView.register(nib, forCellWithReuseIdentifier: ScreenshotCollectionViewCell.identifier)
         updateViews()
+        collectionView.dataSource = self
+        collectionView.delegate = self
+        collectionView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+
+
         
     }
     
@@ -67,3 +79,34 @@ class DetailViewController: UIViewController {
     */
 
 }
+extension DetailViewController: UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        guard let screenshots = game?.screenshots else {return 0}
+        self.screenshots = screenshots
+        return screenshots.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ScreenshotCollectionViewCell.identifier, for: indexPath) as? ScreenshotCollectionViewCell else {
+            return ScreenshotCollectionViewCell()
+            
+        }
+        self.screenshot = screenshots[indexPath.row]
+
+        
+        guard let imageId = screenshot?.image_id else{return cell}
+        let imageStringUrl = "https://images.igdb.com/igdb/image/upload/t_cover_big/\(imageId).jpg"
+        cell.screenshotImageView.sd_setImage(with: URL(string: imageStringUrl), placeholderImage: UIImage(named: "co1rxc.png"))
+        
+        return cell
+    }
+    
+    
+}
+
+extension DetailViewController: UICollectionViewDelegateFlowLayout {
+        func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 170, height: 100)
+    }
+}
+
