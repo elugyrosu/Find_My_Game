@@ -12,21 +12,21 @@ class GameForYouViewController: UIViewController {
     
     private let igdbService = IGDBService()
     private var gameList = [Game]()
-    private var gameListCount = 0
+    
     
     var platformAnswer = Platform.NextGen
     var filmAnswer = Film.Action
     var preferenceAnswer = Preference.Art
-    var characterAnswer = Character.Adventure
+    var characterAnswer = Character.Creator
     var ageAnswer = Age.Heighteen
-    
-    var genres = [Int]()
-    
+    var weekEndAnswer = WeekEnd.Nature
+        
     @IBOutlet var platformAnswerButtons: [UIButton]!
     @IBOutlet var filmAnswerButtons: [UIButton]!
     @IBOutlet var characterAnswerButtons: [UIButton]!
     @IBOutlet var preferenceAnswerButtons: [UIButton]!
     @IBOutlet var ageAnswerButtons: [UIButton]!
+    @IBOutlet var weekEndAnswerButtons: [UIButton]!
     
     
     @IBOutlet weak var scrollView: UIScrollView!
@@ -34,6 +34,9 @@ class GameForYouViewController: UIViewController {
     
     
     func buttonsInitialization(){
+        ageAnswerButtons.forEach { button in
+            button.addTarget(self, action: #selector(ageAnswerButtonTapped(_:)), for: .touchUpInside)
+        }
         platformAnswerButtons.forEach { button in
             button.addTarget(self, action: #selector(platformAnswerButtonTapped(_:)), for: .touchUpInside)
         }
@@ -43,14 +46,34 @@ class GameForYouViewController: UIViewController {
         characterAnswerButtons.forEach { button in
             button.addTarget(self, action: #selector(characterAnswerButtonTapped(_:)), for: .touchUpInside)
         }
+        weekEndAnswerButtons.forEach { button in
+            button.addTarget(self, action: #selector(weekEndAnswerButtonTapped(_:)), for: .touchUpInside)
+        }
         preferenceAnswerButtons.forEach { button in
             button.addTarget(self, action: #selector(preferenceAnswerButtonTapped(_:)), for: .touchUpInside)
         }
+    }
+    @objc func ageAnswerButtonTapped(_ sender: UIButton) {
         ageAnswerButtons.forEach { button in
-            button.addTarget(self, action: #selector(ageAnswerButtonTapped(_:)), for: .touchUpInside)
+            button.isSelected = false
+        }
+        sender.isSelected = true
+        
+        switch sender.tag {
+        case 1:
+            ageAnswer = .UnderSeven
+        case 2:
+            ageAnswer = .SevenEleven
+        case 3:
+            ageAnswer = .TwelveFifteen
+        case 4:
+            ageAnswer = .SixteenHeighteen
+        case 5:
+            ageAnswer = .Heighteen
+        default:
+            print("Tag age Error")
         }
     }
-    
     @objc func platformAnswerButtonTapped(_ sender: UIButton) {
         platformAnswerButtons.forEach { button in
             button.isSelected = false
@@ -100,17 +123,37 @@ class GameForYouViewController: UIViewController {
         sender.isSelected = true
         switch sender.tag {
         case 1:
-            characterAnswer = .Structured
+            characterAnswer = .Stealth
         case 2:
-            characterAnswer = .Fiable
+            characterAnswer = .Creator
         case 3:
-            characterAnswer = .Curious
+            characterAnswer = .Explorer
         case 4:
-            characterAnswer = .Adventure
+            characterAnswer = .Survival
         case 5:
-            characterAnswer = .Bold
+            characterAnswer = .Mystery
         default:
             print("Tag character Error")
+        }
+    }
+    @objc func weekEndAnswerButtonTapped(_ sender: UIButton) {
+        weekEndAnswerButtons.forEach { button in
+            button.isSelected = false
+        }
+        sender.isSelected = true
+        switch sender.tag {
+        case 1:
+            weekEndAnswer = .Party
+        case 2:
+            weekEndAnswer = .Sport
+        case 3:
+            weekEndAnswer = .Nature
+        case 4:
+            weekEndAnswer = .Plate
+        case 5:
+            weekEndAnswer = .Book
+        default:
+            print("Tag week end Error")
         }
     }
     @objc func preferenceAnswerButtonTapped(_ sender: UIButton) {
@@ -133,27 +176,7 @@ class GameForYouViewController: UIViewController {
             print("Tag preference Error")
         }
     }
-    @objc func ageAnswerButtonTapped(_ sender: UIButton) {
-        ageAnswerButtons.forEach { button in
-            button.isSelected = false
-        }
-        sender.isSelected = true
-        
-        switch sender.tag {
-        case 1:
-            ageAnswer = .UnderSeven
-        case 2:
-            ageAnswer = .SevenEleven
-        case 3:
-            ageAnswer = .TwelveFifteen
-        case 4:
-            ageAnswer = .SixteenHeighteen
-        case 5:
-            ageAnswer = .Heighteen
-        default:
-            print("Tag age Error")
-        }
-    }
+
 
     
     override func viewDidLoad() {
@@ -164,22 +187,22 @@ class GameForYouViewController: UIViewController {
     
     
     @IBAction func discoverButtonAction(_ sender: Any) {
-        gamesCall(platforms: platformAnswer.rawValue, themes: filmAnswer.rawValue, genres: preferenceAnswer.rawValue, ageRating: ageAnswer.rawValue)
+        
+        gamesCall(platforms: platformAnswer.rawValue, themes: filmAnswer.rawValue + "," + characterAnswer.rawValue, genres: preferenceAnswer.rawValue + "," + weekEndAnswer.rawValue, ageRating: ageAnswer.rawValue)
     }
 
     
-    
     private func gamesCall(platforms: String, themes: String, genres: String, ageRating: String) {
-        igdbService.getResult(platforms: platforms, themes: themes, genres: genres, ageRating: ageRating) { (result: Result<[Game], Error>) in
+        let httpBodyString = "fields *, cover.image_id, screenshots.image_id, genres.name, themes.name, platforms.name; sort total_rating desc; where platforms = (\(platforms)) & total_rating > 70 & themes = (\(themes)) & genres = (\(genres)) & age_ratings.rating = (\(ageRating)); limit 100;"
+        igdbService.getResult(httpBody: httpBodyString) { (result: Result<[Game], Error>) in
             
             switch result {
             case .success(let data):
                 self.gameList = data
-                self.gameListCount = data.count
-                if self.gameListCount >= 1{
+                if data.count >= 1{
                     self.performSegue(withIdentifier: "segueToCollectionViewController", sender: self)
                 }else{
-                    self.presentAlert(message: "We have no recipe for your search, check your ingredients")
+                    self.presentAlert(message: "We have no results for your search")
                 }
             case .failure(let error):
                 print(error.localizedDescription)
@@ -201,6 +224,6 @@ extension GameForYouViewController: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let pageWidth = scrollView.bounds.width
         let pageFraction = (scrollView.contentOffset.x/pageWidth)
-        progressView.setProgress(Float(pageFraction/6), animated: false)
+        progressView.setProgress(Float(pageFraction/7), animated: false)
     }
 }

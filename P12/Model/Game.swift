@@ -8,38 +8,24 @@
 
 import Foundation
 
-//struct Game: Decodable {
-//    let name: String
-//
-//    enum CodingKeys: String, CodingKey {
-//        case name
-//    }
-//}
-//
-//typealias GameArray = [Game]
 
 struct Game: Decodable {
     let id: Int
     let cover: Cover?
-    let name: String?
+    let name: String
     let summary: String?
-    let ageRatings: [AgeRating]?
     let genres: [Genre]?
-    let platforms: [Int]?
+    let platforms: [Genre]
     let total_rating: Double?
-    let themes: [Int]?
-    let gameModes: [Int]?
+    let themes: [Genre]?
     let screenshots: [Cover]?
     let first_release_date: Int?
 }
 
-struct AgeRating: Decodable {
-    let rating: Int?
-}
 
 struct Cover: Decodable {
-    let id: Int?
-    let image_id: String?
+    let id: Int
+    let image_id: String
 }
 
 struct Genre: Decodable {

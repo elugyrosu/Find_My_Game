@@ -15,8 +15,6 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
     var gameList = [Game]()
     var game: Game?
     
-
-    
     private let spacing:CGFloat = 15
 
     
@@ -29,7 +27,7 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
         
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let numberOfItemsPerRow:CGFloat = 3
+        let numberOfItemsPerRow:CGFloat = 2
             let spacingBetweenCells:CGFloat = 15
             
             let totalSpacing = (2 * self.spacing) + ((numberOfItemsPerRow - 1) * spacingBetweenCells) //Amount of total spacing in a row

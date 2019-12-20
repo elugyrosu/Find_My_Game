@@ -8,7 +8,16 @@
 
 import Foundation
 
+enum Age: String{
+    case UnderSeven = "1,7"
+    case SevenEleven = "1,2,7,8,9"
+    case TwelveFifteen = "1,2,3,7,8,9,10"
+    case SixteenHeighteen = "1,2,3,4,7,8,9,10,11"
+    case Heighteen = "1,2,3,4,5,6,7,8,9,10,11,12"
+}
 enum Platform: String{
+    case PS4  = "48"
+    case XOne = "49"
     case iOS = "39"
     case NextGen = "48,49"
     case Switch = "130"
@@ -23,13 +32,20 @@ enum Film: String{
     case Comedy = "27,35"
     case Documentary = "22,28,41"
 }
-
 enum Character: String{
-    case Structured = "16,24,15"
-    case Fiable = "21,23"
-    case Curious = "33,43,38"
-    case Adventure = "31,8,12"
-    case Bold = "4,5,33,25"
+    case Stealth = "23"
+    case Creator = "33"
+    case Explorer = "38"
+    case Survival = "21"
+    case Mystery = "43"
+}
+
+enum WeekEnd: String{
+    case Nature = "31,8"
+    case Party = "5,33"
+    case Plate = "16,15,13"
+    case Book = "12,24"
+    case Sport = "4,25"
 }
 
 enum Preference: String{
@@ -40,18 +56,20 @@ enum Preference: String{
     case Enigma = "9,28"
 }
 
-enum Age: String{
-    case UnderSeven = "1,7"
-    case SevenEleven = "1,2,7,8,9"
-    case TwelveFifteen = "1,2,3,7,8,9,10"
-    case SixteenHeighteen = "1,2,3,4,7,8,9,10,11"
-    case Heighteen = "1,2,3,4,5,6,7,8,9,10,11,12"
-    
+enum GameMode: String{
+    case SplitScreen = "4"
+    case Multiplayer = "2"
+    case Coop = "3"
 }
 
-struct Form {
-    var platforms: [Int]
-    var genres: [Int]
-    var themes: [Int]
+enum Players: String{
+    case TwoPlayer = "= 2"
+    case FourPlayer = "> 2"
+    case More = "> 4"
+}
+
+enum Coop: String{
+    case True = "true"
+    case False = "false"
 }
 

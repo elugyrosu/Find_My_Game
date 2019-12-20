@@ -24,14 +24,14 @@
 		FF706432239FF3B40000EC61 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF706431239FF3B40000EC61 /* CollectionViewController.swift */; };
 		FF706435239FFB7F0000EC61 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF706433239FFB7F0000EC61 /* CustomCollectionViewCell.swift */; };
 		FF706436239FFB7F0000EC61 /* CustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF706434239FFB7F0000EC61 /* CustomCollectionViewCell.xib */; };
-		FF70643823A026040000EC61 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF70643723A026040000EC61 /* String.swift */; };
 		FFB1CFC123A97F4D00DE5714 /* ScreenshotCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB1CFBF23A97F4D00DE5714 /* ScreenshotCollectionViewCell.swift */; };
 		FFB1CFC223A97F4D00DE5714 /* ScreenshotCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFB1CFC023A97F4D00DE5714 /* ScreenshotCollectionViewCell.xib */; };
 		FFE5D66F23A7B0E2001D4C53 /* UICollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE5D66E23A7B0E2001D4C53 /* UICollectionViewCell.swift */; };
 		FFE5D67123A7D592001D4C53 /* ApiKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = FFE5D67023A7D592001D4C53 /* ApiKeys.plist */; };
 		FFE5D67323A7D5B8001D4C53 /* ApiKeysManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE5D67223A7D5B8001D4C53 /* ApiKeysManager.swift */; };
+		FFEBB89623AB9004002991C0 /* VRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEBB89523AB9004002991C0 /* VRViewController.swift */; };
+		FFEBB89823AB9014002991C0 /* MultiplayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEBB89723AB9014002991C0 /* MultiplayerViewController.swift */; };
 		FFF985F423A2C3AF00431D2C /* Form.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF985F323A2C3AF00431D2C /* Form.swift */; };
-		FFFD75242395642100AEE8FD /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFD75232395642100AEE8FD /* PageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,14 +68,14 @@
 		FF706431239FF3B40000EC61 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		FF706433239FFB7F0000EC61 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
 		FF706434239FFB7F0000EC61 /* CustomCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCollectionViewCell.xib; sourceTree = "<group>"; };
-		FF70643723A026040000EC61 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		FFB1CFBF23A97F4D00DE5714 /* ScreenshotCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotCollectionViewCell.swift; sourceTree = "<group>"; };
 		FFB1CFC023A97F4D00DE5714 /* ScreenshotCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScreenshotCollectionViewCell.xib; sourceTree = "<group>"; };
 		FFE5D66E23A7B0E2001D4C53 /* UICollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewCell.swift; sourceTree = "<group>"; };
 		FFE5D67023A7D592001D4C53 /* ApiKeys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ApiKeys.plist; sourceTree = "<group>"; };
 		FFE5D67223A7D5B8001D4C53 /* ApiKeysManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiKeysManager.swift; sourceTree = "<group>"; };
+		FFEBB89523AB9004002991C0 /* VRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VRViewController.swift; sourceTree = "<group>"; };
+		FFEBB89723AB9014002991C0 /* MultiplayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplayerViewController.swift; sourceTree = "<group>"; };
 		FFF985F323A2C3AF00431D2C /* Form.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Form.swift; sourceTree = "<group>"; };
-		FFFD75232395642100AEE8FD /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,11 +187,12 @@
 			isa = PBXGroup;
 			children = (
 				FF01CDEA238463110081E16D /* SearchViewController.swift */,
-				FFFD75232395642100AEE8FD /* PageViewController.swift */,
 				FF14CA30239E60D40099FA25 /* DetailViewController.swift */,
 				FF62B220239ED4C100D49985 /* FindViewController.swift */,
 				FF706431239FF3B40000EC61 /* CollectionViewController.swift */,
 				FF307AC823A3DD5000C24198 /* GameForYouViewController.swift */,
+				FFEBB89523AB9004002991C0 /* VRViewController.swift */,
+				FFEBB89723AB9014002991C0 /* MultiplayerViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -200,7 +201,6 @@
 			isa = PBXGroup;
 			children = (
 				FF14CA2E239E5C780099FA25 /* UIViewController.swift */,
-				FF70643723A026040000EC61 /* String.swift */,
 				FFE5D66E23A7B0E2001D4C53 /* UICollectionViewCell.swift */,
 			);
 			path = Extensions;
@@ -339,14 +339,14 @@
 			files = (
 				FFE5D66F23A7B0E2001D4C53 /* UICollectionViewCell.swift in Sources */,
 				FF706432239FF3B40000EC61 /* CollectionViewController.swift in Sources */,
+				FFEBB89823AB9014002991C0 /* MultiplayerViewController.swift in Sources */,
 				FF14CA31239E60D40099FA25 /* DetailViewController.swift in Sources */,
 				FFE5D67323A7D5B8001D4C53 /* ApiKeysManager.swift in Sources */,
 				FFF985F423A2C3AF00431D2C /* Form.swift in Sources */,
 				FF01CDEB238463110081E16D /* SearchViewController.swift in Sources */,
 				FF307AC923A3DD5000C24198 /* GameForYouViewController.swift in Sources */,
 				FF706435239FFB7F0000EC61 /* CustomCollectionViewCell.swift in Sources */,
-				FF70643823A026040000EC61 /* String.swift in Sources */,
-				FFFD75242395642100AEE8FD /* PageViewController.swift in Sources */,
+				FFEBB89623AB9004002991C0 /* VRViewController.swift in Sources */,
 				FFB1CFC123A97F4D00DE5714 /* ScreenshotCollectionViewCell.swift in Sources */,
 				FF14CA22239C42190099FA25 /* IGDBService.swift in Sources */,
 				FF14CA2F239E5C780099FA25 /* UIViewController.swift in Sources */,

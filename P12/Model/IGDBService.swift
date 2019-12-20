@@ -26,17 +26,15 @@ class IGDBService {
         case badURL
         case decodeError
         case dataError
-        
     }
-    
-    func getResult(platforms: String, themes: String, genres: String, ageRating: String, callback: @escaping (Result<[Game], Error>) -> Void){
+
+    func getResult(httpBody: String, callback: @escaping (Result<[Game], Error>) -> Void){
         guard let url = searchUrl else{
             callback(.failure(NetworkError.badURL))
             return
         }
-        
         var requestHeader = URLRequest.init(url: url)
-        requestHeader.httpBody = "fields *, cover.image_id, screenshots.image_id, age_ratings.* , genres.* ; where platforms = (\(platforms)) & total_rating > 50 & themes = (\(themes)) & genres = (\(genres)) & age_ratings.rating = (\(ageRating)); limit 100;".data(using: .utf8, allowLossyConversion: false)
+        requestHeader.httpBody = httpBody.data(using: .utf8, allowLossyConversion: false)
         requestHeader.httpMethod = "POST"
         requestHeader.setValue(apiKey, forHTTPHeaderField: "user-key")
         requestHeader.setValue("application/json", forHTTPHeaderField: "Accept")
