@@ -1,8 +1,8 @@
 //
-//  CollectionViewController.swift
+//  FavoriteCollectionViewController.swift
 //  P12
 //
-//  Created by Jordan MOREAU on 10/12/2019.
+//  Created by Jordan MOREAU on 22/12/2019.
 //  Copyright © 2019 Jordan MOREAU. All rights reserved.
 //
 
@@ -10,23 +10,36 @@ import UIKit
 import SDWebImage
 
 
-class CollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
 
-    var gameList = [Game]()
-    var game: Game?
+class FavoriteCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
+
+    private var gameList = FavoriteGame.fetchAll()
+    private var favoriteGame: FavoriteGame?
     
     private let spacing:CGFloat = 15
-
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        gameList = FavoriteGame.fetchAll()
+        collectionView.reloadData()
+
+        // Uncomment the following line to preserve selection between presentations
+        // self.clearsSelectionOnViewWillAppear = false
+
+        // Register cell classes
         let nib = UINib(nibName: CustomCollectionViewCell.identifier, bundle: nil)
         self.collectionView.register(nib, forCellWithReuseIdentifier: CustomCollectionViewCell.identifier)
         collectionView.contentInset = UIEdgeInsets(top: 20, left: 15, bottom: 20, right: 15)
-        
-        
+        checkFavorite()
+        // Do any additional setup after loading the view.
     }
-    
+    func checkFavorite() {
+        if gameList.count > 0 {
+            favoriteGame = gameList[0]
+            guard let name = favoriteGame?.name else {return}
+            print(name)
+        }
+    }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let numberOfItemsPerRow:CGFloat = 2
@@ -41,9 +54,8 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
                 return CGSize(width: 0, height: 0)
             }
         }
+
     /*
-     
-     
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -54,13 +66,7 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
     */
 
     // MARK: UICollectionViewDataSource
-    
 
-//
-//    override func numberOfSections(in collectionView: UICollectionView) -> Int {
-//        // #warning Incomplete implementation, return the number of sections
-//        return 1
-//    }
 
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -71,35 +77,34 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CustomCollectionViewCell.identifier, for: indexPath) as? CustomCollectionViewCell else {
             return CustomCollectionViewCell()}
-        self.game = gameList[indexPath.row]
-        cell.game = game
+        favoriteGame = gameList[indexPath.row]
+        cell.favoriteGame = favoriteGame
         
-        guard let imageId = game?.cover?.image_id else{return cell}
-        let imageStringUrl = "https://images.igdb.com/igdb/image/upload/t_cover_big/\(imageId).jpg"
+        guard let coverId = favoriteGame?.cover else{return cell}
+//        cell.coverImageView.image = UIImage(data: coverData)
+        // Configure the cell
+        let imageStringUrl = "https://images.igdb.com/igdb/image/upload/t_cover_big/\(coverId).jpg"
         cell.coverImageView.sd_setImage(with: URL(string: imageStringUrl), placeholderImage: UIImage(named: "co1rxc.png"))
-            
-    return cell
-    }
     
+        return cell
+    }
+   
+    
+    
+
+    // MARK: UICollectionViewDelegate
+
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        game = gameList[indexPath.row]
-        performSegue(withIdentifier: "segueToDetail", sender: indexPath)
+        favoriteGame = gameList[indexPath.row]
+        performSegue(withIdentifier: "segueToFavoriteDetailViewController", sender: indexPath)
     }
     
- 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "segueToDetail"{
-            guard let detailVC = segue.destination as? DetailViewController else {return}
-            detailVC.game = game
+        if segue.identifier == "segueToFavoriteDetailViewController"{
+            guard let detailVC = segue.destination as? FavoriteDetailViewController else {return}
+            detailVC.favoriteGame = favoriteGame
         }
     }
-    
-    
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-//      let itemSize = (collectionView.frame.width - (collectionView.contentInset.left + collectionView.contentInset.right + 10)) / 2
-//      return CGSize(width: itemSize, height: itemSize)
-//    }
-
 
     /*
     // Uncomment this method to specify if the specified item should be highlighted during tracking
@@ -129,6 +134,5 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
     
     }
     */
-
 
 }

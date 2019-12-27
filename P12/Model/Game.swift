@@ -29,5 +29,5 @@ struct Cover: Decodable {
 }
 
 struct Genre: Decodable {
-    let name: String?
+    let name: String
 }

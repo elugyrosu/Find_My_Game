@@ -9,7 +9,9 @@
 import UIKit
 
 class FindViewController: UIViewController {
-
+    private let igdbService = IGDBService()
+    private var gameList = [Game]()
+    
     @IBOutlet var viewsToBorder: [UIView]!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +22,37 @@ class FindViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
+    @IBAction func vrButtonTapped(_ sender: UIButton) {
+        gamesVRCall()
+    }
+    private func gamesVRCall() {
+    //        let httpBodyString = "fields *, cover.image_id, screenshots.image_id, age_ratings.* , genres.* ; where platforms = (\(platforms)) & total_rating > 70 & themes = (\(themes)) & genres = (\(genres)) & age_ratings.rating = (\(ageRating)); limit 100;"
+            let httpBodyString = "fields *, cover.image_id, screenshots.image_id, genres.name, themes.name, platforms.name; sort total_rating desc; where platforms = (162,163,165) & total_rating > 70; limit 100;"
+            igdbService.getResult(httpBody: httpBodyString) { (result: Result<[Game], Error>) in
+                
+                switch result {
+                case .success(let data):
+                    self.gameList = data
+                    if data.count >= 1{
+                        self.performSegue(withIdentifier: "segueToCollectionViewController", sender: self)
+                    }else{
+                        self.presentAlert(message: "We have no recipe for your search, check your ingredients")
+                    }
+                case .failure(let error):
+                    print(error.localizedDescription)
+                    self.presentAlert(message: "Network error")
+                    
+                }
+            }
+        }
+        
+        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            if segue.identifier == "segueToCollectionViewController" {
+                guard let resultVC = segue.destination as? CollectionViewController else{return}
+                resultVC.gameList = gameList
+            }
+        }
     
 
     /*

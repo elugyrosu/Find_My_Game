@@ -16,6 +16,7 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UITableV
     var screenshots = [Cover]()
     
 
+    @IBOutlet weak var favoriteBarButtonItem: UIBarButtonItem!
     @IBOutlet var cornerViews: [UIView]!
     
     @IBOutlet weak var titleLabel: UILabel!
@@ -25,6 +26,20 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UITableV
     
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
+    
+    
+    
+    @IBAction func handleFavoriteBarButtonItem(_ sender: UIBarButtonItem) {
+        guard let id = game?.id else {return}
+        
+        if FavoriteGame.checkIfAlreadyExist(gameId: String(id)) == true{
+            FavoriteGame.deleteGame(gameId: String(id))
+        }else{
+            guard let favoriteGame = game else{return}
+            FavoriteGame.addGame(game: favoriteGame)
+        }
+        checkIfFavorite()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,9 +57,12 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UITableV
             view.layer.cornerRadius = 10
             view.layer.masksToBounds = true
         }
-        
 
-
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        checkIfFavorite()
     }
     
     private func updateViews(){
@@ -76,6 +94,15 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UITableV
             strDate = dateFormatter.string(from: date)
         return strDate
     }
+    
+    private func checkIfFavorite(){
+        guard let game = game else {return}
+        if FavoriteGame.checkIfAlreadyExist(gameId: String(game.id)) == true{
+            favoriteBarButtonItem.image = #imageLiteral(resourceName: "Full star")
+        }else{
+            favoriteBarButtonItem.image = #imageLiteral(resourceName: "Empty Star")
+            }
+        }
     
 
     /*

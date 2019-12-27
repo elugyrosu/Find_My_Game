@@ -19,6 +19,8 @@
 		FF14CA2F239E5C780099FA25 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF14CA2E239E5C780099FA25 /* UIViewController.swift */; };
 		FF14CA31239E60D40099FA25 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF14CA30239E60D40099FA25 /* DetailViewController.swift */; };
 		FF307AC923A3DD5000C24198 /* GameForYouViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF307AC823A3DD5000C24198 /* GameForYouViewController.swift */; };
+		FF3E664523AF8B17008A2419 /* FavoriteGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3E664423AF8B17008A2419 /* FavoriteGame.swift */; };
+		FF3E664823AF8D90008A2419 /* FavoriteGame.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FF3E664623AF8D90008A2419 /* FavoriteGame.xcdatamodeld */; };
 		FF62B221239ED4C100D49985 /* FindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF62B220239ED4C100D49985 /* FindViewController.swift */; };
 		FF65709423A93A300068FB7F /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = FF65709323A93A300068FB7F /* Podfile */; };
 		FF706432239FF3B40000EC61 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF706431239FF3B40000EC61 /* CollectionViewController.swift */; };
@@ -26,10 +28,13 @@
 		FF706436239FFB7F0000EC61 /* CustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF706434239FFB7F0000EC61 /* CustomCollectionViewCell.xib */; };
 		FFB1CFC123A97F4D00DE5714 /* ScreenshotCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB1CFBF23A97F4D00DE5714 /* ScreenshotCollectionViewCell.swift */; };
 		FFB1CFC223A97F4D00DE5714 /* ScreenshotCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFB1CFC023A97F4D00DE5714 /* ScreenshotCollectionViewCell.xib */; };
+		FFBB6E6023B3FB5C00B9472C /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBB6E5F23B3FB5C00B9472C /* String.swift */; };
+		FFD79DA823B00A4900D5DA59 /* FavoriteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD79DA723B00A4900D5DA59 /* FavoriteDetailViewController.swift */; };
+		FFD79DAA23B0126000D5DA59 /* FavoriteCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD79DA923B0126000D5DA59 /* FavoriteCollectionViewController.swift */; };
 		FFE5D66F23A7B0E2001D4C53 /* UICollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE5D66E23A7B0E2001D4C53 /* UICollectionViewCell.swift */; };
 		FFE5D67123A7D592001D4C53 /* ApiKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = FFE5D67023A7D592001D4C53 /* ApiKeys.plist */; };
 		FFE5D67323A7D5B8001D4C53 /* ApiKeysManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE5D67223A7D5B8001D4C53 /* ApiKeysManager.swift */; };
-		FFEBB89623AB9004002991C0 /* VRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEBB89523AB9004002991C0 /* VRViewController.swift */; };
+		FFEBB89623AB9004002991C0 /* RhythmGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEBB89523AB9004002991C0 /* RhythmGameViewController.swift */; };
 		FFEBB89823AB9014002991C0 /* MultiplayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEBB89723AB9014002991C0 /* MultiplayerViewController.swift */; };
 		FFF985F423A2C3AF00431D2C /* Form.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF985F323A2C3AF00431D2C /* Form.swift */; };
 /* End PBXBuildFile section */
@@ -63,6 +68,8 @@
 		FF14CA2E239E5C780099FA25 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		FF14CA30239E60D40099FA25 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		FF307AC823A3DD5000C24198 /* GameForYouViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameForYouViewController.swift; sourceTree = "<group>"; };
+		FF3E664423AF8B17008A2419 /* FavoriteGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteGame.swift; sourceTree = "<group>"; };
+		FF3E664723AF8D90008A2419 /* FavoriteGame.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FavoriteGame.xcdatamodel; sourceTree = "<group>"; };
 		FF62B220239ED4C100D49985 /* FindViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindViewController.swift; sourceTree = "<group>"; };
 		FF65709323A93A300068FB7F /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		FF706431239FF3B40000EC61 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
@@ -70,10 +77,13 @@
 		FF706434239FFB7F0000EC61 /* CustomCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCollectionViewCell.xib; sourceTree = "<group>"; };
 		FFB1CFBF23A97F4D00DE5714 /* ScreenshotCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotCollectionViewCell.swift; sourceTree = "<group>"; };
 		FFB1CFC023A97F4D00DE5714 /* ScreenshotCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScreenshotCollectionViewCell.xib; sourceTree = "<group>"; };
+		FFBB6E5F23B3FB5C00B9472C /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		FFD79DA723B00A4900D5DA59 /* FavoriteDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteDetailViewController.swift; sourceTree = "<group>"; };
+		FFD79DA923B0126000D5DA59 /* FavoriteCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCollectionViewController.swift; sourceTree = "<group>"; };
 		FFE5D66E23A7B0E2001D4C53 /* UICollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewCell.swift; sourceTree = "<group>"; };
 		FFE5D67023A7D592001D4C53 /* ApiKeys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ApiKeys.plist; sourceTree = "<group>"; };
 		FFE5D67223A7D5B8001D4C53 /* ApiKeysManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiKeysManager.swift; sourceTree = "<group>"; };
-		FFEBB89523AB9004002991C0 /* VRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VRViewController.swift; sourceTree = "<group>"; };
+		FFEBB89523AB9004002991C0 /* RhythmGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RhythmGameViewController.swift; sourceTree = "<group>"; };
 		FFEBB89723AB9014002991C0 /* MultiplayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplayerViewController.swift; sourceTree = "<group>"; };
 		FFF985F323A2C3AF00431D2C /* Form.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Form.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -167,6 +177,8 @@
 				FF14CA21239C42190099FA25 /* IGDBService.swift */,
 				FF14CA23239D092C0099FA25 /* Game.swift */,
 				FFF985F323A2C3AF00431D2C /* Form.swift */,
+				FF3E664423AF8B17008A2419 /* FavoriteGame.swift */,
+				FF3E664623AF8D90008A2419 /* FavoriteGame.xcdatamodeld */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -190,8 +202,10 @@
 				FF14CA30239E60D40099FA25 /* DetailViewController.swift */,
 				FF62B220239ED4C100D49985 /* FindViewController.swift */,
 				FF706431239FF3B40000EC61 /* CollectionViewController.swift */,
+				FFD79DA923B0126000D5DA59 /* FavoriteCollectionViewController.swift */,
+				FFD79DA723B00A4900D5DA59 /* FavoriteDetailViewController.swift */,
 				FF307AC823A3DD5000C24198 /* GameForYouViewController.swift */,
-				FFEBB89523AB9004002991C0 /* VRViewController.swift */,
+				FFEBB89523AB9004002991C0 /* RhythmGameViewController.swift */,
 				FFEBB89723AB9014002991C0 /* MultiplayerViewController.swift */,
 			);
 			path = Controller;
@@ -202,6 +216,7 @@
 			children = (
 				FF14CA2E239E5C780099FA25 /* UIViewController.swift */,
 				FFE5D66E23A7B0E2001D4C53 /* UICollectionViewCell.swift */,
+				FFBB6E5F23B3FB5C00B9472C /* String.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -341,16 +356,21 @@
 				FF706432239FF3B40000EC61 /* CollectionViewController.swift in Sources */,
 				FFEBB89823AB9014002991C0 /* MultiplayerViewController.swift in Sources */,
 				FF14CA31239E60D40099FA25 /* DetailViewController.swift in Sources */,
+				FFD79DA823B00A4900D5DA59 /* FavoriteDetailViewController.swift in Sources */,
 				FFE5D67323A7D5B8001D4C53 /* ApiKeysManager.swift in Sources */,
+				FF3E664823AF8D90008A2419 /* FavoriteGame.xcdatamodeld in Sources */,
 				FFF985F423A2C3AF00431D2C /* Form.swift in Sources */,
 				FF01CDEB238463110081E16D /* SearchViewController.swift in Sources */,
 				FF307AC923A3DD5000C24198 /* GameForYouViewController.swift in Sources */,
+				FF3E664523AF8B17008A2419 /* FavoriteGame.swift in Sources */,
 				FF706435239FFB7F0000EC61 /* CustomCollectionViewCell.swift in Sources */,
-				FFEBB89623AB9004002991C0 /* VRViewController.swift in Sources */,
+				FFD79DAA23B0126000D5DA59 /* FavoriteCollectionViewController.swift in Sources */,
+				FFEBB89623AB9004002991C0 /* RhythmGameViewController.swift in Sources */,
 				FFB1CFC123A97F4D00DE5714 /* ScreenshotCollectionViewCell.swift in Sources */,
 				FF14CA22239C42190099FA25 /* IGDBService.swift in Sources */,
 				FF14CA2F239E5C780099FA25 /* UIViewController.swift in Sources */,
 				FF62B221239ED4C100D49985 /* FindViewController.swift in Sources */,
+				FFBB6E6023B3FB5C00B9472C /* String.swift in Sources */,
 				FF01CDC323845A7E0081E16D /* AppDelegate.swift in Sources */,
 				FF14CA24239D092C0099FA25 /* Game.swift in Sources */,
 			);
@@ -621,6 +641,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FF3E664623AF8D90008A2419 /* FavoriteGame.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FF3E664723AF8D90008A2419 /* FavoriteGame.xcdatamodel */,
+			);
+			currentVersion = FF3E664723AF8D90008A2419 /* FavoriteGame.xcdatamodel */;
+			path = FavoriteGame.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = FF01CDB723845A7E0081E16D /* Project object */;
 }

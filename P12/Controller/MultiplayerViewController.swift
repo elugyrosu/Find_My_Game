@@ -77,16 +77,11 @@ class MultiplayerViewController: UIViewController {
             print("Tag playerButton Error")
         }
     }
-    
-    
         override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-    
-    
-    
     
     @IBAction func resultButtonTapped(_ sender: Any) {
         gamesCall(platform: platformAnswer.rawValue, players: playersAnswer.rawValue, coop: coopAnswer.rawValue)

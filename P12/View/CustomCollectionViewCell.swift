@@ -15,10 +15,17 @@ class CustomCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var coverImageView: UIImageView!
     
     @IBOutlet weak var ratingLabel: UILabel!
+
     var game: Game? {
         didSet {
             guard let rating = game?.total_rating else {return}
             ratingLabel.text = String(Int(rating))
+        }
+    }
+    var favoriteGame: FavoriteGame?{
+        didSet {
+            guard let rating = favoriteGame?.totalRating else {return}
+            ratingLabel.text = rating
         }
     }
     
