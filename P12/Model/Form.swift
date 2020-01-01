@@ -23,6 +23,8 @@ enum Platform: String{
     case Switch = "130"
     case PC = "6,92"
     case Mac = "14"
+    case VR = "165"
+    case All = "48,49,39,130,6,92,14,165,162,163"
 }
 
 enum Film: String{
@@ -73,3 +75,11 @@ enum Coop: String{
     case False = "false"
 }
 
+enum Rating: String{
+    case Ten = "10"
+    case Fifty = "50"
+    case Sixty = "60"
+    case Seventy = "70"
+    case Heigty = "80"
+    case Ninety = "90"
+}

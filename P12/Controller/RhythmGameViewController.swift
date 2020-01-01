@@ -61,9 +61,8 @@ class RhythmGameViewController: UIViewController {
     }
     */
     private func gamesCall(platform: String) {
-//        let httpBodyString = "fields *, cover.image_id, screenshots.image_id, age_ratings.* , genres.* ; where platforms = (\(platforms)) & total_rating > 70 & themes = (\(themes)) & genres = (\(genres)) & age_ratings.rating = (\(ageRating)); limit 100;"
         let httpBodyString = "fields *, cover.image_id, screenshots.image_id, genres.name, themes.name, platforms.name; sort total_rating desc; where platforms = (\(platform)) & genres = (7) & total_rating > 70; limit 100;"
-        igdbService.getResult(httpBody: httpBodyString) { (result: Result<[Game], Error>) in
+        igdbService.getResult(httpBody: httpBodyString) { result in
             
             switch result {
             case .success(let data):
@@ -71,7 +70,7 @@ class RhythmGameViewController: UIViewController {
                 if data.count >= 1{
                     self.performSegue(withIdentifier: "segueToCollectionViewController", sender: self)
                 }else{
-                    self.presentAlert(message: "We have no recipe for your search, check your ingredients")
+                    self.presentAlert(message: "We have no result for your search")
                 }
             case .failure(let error):
                 print(error.localizedDescription)

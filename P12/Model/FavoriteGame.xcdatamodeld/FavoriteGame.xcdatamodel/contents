@@ -4,9 +4,9 @@
         <attribute name="cover" optional="YES" attributeType="String"/>
         <attribute name="id" optional="YES" attributeType="String"/>
         <attribute name="name" optional="YES" attributeType="String"/>
-        <attribute name="platforms" optional="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromData" customClassName="[NSString]"/>
+        <attribute name="platforms" optional="YES" attributeType="Transformable" valueTransformerName="" customClassName="[NSString]"/>
         <attribute name="releaseDate" optional="YES" attributeType="String"/>
-        <attribute name="screenshots" optional="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromData" customClassName="[NSString]"/>
+        <attribute name="screenshots" optional="YES" attributeType="Transformable" valueTransformerName="" customClassName="[NSString]"/>
         <attribute name="summary" optional="YES" attributeType="String"/>
         <attribute name="totalRating" optional="YES" attributeType="String"/>
     </entity>

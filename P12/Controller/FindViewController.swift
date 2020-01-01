@@ -37,7 +37,7 @@ class FindViewController: UIViewController {
                     if data.count >= 1{
                         self.performSegue(withIdentifier: "segueToCollectionViewController", sender: self)
                     }else{
-                        self.presentAlert(message: "We have no recipe for your search, check your ingredients")
+                        self.presentAlert(message: "We have no result for your search")
                     }
                 case .failure(let error):
                     print(error.localizedDescription)

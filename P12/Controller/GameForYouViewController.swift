@@ -194,7 +194,7 @@ class GameForYouViewController: UIViewController {
     
     private func gamesCall(platforms: String, themes: String, genres: String, ageRating: String) {
         let httpBodyString = "fields *, cover.image_id, screenshots.image_id, genres.name, themes.name, platforms.name; sort total_rating desc; where platforms = (\(platforms)) & total_rating > 70 & themes = (\(themes)) & genres = (\(genres)) & age_ratings.rating = (\(ageRating)); limit 100;"
-        igdbService.getResult(httpBody: httpBodyString) { (result: Result<[Game], Error>) in
+        igdbService.getResult(httpBody: httpBodyString) { result in
             
             switch result {
             case .success(let data):
