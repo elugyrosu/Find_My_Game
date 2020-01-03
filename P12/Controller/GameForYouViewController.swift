@@ -10,17 +10,23 @@ import UIKit
 
 class GameForYouViewController: UIViewController {
     
+    // MARK: Properties
+
     private let igdbService = IGDBService()
     private var gameList = [Game]()
+
+    private var platformAnswer = Platform.NextGen
+    private var filmAnswer = Film.Action
+    private var preferenceAnswer = Preference.Art
+    private var characterAnswer = Character.Creator
+    private var ageAnswer = Age.Heighteen
+    private var weekEndAnswer = WeekEnd.Nature
     
-    
-    var platformAnswer = Platform.NextGen
-    var filmAnswer = Film.Action
-    var preferenceAnswer = Preference.Art
-    var characterAnswer = Character.Creator
-    var ageAnswer = Age.Heighteen
-    var weekEndAnswer = WeekEnd.Nature
+    // MARK: Outlets
         
+    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var progressView: UIProgressView!
+    
     @IBOutlet var platformAnswerButtons: [UIButton]!
     @IBOutlet var filmAnswerButtons: [UIButton]!
     @IBOutlet var characterAnswerButtons: [UIButton]!
@@ -28,11 +34,21 @@ class GameForYouViewController: UIViewController {
     @IBOutlet var ageAnswerButtons: [UIButton]!
     @IBOutlet var weekEndAnswerButtons: [UIButton]!
     
+    // MARK: View Life Cycle
     
-    @IBOutlet weak var scrollView: UIScrollView!
-    @IBOutlet weak var progressView: UIProgressView!
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        buttonsInitialization()
+    }
     
+    // MARK: Action Button Outlet
+
+    @IBAction func discoverButtonAction(_ sender: Any) {
+        gamesCall(platforms: platformAnswer.rawValue, themes: filmAnswer.rawValue + "," + characterAnswer.rawValue, genres: preferenceAnswer.rawValue + "," + weekEndAnswer.rawValue, ageRating: ageAnswer.rawValue)
+    }
     
+    // MARK: Action Button Methods
+
     func buttonsInitialization(){
         ageAnswerButtons.forEach { button in
             button.addTarget(self, action: #selector(ageAnswerButtonTapped(_:)), for: .touchUpInside)
@@ -53,6 +69,7 @@ class GameForYouViewController: UIViewController {
             button.addTarget(self, action: #selector(preferenceAnswerButtonTapped(_:)), for: .touchUpInside)
         }
     }
+    
     @objc func ageAnswerButtonTapped(_ sender: UIButton) {
         ageAnswerButtons.forEach { button in
             button.isSelected = false
@@ -74,6 +91,7 @@ class GameForYouViewController: UIViewController {
             print("Tag age Error")
         }
     }
+    
     @objc func platformAnswerButtonTapped(_ sender: UIButton) {
         platformAnswerButtons.forEach { button in
             button.isSelected = false
@@ -95,6 +113,7 @@ class GameForYouViewController: UIViewController {
             print("Tag platform Error")
         }
     }
+    
     @objc func filmAnswerButtonTapped(_ sender: UIButton) {
         filmAnswerButtons.forEach { button in
             button.isSelected = false
@@ -115,8 +134,8 @@ class GameForYouViewController: UIViewController {
             print("Tag film Error")
         }
     }
+    
     @objc func characterAnswerButtonTapped(_ sender: UIButton) {
-        
         characterAnswerButtons.forEach { button in
             button.isSelected = false
         }
@@ -136,6 +155,7 @@ class GameForYouViewController: UIViewController {
             print("Tag character Error")
         }
     }
+    
     @objc func weekEndAnswerButtonTapped(_ sender: UIButton) {
         weekEndAnswerButtons.forEach { button in
             button.isSelected = false
@@ -156,6 +176,7 @@ class GameForYouViewController: UIViewController {
             print("Tag week end Error")
         }
     }
+    
     @objc func preferenceAnswerButtonTapped(_ sender: UIButton) {
         preferenceAnswerButtons.forEach { button in
             button.isSelected = false
@@ -177,20 +198,7 @@ class GameForYouViewController: UIViewController {
         }
     }
 
-
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        buttonsInitialization()
-        // Do any additional setup after loading the view.
-    }
-    
-    
-    @IBAction func discoverButtonAction(_ sender: Any) {
-        
-        gamesCall(platforms: platformAnswer.rawValue, themes: filmAnswer.rawValue + "," + characterAnswer.rawValue, genres: preferenceAnswer.rawValue + "," + weekEndAnswer.rawValue, ageRating: ageAnswer.rawValue)
-    }
-
+    // MARK: Class Methods
     
     private func gamesCall(platforms: String, themes: String, genres: String, ageRating: String) {
         let httpBodyString = "fields *, cover.image_id, screenshots.image_id, genres.name, themes.name, platforms.name; sort total_rating desc; where platforms = (\(platforms)) & total_rating > 70 & themes = (\(themes)) & genres = (\(genres)) & age_ratings.rating = (\(ageRating)); limit 100;"
@@ -207,10 +215,11 @@ class GameForYouViewController: UIViewController {
             case .failure(let error):
                 print(error.localizedDescription)
                 self.presentAlert(message: "Network error")
-
             }
         }
     }
+    
+    // MARK: Segue
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "segueToCollectionViewController" {
@@ -219,6 +228,8 @@ class GameForYouViewController: UIViewController {
         }
     }
 }
+
+// MARK: UIScrollViewDelegate
 
 extension GameForYouViewController: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {

@@ -15,23 +15,36 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UITableV
     var screenshot: Cover?
     var screenshots = [Cover]()
     
-
-    @IBOutlet weak var favoriteBarButtonItem: UIBarButtonItem!
     @IBOutlet var cornerViews: [UIView]!
-    
+    @IBOutlet weak var favoriteBarButtonItem: UIBarButtonItem!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var releaseDateLabel: UILabel!
     @IBOutlet weak var coverImageView: UIImageView!
     @IBOutlet weak var summaryLabel: UILabel!
-    
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
     
+    // MARK: - View Life Cycle
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        updateViews()
+        collectionView.dataSource = self
+        collectionView.delegate = self
+        let nib = UINib(nibName: ScreenshotCollectionViewCell.identifier, bundle: nil)
+        self.collectionView.register(nib, forCellWithReuseIdentifier: ScreenshotCollectionViewCell.identifier)
+        collectionView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        checkIfFavorite()
+    }
+    
+    // MARK: - Action Button Outlets
     
     @IBAction func handleFavoriteBarButtonItem(_ sender: UIBarButtonItem) {
         guard let id = game?.id else {return}
-        
         if FavoriteGame.checkIfAlreadyExist(gameId: String(id)) == true{
             FavoriteGame.deleteGame(gameId: String(id))
         }else{
@@ -41,31 +54,13 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UITableV
         checkIfFavorite()
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        updateViews()
-
-        // Do any additional setup after loading the view.
-        let nib = UINib(nibName: ScreenshotCollectionViewCell.identifier, bundle: nil)
-        self.collectionView.register(nib, forCellWithReuseIdentifier: ScreenshotCollectionViewCell.identifier)
-        
-        collectionView.dataSource = self
-        collectionView.delegate = self
-        collectionView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
-
+    // MARK: - Class Methods
+    
+    private func updateViews(){
         cornerViews.forEach { view in
             view.layer.cornerRadius = 10
             view.layer.masksToBounds = true
         }
-
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        checkIfFavorite()
-    }
-    
-    private func updateViews(){
         guard let game = game else{return}
         titleLabel.text = game.name
         summaryLabel.text = game.summary
@@ -77,21 +72,19 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UITableV
         scoreLabel.text = String(Int(score)) + "/100"
     }
     
-    func getCoverImage() {
+    private func getCoverImage() {
         guard let imageId = game?.cover?.image_id else {return}
         let imageStringUrl = "https://images.igdb.com/igdb/image/upload/t_cover_big/\(imageId).jpg"
         coverImageView.sd_setImage(with: URL(string: imageStringUrl), placeholderImage: UIImage(named: "co1rxc.png"))
     }
     
-    func createDateTime(timestamp: Int) -> String {
+    private func createDateTime(timestamp: Int) -> String {
         var strDate = "undefined"
-            
         let unixTime = Double(timestamp)
-            let date = Date(timeIntervalSince1970: unixTime)
-            let dateFormatter = DateFormatter()
-
-            dateFormatter.dateFormat = "dd MMM yyyy"
-            strDate = dateFormatter.string(from: date)
+        let date = Date(timeIntervalSince1970: unixTime)
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "dd MMM yyyy"
+        strDate = dateFormatter.string(from: date)
         return strDate
     }
     
@@ -101,21 +94,12 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UITableV
             favoriteBarButtonItem.image = #imageLiteral(resourceName: "Full star")
         }else{
             favoriteBarButtonItem.image = #imageLiteral(resourceName: "Empty Star")
-            }
         }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
     }
-    */
-
 }
+
+// MARK: - UICollectionViewDataSource
+
 extension DetailViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         guard let screenshots = game?.screenshots else {return 0}
@@ -131,35 +115,33 @@ extension DetailViewController: UICollectionViewDataSource {
         guard let imageId = screenshot?.image_id else{return cell}
         let imageStringUrl = "https://images.igdb.com/igdb/image/upload/t_screenshot_med/\(imageId).jpg"
         cell.screenshotImageView.sd_setImage(with: URL(string: imageStringUrl), placeholderImage: UIImage(named: "co1rxc.png"))
-        
         return cell
     }
 }
 
+// MARK: - UICollectionViewDelegateFlowLayout
+
 extension DetailViewController: UICollectionViewDelegateFlowLayout {
-        func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 200, height: 140)
     }
 }
 
+// MARK: - UITableViewDataSource
+
 extension DetailViewController: UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         guard let game = game else {return 0}
-
         return game.platforms.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell = UITableViewCell()
-        
-            cell = tableView.dequeueReusableCell(withIdentifier: "platformCell", for: indexPath)
-            guard let platform = game?.platforms[indexPath.row].name else{
-                return cell
-            }
-            cell.textLabel?.text = platform
-
+        cell = tableView.dequeueReusableCell(withIdentifier: "platformCell", for: indexPath)
+        guard let platform = game?.platforms[indexPath.row].name else{
+            return cell
+        }
+        cell.textLabel?.text = platform
         return cell
     }
-    
-    
 }

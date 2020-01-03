@@ -9,16 +9,34 @@
 import UIKit
 
 class MultiplayerViewController: UIViewController {
-
+    
+    // MARK: Properties
+    
     private let igdbService = IGDBService()
     private var gameList = [Game]()
+    private var platformAnswer = Platform.PS4
+    private var playersAnswer = Players.TwoPlayer
+    private var coopAnswer = Coop.False
     
-    var platformAnswer = Platform.PS4
-    var playersAnswer = Players.TwoPlayer
-    var coopAnswer = Coop.False
+    // MARK: Outlets
+    
     @IBOutlet weak var progressView: UIProgressView!
-
     @IBOutlet var platformButtons: [UIButton]!
+    @IBOutlet var playerButtons: [UIButton]!
+    @IBOutlet var coopModeButtons: [UIButton]!
+    
+    // MARK: View Life Cycle
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+    // MARK: Action Button Outlets
+    
+    @IBAction func resultButtonTapped(_ sender: Any) {
+        gamesCall(platform: platformAnswer.rawValue, players: playersAnswer.rawValue, coop: coopAnswer.rawValue)
+    }
+    
     @IBAction func platformButtonsTapped(_ sender: UIButton) {
         platformButtons.forEach { button in
             button.isSelected = false
@@ -41,8 +59,6 @@ class MultiplayerViewController: UIViewController {
         }
     }
     
-    
-    @IBOutlet var playerButtons: [UIButton]!
     @IBAction func playerButtonTapped(_ sender: UIButton) {
         playerButtons.forEach { button in
             button.isSelected = false
@@ -61,8 +77,6 @@ class MultiplayerViewController: UIViewController {
         }
     }
     
-    @IBOutlet var coopModeButtons: [UIButton]!
-    
     @IBAction func coopModeButtonTapped(_ sender: UIButton) {
         coopModeButtons.forEach { button in
             button.isSelected = false
@@ -77,25 +91,9 @@ class MultiplayerViewController: UIViewController {
             print("Tag playerButton Error")
         }
     }
-        override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
     
-    @IBAction func resultButtonTapped(_ sender: Any) {
-        gamesCall(platform: platformAnswer.rawValue, players: playersAnswer.rawValue, coop: coopAnswer.rawValue)
-    }
+    // MARK: Class Methods
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
     private func gamesCall(platform: String, players: String, coop: String) {
         let httpBodyString = "fields *, cover.image_id, screenshots.image_id, genres.name, themes.name, platforms.name; sort total_rating desc; where platforms = (\(platform)) & multiplayer_modes.offlinemax \(players) & multiplayer_modes.offlinecoop = \(coop) & total_rating > 70; limit 100;"
         igdbService.getResult(httpBody: httpBodyString) { (result: Result<[Game], Error>) in
@@ -111,10 +109,11 @@ class MultiplayerViewController: UIViewController {
             case .failure(let error):
                 print(error.localizedDescription)
                 self.presentAlert(message: "Network error")
-                
             }
         }
     }
+    
+    // MARK: Segue
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "segueToCollectionViewController" {
@@ -123,6 +122,8 @@ class MultiplayerViewController: UIViewController {
         }
     }
 }
+
+// MARK: UIScrollViewDelegate
 
 extension MultiplayerViewController: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {

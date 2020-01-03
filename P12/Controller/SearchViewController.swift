@@ -10,15 +10,46 @@ import UIKit
 
 class SearchViewController: UIViewController {
     
+    // MARK: - Properties
+
     private let igdbService = IGDBService()
     private var gameList = [Game]()
-    var ageAnswer = Age.Heighteen
-    var rating = Rating.Ten
-    var platformAnswer = Platform.All
+    private var ageAnswer = Age.Heighteen
+    private var rating = Rating.Ten
+    private var platformAnswer = Platform.All
     
+    // MARK: - Outlets
+    
+    @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var activityIndicatorView: UIActivityIndicatorView!
+    @IBOutlet weak var searchButton: UIButton!
     
     @IBOutlet var platformButtons: [UIButton]!
+    @IBOutlet var ageButtons: [UIButton]!
+    @IBOutlet var scoreButtons: [UIButton]!
     
+    // MARK: - View Life Cycle
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        activityIndicatorView.isHidden = true
+        // Do any additional setup after loading the view.
+        scoreButtons.forEach { button in
+            button.layer.cornerRadius = 13
+            button.layer.masksToBounds = true
+        }
+        platformButtons.forEach { button in
+            button.layer.cornerRadius = 13
+            button.layer.masksToBounds = true
+        }
+        ageButtons.forEach { button in
+            button.layer.cornerRadius = 13
+            button.layer.masksToBounds = true
+        }
+    }
+
+    // MARK: - Action Button Outlets
+
     @IBAction func platformButtonTapped(_ sender: UIButton) {
         platformButtons.forEach { button in
             button.isSelected = false
@@ -46,10 +77,6 @@ class SearchViewController: UIViewController {
             }
     }
     
-    
-    
-    @IBOutlet var ageButtons: [UIButton]!
-    
     @IBAction func ageButonTapped(_ sender: UIButton) {
         ageButtons.forEach { button in
             button.isSelected = false
@@ -70,13 +97,7 @@ class SearchViewController: UIViewController {
         default:
             print("Tag age Error")
         }
-        
     }
-    
-    
-    
-
-    @IBOutlet var scoreButtons: [UIButton]!
     
     @IBAction func scoreButtonTapped(_ sender: UIButton) {
         scoreButtons.forEach { button in
@@ -100,54 +121,16 @@ class SearchViewController: UIViewController {
         }
     }
     
-
-
-
-    
-    @IBOutlet weak var searchBar: UISearchBar!
-    @IBOutlet weak var activityIndicatorView: UIActivityIndicatorView!
-    
-    @IBOutlet weak var searchButton: UIButton!
     @IBAction func searchButtonTapped(_ sender: UIButton) {
         gamesCall()
     }
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        activityIndicatorView.isHidden = true
-        // Do any additional setup after loading the view.
-        scoreButtons.forEach { button in
-            button.layer.cornerRadius = 13
-            button.layer.masksToBounds = true
-        }
-        platformButtons.forEach { button in
-            button.layer.cornerRadius = 13
-            button.layer.masksToBounds = true
-        }
-        ageButtons.forEach { button in
-            button.layer.cornerRadius = 13
-            button.layer.masksToBounds = true
-        }
-        
-    }
     
-    
+    // MARK: - Class Methods
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-    
-    
     private func toggleActivityIndicator(shown: Bool){
         activityIndicatorView.isHidden = !shown
         searchButton.isHidden = shown
     }
-    
     
     private func bodyConstruction() -> String{
         var searchBody = ""
@@ -183,6 +166,9 @@ class SearchViewController: UIViewController {
             }
         }
     }
+    
+    // MARK: - Segue
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "segueToCollectionViewController" {
             guard let resultVC = segue.destination as? CollectionViewController else{return}
@@ -190,6 +176,8 @@ class SearchViewController: UIViewController {
         }
     }
 }
+
+// MARK: - UISearchBarDelegate
 
 extension SearchViewController: UISearchBarDelegate{
     @IBAction func dismissedKeyboard(_ sender: UITapGestureRecognizer) {

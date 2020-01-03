@@ -8,6 +8,8 @@
 
 import Foundation
 
+// id for API requests
+
 enum Age: String{
     case UnderSeven = "1,7"
     case SevenEleven = "1,2,7,8,9"
@@ -15,6 +17,7 @@ enum Age: String{
     case SixteenHeighteen = "1,2,3,4,7,8,9,10,11"
     case Heighteen = "1,2,3,4,5,6,7,8,9,10,11,12"
 }
+
 enum Platform: String{
     case PS4  = "48"
     case XOne = "49"
@@ -34,6 +37,7 @@ enum Film: String{
     case Comedy = "27,35"
     case Documentary = "22,28,41"
 }
+
 enum Character: String{
     case Stealth = "23"
     case Creator = "33"

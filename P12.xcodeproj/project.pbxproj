@@ -32,7 +32,6 @@
 		FFBAD5C023B7D2D200A2E86F /* URLSessionFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFF2A2723B7BA1400793AD9 /* URLSessionFake.swift */; };
 		FFBAD5C223B7D61E00A2E86F /* FakeResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAD5C123B7D61E00A2E86F /* FakeResponseData.swift */; };
 		FFBAD5C423B7D6CA00A2E86F /* igdbResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = FFBAD5C323B7D6CA00A2E86F /* igdbResponse.json */; };
-		FFBB6E6023B3FB5C00B9472C /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBB6E5F23B3FB5C00B9472C /* String.swift */; };
 		FFD79DA823B00A4900D5DA59 /* FavoriteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD79DA723B00A4900D5DA59 /* FavoriteDetailViewController.swift */; };
 		FFD79DAA23B0126000D5DA59 /* FavoriteCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD79DA923B0126000D5DA59 /* FavoriteCollectionViewController.swift */; };
 		FFE5D66F23A7B0E2001D4C53 /* UICollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE5D66E23A7B0E2001D4C53 /* UICollectionViewCell.swift */; };
@@ -42,7 +41,6 @@
 		FFEBB89823AB9014002991C0 /* MultiplayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEBB89723AB9014002991C0 /* MultiplayerViewController.swift */; };
 		FFF985F423A2C3AF00431D2C /* Form.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF985F323A2C3AF00431D2C /* Form.swift */; };
 		FFF9A90C23B92D9A00BA4B34 /* FavoriteGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF9A90B23B92D9A00BA4B34 /* FavoriteGameTests.swift */; };
-		FFFF2A6F23B7C39D00793AD9 /* P12Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFF2A6E23B7C39D00793AD9 /* P12Tests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,7 +84,6 @@
 		FFBAD5BE23B7C81800A2E86F /* IGDBServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGDBServiceTests.swift; sourceTree = "<group>"; };
 		FFBAD5C123B7D61E00A2E86F /* FakeResponseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeResponseData.swift; sourceTree = "<group>"; };
 		FFBAD5C323B7D6CA00A2E86F /* igdbResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = igdbResponse.json; sourceTree = "<group>"; };
-		FFBB6E5F23B3FB5C00B9472C /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		FFD79DA723B00A4900D5DA59 /* FavoriteDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteDetailViewController.swift; sourceTree = "<group>"; };
 		FFD79DA923B0126000D5DA59 /* FavoriteCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCollectionViewController.swift; sourceTree = "<group>"; };
 		FFE5D66E23A7B0E2001D4C53 /* UICollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewCell.swift; sourceTree = "<group>"; };
@@ -98,7 +95,6 @@
 		FFF9A90B23B92D9A00BA4B34 /* FavoriteGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteGameTests.swift; sourceTree = "<group>"; };
 		FFFF2A2723B7BA1400793AD9 /* URLSessionFake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionFake.swift; sourceTree = "<group>"; };
 		FFFF2A6C23B7C39D00793AD9 /* P12Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = P12Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FFFF2A6E23B7C39D00793AD9 /* P12Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P12Tests.swift; sourceTree = "<group>"; };
 		FFFF2A7023B7C39D00793AD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -207,15 +203,15 @@
 		FF01CDE9238462400081E16D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				FF01CDEA238463110081E16D /* SearchViewController.swift */,
-				FF14CA30239E60D40099FA25 /* DetailViewController.swift */,
 				FF62B220239ED4C100D49985 /* FindViewController.swift */,
+				FF307AC823A3DD5000C24198 /* GameForYouViewController.swift */,
+				FFEBB89723AB9014002991C0 /* MultiplayerViewController.swift */,
+				FFEBB89523AB9004002991C0 /* RhythmGameViewController.swift */,
 				FF706431239FF3B40000EC61 /* CollectionViewController.swift */,
+				FF14CA30239E60D40099FA25 /* DetailViewController.swift */,
+				FF01CDEA238463110081E16D /* SearchViewController.swift */,
 				FFD79DA923B0126000D5DA59 /* FavoriteCollectionViewController.swift */,
 				FFD79DA723B00A4900D5DA59 /* FavoriteDetailViewController.swift */,
-				FF307AC823A3DD5000C24198 /* GameForYouViewController.swift */,
-				FFEBB89523AB9004002991C0 /* RhythmGameViewController.swift */,
-				FFEBB89723AB9014002991C0 /* MultiplayerViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -225,7 +221,6 @@
 			children = (
 				FF14CA2E239E5C780099FA25 /* UIViewController.swift */,
 				FFE5D66E23A7B0E2001D4C53 /* UICollectionViewCell.swift */,
-				FFBB6E5F23B3FB5C00B9472C /* String.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -244,10 +239,9 @@
 			isa = PBXGroup;
 			children = (
 				FFFF2A2623B7B72700793AD9 /* Helpers */,
-				FFFF2A6E23B7C39D00793AD9 /* P12Tests.swift */,
-				FFFF2A7023B7C39D00793AD9 /* Info.plist */,
 				FFBAD5BE23B7C81800A2E86F /* IGDBServiceTests.swift */,
 				FFF9A90B23B92D9A00BA4B34 /* FavoriteGameTests.swift */,
+				FFFF2A7023B7C39D00793AD9 /* Info.plist */,
 			);
 			path = P12Tests;
 			sourceTree = "<group>";
@@ -425,7 +419,6 @@
 				FF14CA22239C42190099FA25 /* IGDBService.swift in Sources */,
 				FF14CA2F239E5C780099FA25 /* UIViewController.swift in Sources */,
 				FF62B221239ED4C100D49985 /* FindViewController.swift in Sources */,
-				FFBB6E6023B3FB5C00B9472C /* String.swift in Sources */,
 				FF01CDC323845A7E0081E16D /* AppDelegate.swift in Sources */,
 				FF14CA24239D092C0099FA25 /* Game.swift in Sources */,
 			);
@@ -435,7 +428,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFFF2A6F23B7C39D00793AD9 /* P12Tests.swift in Sources */,
 				FFBAD5C223B7D61E00A2E86F /* FakeResponseData.swift in Sources */,
 				FFBAD5C023B7D2D200A2E86F /* URLSessionFake.swift in Sources */,
 				FFBAD5BF23B7C81800A2E86F /* IGDBServiceTests.swift in Sources */,

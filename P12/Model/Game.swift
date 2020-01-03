@@ -8,6 +8,7 @@
 
 import Foundation
 
+// MARK: - Game
 
 struct Game: Decodable {
     let id: Int
@@ -22,11 +23,14 @@ struct Game: Decodable {
     let first_release_date: Int?
 }
 
+// MARK: - Cover
 
 struct Cover: Decodable {
     let id: Int
     let image_id: String
 }
+
+// MARK: - Genre
 
 struct Genre: Decodable {
     let name: String

@@ -9,7 +9,12 @@
 import UIKit
 
 class ScreenshotCollectionViewCell: UICollectionViewCell {
+    
+    // MARK: - Outlet
+
     @IBOutlet weak var screenshotImageView: UIImageView!
+    
+    // MARK: - View Life Cycle
     
     override func awakeFromNib() {
         super.awakeFromNib()

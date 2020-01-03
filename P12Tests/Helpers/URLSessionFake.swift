@@ -9,6 +9,7 @@
 import Foundation
 
 class URLSessionFake: URLSession {
+    
     var data: Data?
     var response: URLResponse?
     var error: Error?
@@ -27,6 +28,7 @@ class URLSessionFake: URLSession {
         task.responseError = error
         return task
     }
+    
     override func dataTask(with request: URLRequest, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) -> URLSessionDataTask {
         let task = URLSesionDataTaskFake()
         task.completionHandler = completionHandler
@@ -35,12 +37,10 @@ class URLSessionFake: URLSession {
         task.responseError = error
         return task
     }
-    
 }
 
 class URLSesionDataTaskFake: URLSessionDataTask{
     var completionHandler: ((Data?, URLResponse?, Error?)-> Void)?
-    
     var data: Data?
     var urlResponse: URLResponse?
     var responseError: Error?

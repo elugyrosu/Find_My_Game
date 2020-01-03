@@ -8,6 +8,8 @@
 
 import Foundation
 
+// MARK: - IGDBService
+
 class IGDBService {
     private let igdbApiUrl = "https://api-v3.igdb.com/games/"
     

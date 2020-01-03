@@ -9,12 +9,8 @@
 import UIKit
 
 class CustomCollectionViewCell: UICollectionViewCell {
-
-
-    @IBOutlet weak var containerView: UIView!
-    @IBOutlet weak var coverImageView: UIImageView!
     
-    @IBOutlet weak var ratingLabel: UILabel!
+    // MARK: - Properties
 
     var game: Game? {
         didSet {
@@ -29,6 +25,14 @@ class CustomCollectionViewCell: UICollectionViewCell {
         }
     }
     
+    // MARK: - Outlets
+
+    @IBOutlet weak var containerView: UIView!
+    @IBOutlet weak var coverImageView: UIImageView!
+    @IBOutlet weak var ratingLabel: UILabel!
+
+    // MARK: - View Life Cycle
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -36,10 +40,5 @@ class CustomCollectionViewCell: UICollectionViewCell {
         coverImageView.layer.masksToBounds = true
         ratingLabel.layer.cornerRadius = ratingLabel.frame.size.height/2
         ratingLabel.layer.masksToBounds = true
-
-
     }
-    
-
-
 }

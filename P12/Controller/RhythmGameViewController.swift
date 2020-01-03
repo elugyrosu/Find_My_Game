@@ -9,24 +9,29 @@
 import UIKit
 
 class RhythmGameViewController: UIViewController {
+    
+    // MARK: Properties
+
     private let igdbService = IGDBService()
     private var gameList = [Game]()
-    var platformAnswer = Platform.PS4
+    private var platformAnswer = Platform.PS4
 
-    
-    
-    
+    // MARK: Outlets
 
     @IBOutlet var platformButtons: [UIButton]!
-    
     @IBOutlet weak var progressView: UIProgressView!
-    @IBAction func resultButtonTapped(_ sender: Any) {
-        gamesCall(platform: platformAnswer.rawValue)
-    }
+    
+    // MARK: View Life Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+    }
+    
+    // MARK: Action Button Outlets
+
+    @IBAction func resultButtonTapped(_ sender: Any) {
+        gamesCall(platform: platformAnswer.rawValue)
     }
     
     @IBAction func platformButtonTapped(_ sender: UIButton) {
@@ -50,16 +55,9 @@ class RhythmGameViewController: UIViewController {
             print("Tag platform Error")
         }
     }
-    
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    // MARK: Class Methods
+    
     private func gamesCall(platform: String) {
         let httpBodyString = "fields *, cover.image_id, screenshots.image_id, genres.name, themes.name, platforms.name; sort total_rating desc; where platforms = (\(platform)) & genres = (7) & total_rating > 70; limit 100;"
         igdbService.getResult(httpBody: httpBodyString) { result in
@@ -75,10 +73,11 @@ class RhythmGameViewController: UIViewController {
             case .failure(let error):
                 print(error.localizedDescription)
                 self.presentAlert(message: "Network error")
-                
             }
         }
     }
+    
+    // MARK: Segue
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "segueToCollectionViewController" {
@@ -87,6 +86,8 @@ class RhythmGameViewController: UIViewController {
         }
     }
 }
+
+// MARK: UIScrollViewDelegate
 
 extension RhythmGameViewController: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
