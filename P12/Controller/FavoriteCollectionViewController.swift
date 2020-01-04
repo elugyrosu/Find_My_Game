@@ -54,7 +54,7 @@ class FavoriteCollectionViewController: UICollectionViewController {
         cell.favoriteGame = favoriteGame
         guard let coverId = favoriteGame?.cover else{return cell}
         let imageStringUrl = "https://images.igdb.com/igdb/image/upload/t_cover_big/\(coverId).jpg"
-        cell.coverImageView.sd_setImage(with: URL(string: imageStringUrl), placeholderImage: UIImage(named: "co1rxc.png"))
+        cell.coverImageView.sd_setImage(with: URL(string: imageStringUrl), placeholderImage: UIImage(named: "no image.png"))
         
         return cell
     }

@@ -89,7 +89,7 @@ class FavoriteDetailViewController: UIViewController, UICollectionViewDelegate, 
     private func getCoverImage() {
         guard let imageId = favoriteGame?.cover else {return}
         let imageStringUrl = "https://images.igdb.com/igdb/image/upload/t_cover_big/\(imageId).jpg"
-        imageView.sd_setImage(with: URL(string: imageStringUrl), placeholderImage: UIImage(named: "co1rxc.png"))
+        imageView.sd_setImage(with: URL(string: imageStringUrl), placeholderImage: UIImage(named: "no image.png"))
     }
 }
 
@@ -108,7 +108,7 @@ extension FavoriteDetailViewController: UICollectionViewDataSource {
         }
         let imageId = screenshots[indexPath.row]
         let imageStringUrl = "https://images.igdb.com/igdb/image/upload/t_screenshot_med/\(imageId).jpg"
-        cell.screenshotImageView.sd_setImage(with: URL(string: imageStringUrl), placeholderImage: UIImage(named: "co1rxc.png"))
+        cell.screenshotImageView.sd_setImage(with: URL(string: imageStringUrl), placeholderImage: UIImage(named: "no image.png"))
         return cell
     }
 }

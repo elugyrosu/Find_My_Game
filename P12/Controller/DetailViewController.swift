@@ -75,7 +75,7 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UITableV
     private func getCoverImage() {
         guard let imageId = game?.cover?.image_id else {return}
         let imageStringUrl = "https://images.igdb.com/igdb/image/upload/t_cover_big/\(imageId).jpg"
-        coverImageView.sd_setImage(with: URL(string: imageStringUrl), placeholderImage: UIImage(named: "co1rxc.png"))
+        coverImageView.sd_setImage(with: URL(string: imageStringUrl), placeholderImage: UIImage(named: "no image.png"))
     }
     
     private func createDateTime(timestamp: Int) -> String {
@@ -114,7 +114,7 @@ extension DetailViewController: UICollectionViewDataSource {
         screenshot = screenshots[indexPath.row]
         guard let imageId = screenshot?.image_id else{return cell}
         let imageStringUrl = "https://images.igdb.com/igdb/image/upload/t_screenshot_med/\(imageId).jpg"
-        cell.screenshotImageView.sd_setImage(with: URL(string: imageStringUrl), placeholderImage: UIImage(named: "co1rxc.png"))
+        cell.screenshotImageView.sd_setImage(with: URL(string: imageStringUrl), placeholderImage: UIImage(named: "no image.png"))
         return cell
     }
 }

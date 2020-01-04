@@ -30,11 +30,11 @@
             </objects>
             <point key="canvasLocation" x="-1209" y="121"/>
         </scene>
-        <!--FIND-->
+        <!--Find-->
         <scene sceneID="nH1-Re-JG5">
             <objects>
                 <navigationController id="2yQ-p5-qg4" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="FIND" image="2" id="XRj-Q7-IAU"/>
+                    <tabBarItem key="tabBarItem" title="Find" image="Find" id="XRj-Q7-IAU"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="vMT-Vt-7cz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -69,7 +69,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Xu-k9-Zar">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="160.66666666666666"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hiking-with-a-compass-near-waterfalls" translatesAutoresizingMaskIntoConstraints="NO" id="oTj-3s-F2G">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Gamepad" translatesAutoresizingMaskIntoConstraints="NO" id="oTj-3s-F2G">
                                                 <rect key="frame" x="0.0" y="0.0" width="160.66666666666666" height="160.66666666666666"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="oTj-3s-F2G" secondAttribute="height" id="3d0-hC-pDE"/>
@@ -188,7 +188,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lz6-2U-cVF">
                                         <rect key="frame" x="0.0" y="321.66666666666669" width="414" height="160.66666666666669"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ugur-akdemir-5X39cfzKX3o-unsplash" translatesAutoresizingMaskIntoConstraints="NO" id="xwz-MJ-czA">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="drum" translatesAutoresizingMaskIntoConstraints="NO" id="xwz-MJ-czA">
                                                 <rect key="frame" x="0.0" y="0.0" width="160.66666666666666" height="160.66666666666666"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="xwz-MJ-czA" secondAttribute="height" id="T0h-n8-nDZ"/>
@@ -338,7 +338,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="d" translatesAutoresizingMaskIntoConstraints="NO" id="VDZ-Kq-gBW">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Gamepad" translatesAutoresizingMaskIntoConstraints="NO" id="VDZ-Kq-gBW">
                                 <rect key="frame" x="0.0" y="44" width="414" height="643"/>
                             </imageView>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9hH-7R-EdK">
@@ -404,7 +404,7 @@
                                                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                                 <nil key="highlightedColor"/>
                                                                                             </label>
-                                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.65000000000000002" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="swipe" translatesAutoresizingMaskIntoConstraints="NO" id="SNa-Kk-NHC">
+                                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.65000000000000002" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="white swipe" translatesAutoresizingMaskIntoConstraints="NO" id="SNa-Kk-NHC">
                                                                                                 <rect key="frame" x="30" y="136" width="354" height="379"/>
                                                                                             </imageView>
                                                                                         </subviews>
@@ -1582,11 +1582,11 @@
             </objects>
             <point key="canvasLocation" x="3000" y="-173"/>
         </scene>
-        <!--BROWSE-->
+        <!--Search-->
         <scene sceneID="ER7-Bs-war">
             <objects>
                 <navigationController id="wYb-2z-zlY" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="BROWSE" image="search-12-24" id="7q1-5M-liF"/>
+                    <tabBarItem key="tabBarItem" title="Search" image="search-12-24" id="7q1-5M-liF"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="qEe-GO-GXP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1615,7 +1615,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="virtual-reality-headset" translatesAutoresizingMaskIntoConstraints="NO" id="bOG-D6-txj">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="drum" translatesAutoresizingMaskIntoConstraints="NO" id="bOG-D6-txj">
                                 <rect key="frame" x="0.0" y="44" width="414" height="643"/>
                             </imageView>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rDd-d5-GN0">
@@ -1681,7 +1681,7 @@
                                                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                                 <nil key="highlightedColor"/>
                                                                                             </label>
-                                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.64999997615814209" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="swipe" translatesAutoresizingMaskIntoConstraints="NO" id="BM8-vf-cYh">
+                                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.64999997615814209" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="white swipe" translatesAutoresizingMaskIntoConstraints="NO" id="BM8-vf-cYh">
                                                                                                 <rect key="frame" x="30" y="136" width="354" height="379"/>
                                                                                             </imageView>
                                                                                         </subviews>
@@ -1999,7 +1999,7 @@
                                                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                                 <nil key="highlightedColor"/>
                                                                                             </label>
-                                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.64999997615814209" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="swipe" translatesAutoresizingMaskIntoConstraints="NO" id="ZbZ-6A-EeC">
+                                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.64999997615814209" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="white swipe" translatesAutoresizingMaskIntoConstraints="NO" id="ZbZ-6A-EeC">
                                                                                                 <rect key="frame" x="30" y="136" width="354" height="379"/>
                                                                                             </imageView>
                                                                                         </subviews>
@@ -2625,11 +2625,11 @@
             </objects>
             <point key="canvasLocation" x="3337.68115942029" y="744.29347826086962"/>
         </scene>
-        <!--FAVORITE-->
+        <!--Favorite-->
         <scene sceneID="Nw1-OU-moW">
             <objects>
                 <navigationController id="0ZL-gg-lb6" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="FAVORITE" image="Full star" id="VOM-fi-0oh"/>
+                    <tabBarItem key="tabBarItem" title="Favorite" image="Full star" id="VOM-fi-0oh"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="E4r-2z-0vb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -2909,19 +2909,17 @@
         </scene>
     </scenes>
     <resources>
-        <image name="2" width="24" height="24"/>
         <image name="Empty Star" width="24" height="24"/>
+        <image name="Find" width="24" height="24"/>
         <image name="Full star" width="24" height="24"/>
-        <image name="d" width="800" height="600"/>
+        <image name="Gamepad" width="2048" height="1536"/>
+        <image name="drum" width="1920" height="1280"/>
         <image name="friends" width="960" height="640"/>
-        <image name="hiking-with-a-compass-near-waterfalls" width="2973" height="4460"/>
         <image name="search-12-24" width="24" height="24"/>
-        <image name="swipe" width="512" height="512"/>
-        <image name="ugur-akdemir-5X39cfzKX3o-unsplash" width="5184" height="3456"/>
         <image name="virtual-reality-goggles" width="4460" height="2973"/>
-        <image name="virtual-reality-headset" width="4460" height="2974"/>
+        <image name="white swipe" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="DF6-wI-NgC"/>
+        <segue reference="g4s-YX-sYu"/>
     </inferredMetricsTieBreakers>
 </document>

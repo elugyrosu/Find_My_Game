@@ -41,7 +41,7 @@ class CollectionViewController: UICollectionViewController {
         
         guard let imageId = game?.cover?.image_id else{return cell}
         let imageStringUrl = "https://images.igdb.com/igdb/image/upload/t_cover_big/\(imageId).jpg"
-        cell.coverImageView.sd_setImage(with: URL(string: imageStringUrl), placeholderImage: UIImage(named: "co1rxc.png"))
+        cell.coverImageView.sd_setImage(with: URL(string: imageStringUrl), placeholderImage: UIImage(named: "no image.png"))
         
         return cell
     }
