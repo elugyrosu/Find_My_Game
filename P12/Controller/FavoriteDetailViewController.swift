@@ -137,7 +137,6 @@ extension FavoriteDetailViewController: UITableViewDataSource{
             return cell
         }
         cell.textLabel?.text = platforms[indexPath.row] as String
-        
         return cell
     }
 }

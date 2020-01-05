@@ -26,6 +26,8 @@ class GameForYouViewController: UIViewController {
         
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var progressView: UIProgressView!
+    @IBOutlet weak var activityIndicatorView: UIActivityIndicatorView!
+    @IBOutlet weak var searchButton: UIButton!
     
     @IBOutlet var platformAnswerButtons: [UIButton]!
     @IBOutlet var filmAnswerButtons: [UIButton]!
@@ -38,6 +40,7 @@ class GameForYouViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        activityIndicatorView.isHidden = true
         buttonsInitialization()
     }
     
@@ -200,10 +203,16 @@ class GameForYouViewController: UIViewController {
 
     // MARK: Class Methods
     
+    private func toggleActivityIndicator(shown: Bool){
+        activityIndicatorView.isHidden = !shown
+        searchButton.isHidden = shown
+    }
+    
     private func gamesCall(platforms: String, themes: String, genres: String, ageRating: String) {
+        toggleActivityIndicator(shown: true)
         let httpBodyString = "fields *, cover.image_id, screenshots.image_id, genres.name, themes.name, platforms.name; sort total_rating desc; where platforms = (\(platforms)) & total_rating > 70 & themes = (\(themes)) & genres = (\(genres)) & age_ratings.rating = (\(ageRating)); limit 100;"
         igdbService.getResult(httpBody: httpBodyString) { result in
-            
+            self.toggleActivityIndicator(shown: false)
             switch result {
             case .success(let data):
                 self.gameList = data

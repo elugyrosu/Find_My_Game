@@ -20,6 +20,8 @@ class MultiplayerViewController: UIViewController {
     
     // MARK: Outlets
     
+    @IBOutlet weak var searchButton: UIButton!
+    @IBOutlet weak var activityIndicatorView: UIActivityIndicatorView!
     @IBOutlet weak var progressView: UIProgressView!
     @IBOutlet var platformButtons: [UIButton]!
     @IBOutlet var playerButtons: [UIButton]!
@@ -29,6 +31,7 @@ class MultiplayerViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        activityIndicatorView.isHidden = true
     }
     
     // MARK: Action Button Outlets
@@ -94,10 +97,15 @@ class MultiplayerViewController: UIViewController {
     
     // MARK: Class Methods
     
+    private func toggleActivityIndicator(shown: Bool){
+        activityIndicatorView.isHidden = !shown
+        searchButton.isHidden = shown
+    }
     private func gamesCall(platform: String, players: String, coop: String) {
+        toggleActivityIndicator(shown: true)
         let httpBodyString = "fields *, cover.image_id, screenshots.image_id, genres.name, themes.name, platforms.name; sort total_rating desc; where platforms = (\(platform)) & multiplayer_modes.offlinemax \(players) & multiplayer_modes.offlinecoop = \(coop) & total_rating > 70; limit 100;"
         igdbService.getResult(httpBody: httpBodyString) { (result: Result<[Game], Error>) in
-            
+            self.toggleActivityIndicator(shown: false)
             switch result {
             case .success(let data):
                 self.gameList = data

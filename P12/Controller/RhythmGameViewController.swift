@@ -18,6 +18,8 @@ class RhythmGameViewController: UIViewController {
 
     // MARK: Outlets
 
+    @IBOutlet weak var activityIndicatorView: UIActivityIndicatorView!
+    @IBOutlet weak var searchButton: UIButton!
     @IBOutlet var platformButtons: [UIButton]!
     @IBOutlet weak var progressView: UIProgressView!
     
@@ -25,7 +27,7 @@ class RhythmGameViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        activityIndicatorView.isHidden = true
     }
     
     // MARK: Action Button Outlets
@@ -58,10 +60,16 @@ class RhythmGameViewController: UIViewController {
 
     // MARK: Class Methods
     
+    private func toggleActivityIndicator(shown: Bool){
+        activityIndicatorView.isHidden = !shown
+        searchButton.isHidden = shown
+    }
+    
     private func gamesCall(platform: String) {
+        toggleActivityIndicator(shown: true)
         let httpBodyString = "fields *, cover.image_id, screenshots.image_id, genres.name, themes.name, platforms.name; sort total_rating desc; where platforms = (\(platform)) & genres = (7) & total_rating > 70; limit 100;"
         igdbService.getResult(httpBody: httpBodyString) { result in
-            
+            self.toggleActivityIndicator(shown: false)
             switch result {
             case .success(let data):
                 self.gameList = data

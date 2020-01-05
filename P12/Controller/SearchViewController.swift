@@ -46,6 +46,8 @@ class SearchViewController: UIViewController {
             button.layer.cornerRadius = 13
             button.layer.masksToBounds = true
         }
+        searchButton.layer.cornerRadius = 13
+        searchButton.layer.masksToBounds = true
     }
 
     // MARK: - Action Button Outlets

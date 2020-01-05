@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "FF01CDBE23845A7E0081E16D"
-               BuildableName = "P12.app"
-               BlueprintName = "P12"
+               BuildableName = "Find my game.app"
+               BlueprintName = "Find my game"
                ReferencedContainer = "container:P12.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -56,8 +56,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FF01CDBE23845A7E0081E16D"
-            BuildableName = "P12.app"
-            BlueprintName = "P12"
+            BuildableName = "Find my game.app"
+            BlueprintName = "Find my game"
             ReferencedContainer = "container:P12.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -73,8 +73,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FF01CDBE23845A7E0081E16D"
-            BuildableName = "P12.app"
-            BlueprintName = "P12"
+            BuildableName = "Find my game.app"
+            BlueprintName = "Find my game"
             ReferencedContainer = "container:P12.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

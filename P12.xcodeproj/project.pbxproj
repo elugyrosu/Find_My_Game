@@ -60,7 +60,7 @@
 		77F996612984C832DFEC433E /* libPods-P12Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-P12Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		926DFF72EA9941B030FC11D2 /* Pods-P12Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-P12Tests.debug.xcconfig"; path = "Target Support Files/Pods-P12Tests/Pods-P12Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		D3C1D8EE0186581983502E23 /* Pods-P12.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-P12.debug.xcconfig"; path = "Target Support Files/Pods-P12/Pods-P12.debug.xcconfig"; sourceTree = "<group>"; };
-		FF01CDBF23845A7E0081E16D /* P12.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = P12.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF01CDBF23845A7E0081E16D /* Find my game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Find my game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF01CDC223845A7E0081E16D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF01CDC923845A7E0081E16D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FF01CDCE23845A800081E16D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -153,7 +153,7 @@
 		FF01CDC023845A7E0081E16D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FF01CDBF23845A7E0081E16D /* P12.app */,
+				FF01CDBF23845A7E0081E16D /* Find my game.app */,
 				FFFF2A6C23B7C39D00793AD9 /* P12Tests.xctest */,
 			);
 			name = Products;
@@ -249,9 +249,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FF01CDBE23845A7E0081E16D /* P12 */ = {
+		FF01CDBE23845A7E0081E16D /* Find my game */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FF01CDE123845A800081E16D /* Build configuration list for PBXNativeTarget "P12" */;
+			buildConfigurationList = FF01CDE123845A800081E16D /* Build configuration list for PBXNativeTarget "Find my game" */;
 			buildPhases = (
 				EFD8470F9AE9ED18D0F34444 /* [CP] Check Pods Manifest.lock */,
 				FF01CDBB23845A7E0081E16D /* Sources */,
@@ -262,9 +262,9 @@
 			);
 			dependencies = (
 			);
-			name = P12;
+			name = "Find my game";
 			productName = P12;
-			productReference = FF01CDBF23845A7E0081E16D /* P12.app */;
+			productReference = FF01CDBF23845A7E0081E16D /* Find my game.app */;
 			productType = "com.apple.product-type.application";
 		};
 		FFFF2A6B23B7C39D00793AD9 /* P12Tests */ = {
@@ -318,7 +318,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FF01CDBE23845A7E0081E16D /* P12 */,
+				FF01CDBE23845A7E0081E16D /* Find my game */,
 				FFFF2A6B23B7C39D00793AD9 /* P12Tests */,
 			);
 		};
@@ -440,7 +440,7 @@
 /* Begin PBXTargetDependency section */
 		FFFF2A7223B7C39D00793AD9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = FF01CDBE23845A7E0081E16D /* P12 */;
+			target = FF01CDBE23845A7E0081E16D /* Find my game */;
 			targetProxy = FFFF2A7123B7C39D00793AD9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -673,7 +673,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FF01CDE123845A800081E16D /* Build configuration list for PBXNativeTarget "P12" */ = {
+		FF01CDE123845A800081E16D /* Build configuration list for PBXNativeTarget "Find my game" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FF01CDE223845A800081E16D /* Debug */,

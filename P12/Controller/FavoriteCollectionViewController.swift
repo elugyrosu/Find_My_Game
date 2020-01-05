@@ -36,8 +36,6 @@ class FavoriteCollectionViewController: UICollectionViewController {
     private func checkFavorite() {
         if gameList.count > 0 {
             favoriteGame = gameList[0]
-            guard let name = favoriteGame?.name else {return}
-            print(name)
         }
     }
     
