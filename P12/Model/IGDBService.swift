@@ -22,7 +22,7 @@ class IGDBService {
     private var questionTask : URLSessionDataTask?
     private var questionSession : URLSession
     
-    var apiKey = ApiKeysManager.igdbApiKey
+    var apiKey = ApiKeys.igdbApiKey
     
     enum NetworkError: Error {
         case badURL

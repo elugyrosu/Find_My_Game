@@ -18,6 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return (UIApplication.shared.delegate as! AppDelegate).persistentContainer
     }
     
+    /// viewContext for CRUD
     static var viewContext: NSManagedObjectContext {
         return persistentContainer.viewContext
     }

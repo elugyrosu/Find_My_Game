@@ -35,8 +35,6 @@
 		FFD79DA823B00A4900D5DA59 /* FavoriteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD79DA723B00A4900D5DA59 /* FavoriteDetailViewController.swift */; };
 		FFD79DAA23B0126000D5DA59 /* FavoriteCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD79DA923B0126000D5DA59 /* FavoriteCollectionViewController.swift */; };
 		FFE5D66F23A7B0E2001D4C53 /* UICollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE5D66E23A7B0E2001D4C53 /* UICollectionViewCell.swift */; };
-		FFE5D67123A7D592001D4C53 /* ApiKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = FFE5D67023A7D592001D4C53 /* ApiKeys.plist */; };
-		FFE5D67323A7D5B8001D4C53 /* ApiKeysManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE5D67223A7D5B8001D4C53 /* ApiKeysManager.swift */; };
 		FFEBB89623AB9004002991C0 /* RhythmGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEBB89523AB9004002991C0 /* RhythmGameViewController.swift */; };
 		FFEBB89823AB9014002991C0 /* MultiplayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEBB89723AB9014002991C0 /* MultiplayerViewController.swift */; };
 		FFF985F423A2C3AF00431D2C /* Form.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF985F323A2C3AF00431D2C /* Form.swift */; };
@@ -87,8 +85,6 @@
 		FFD79DA723B00A4900D5DA59 /* FavoriteDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteDetailViewController.swift; sourceTree = "<group>"; };
 		FFD79DA923B0126000D5DA59 /* FavoriteCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCollectionViewController.swift; sourceTree = "<group>"; };
 		FFE5D66E23A7B0E2001D4C53 /* UICollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewCell.swift; sourceTree = "<group>"; };
-		FFE5D67023A7D592001D4C53 /* ApiKeys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ApiKeys.plist; sourceTree = "<group>"; };
-		FFE5D67223A7D5B8001D4C53 /* ApiKeysManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiKeysManager.swift; sourceTree = "<group>"; };
 		FFEBB89523AB9004002991C0 /* RhythmGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RhythmGameViewController.swift; sourceTree = "<group>"; };
 		FFEBB89723AB9014002991C0 /* MultiplayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplayerViewController.swift; sourceTree = "<group>"; };
 		FFF985F323A2C3AF00431D2C /* Form.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Form.swift; sourceTree = "<group>"; };
@@ -161,16 +157,14 @@
 		FF01CDC123845A7E0081E16D /* P12 */ = {
 			isa = PBXGroup;
 			children = (
-				FF01CDC223845A7E0081E16D /* AppDelegate.swift */,
 				FF01CDCE23845A800081E16D /* Assets.xcassets */,
+				FF01CDC223845A7E0081E16D /* AppDelegate.swift */,
+				FF0F161F23C3A3A8006BAC27 /* ApiKeys.swift */,
 				FF01CDD323845A800081E16D /* Info.plist */,
-				FFE5D67023A7D592001D4C53 /* ApiKeys.plist */,
-				FFE5D67223A7D5B8001D4C53 /* ApiKeysManager.swift */,
 				FF14CA2D239E5C5C0099FA25 /* Extensions */,
 				FF01CDE72384622D0081E16D /* Model */,
 				FF01CDE8238462390081E16D /* View */,
 				FF01CDE9238462400081E16D /* Controller */,
-				FF0F161F23C3A3A8006BAC27 /* ApiKeys.swift */,
 			);
 			path = P12;
 			sourceTree = "<group>";
@@ -334,7 +328,6 @@
 				FF706436239FFB7F0000EC61 /* CustomCollectionViewCell.xib in Resources */,
 				FFB1CFC223A97F4D00DE5714 /* ScreenshotCollectionViewCell.xib in Resources */,
 				FF01CDCA23845A7E0081E16D /* Main.storyboard in Resources */,
-				FFE5D67123A7D592001D4C53 /* ApiKeys.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,7 +398,6 @@
 				FFEBB89823AB9014002991C0 /* MultiplayerViewController.swift in Sources */,
 				FF14CA31239E60D40099FA25 /* DetailViewController.swift in Sources */,
 				FFD79DA823B00A4900D5DA59 /* FavoriteDetailViewController.swift in Sources */,
-				FFE5D67323A7D5B8001D4C53 /* ApiKeysManager.swift in Sources */,
 				FF3E664823AF8D90008A2419 /* FavoriteGame.xcdatamodeld in Sources */,
 				FFF985F423A2C3AF00431D2C /* Form.swift in Sources */,
 				FF01CDEB238463110081E16D /* SearchViewController.swift in Sources */,
