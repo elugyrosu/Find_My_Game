@@ -1,6 +1,7 @@
 # Created by https://www.gitignore.io/api/swift,macos
 # Edit at https://www.gitignore.io/?templates=swift,macos
 ApiKeys.plist
+ApiKeysManager.swift
 ### macOS ###
 # General
 .DS_Store

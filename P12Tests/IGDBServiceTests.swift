@@ -25,7 +25,36 @@ class IGDBServiceTests: XCTestCase {
         }
         wait(for: [expectation], timeout: 0.01)
     }
-
+    
+    func testRequestMethod_whenIncorrectData_ThenShouldReturnAFailedCallback(){
+        let urlSessionFake = URLSessionFake(data: FakeResponseData.incorrectData, response: FakeResponseData.responseOK, error: nil)
+        let igdbService = IGDBService(questionSession: urlSessionFake)
+        let expectation = XCTestExpectation(description: "wait for queue change.")
+        igdbService.getResult(httpBody: "fields *, cover.image_id, screenshots.image_id, genres.name, themes.name, platforms.name; sort total_rating desc; limit 100;"){ result in
+            guard case .failure(let error) = result else {
+                XCTFail("Test request method with an error failed.")
+                return
+            }
+            XCTAssertNotNil(error)
+            expectation.fulfill()
+        }
+        wait(for: [expectation], timeout: 0.01)
+    }
+    
+    func testRequestMethod_whenCorrectDataAndResponseKO_ThenShouldReturnAFailedCallback(){
+        let urlSessionFake = URLSessionFake(data: FakeResponseData.correctData, response: FakeResponseData.responseKO, error: nil)
+        let igdbService = IGDBService(questionSession: urlSessionFake)
+        let expectation = XCTestExpectation(description: "wait for queue change.")
+        igdbService.getResult(httpBody: "fields *, cover.image_id, screenshots.image_id, genres.name, themes.name, platforms.name; sort total_rating desc; limit 100;"){ result in
+            guard case .failure(let error) = result else {
+                XCTFail("Test request method with an error failed.")
+                return
+            }
+            XCTAssertNotNil(error)
+            expectation.fulfill()
+        }
+        wait(for: [expectation], timeout: 0.01)
+    }
 
 //    func testRequestMethod_whenCorrectDataAndResponseArePassed_ThenShouldReturnASucceededCallback(){
 //        let urlSessionFake = URLSessionFake(data: FakeResponseData.correctData, response: FakeResponseData.responseOK, error: nil)
@@ -42,6 +71,5 @@ class IGDBServiceTests: XCTestCase {
 //        }
 //        wait(for: [expectation], timeout: 0.01)
 //    }
-//
 
 }

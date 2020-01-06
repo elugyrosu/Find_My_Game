@@ -8,9 +8,10 @@
 
 import Foundation
 
-// MARK: - IGDBService
-
 class IGDBService {
+    
+    // MARK: - Properties
+
     private let igdbApiUrl = "https://api-v3.igdb.com/games/"
     
     init(questionSession: URLSession = URLSession(configuration: .default)){
@@ -29,6 +30,9 @@ class IGDBService {
         case dataError
     }
     
+    // MARK: - Class Method
+    
+    /// API request with Result() type
     func getResult(httpBody: String, callback: @escaping (Result<[Game], Error>) -> Void){
         guard let url = searchUrl else{
             callback(.failure(NetworkError.badURL))

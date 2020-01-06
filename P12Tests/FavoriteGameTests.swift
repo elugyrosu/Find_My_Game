@@ -40,7 +40,6 @@ class FavoriteGameTests: XCTestCase {
     }
     
     func testAddFavoriteGameItemInPersistentContainer() {
-//        let game = Recipe(label: "", image: "", url: "", shareAs: "Lemon Pie", yield: 0, healthLabels: [], ingredientLines: [], totalTime: 0)
         let cover = Cover(id: 123, image_id: "123")
         let platfotm = Genre(name: "ps4")
         let game = Game(id: 12567, cover: Cover(id: 0, image_id: ""), name: "", summary: "", genres: [Genre](), platforms: [platfotm], total_rating: 2345.0, themes: [Genre](), screenshots: [cover], first_release_date: 2)

@@ -10,6 +10,9 @@ import Foundation
 import CoreData
 
 class FavoriteGame: NSManagedObject {
+    
+    // MARK: - CRUD
+
     static func fetchAll(viewContext: NSManagedObjectContext = AppDelegate.viewContext) -> [FavoriteGame] {
         let request: NSFetchRequest<FavoriteGame> = FavoriteGame.fetchRequest()
         request.sortDescriptors = [NSSortDescriptor(key: "name", ascending: true)]
@@ -26,7 +29,7 @@ class FavoriteGame: NSManagedObject {
              })
         try? viewContext.save()
     }
-
+    
     static func addGame(game: Game, viewContext: NSManagedObjectContext = AppDelegate.viewContext) {
         let favoriteGame = FavoriteGame(context: viewContext)
         favoriteGame.id = String(game.id)

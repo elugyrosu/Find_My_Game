@@ -22,7 +22,6 @@
 		FF3E664523AF8B17008A2419 /* FavoriteGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3E664423AF8B17008A2419 /* FavoriteGame.swift */; };
 		FF3E664823AF8D90008A2419 /* FavoriteGame.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FF3E664623AF8D90008A2419 /* FavoriteGame.xcdatamodeld */; };
 		FF62B221239ED4C100D49985 /* FindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF62B220239ED4C100D49985 /* FindViewController.swift */; };
-		FF65709423A93A300068FB7F /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = FF65709323A93A300068FB7F /* Podfile */; };
 		FF706432239FF3B40000EC61 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF706431239FF3B40000EC61 /* CollectionViewController.swift */; };
 		FF706435239FFB7F0000EC61 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF706433239FFB7F0000EC61 /* CustomCollectionViewCell.swift */; };
 		FF706436239FFB7F0000EC61 /* CustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF706434239FFB7F0000EC61 /* CustomCollectionViewCell.xib */; };
@@ -60,7 +59,7 @@
 		77F996612984C832DFEC433E /* libPods-P12Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-P12Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		926DFF72EA9941B030FC11D2 /* Pods-P12Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-P12Tests.debug.xcconfig"; path = "Target Support Files/Pods-P12Tests/Pods-P12Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		D3C1D8EE0186581983502E23 /* Pods-P12.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-P12.debug.xcconfig"; path = "Target Support Files/Pods-P12/Pods-P12.debug.xcconfig"; sourceTree = "<group>"; };
-		FF01CDBF23845A7E0081E16D /* Find my game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Find my game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF01CDBF23845A7E0081E16D /* P12.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = P12.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF01CDC223845A7E0081E16D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF01CDC923845A7E0081E16D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FF01CDCE23845A800081E16D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -75,7 +74,6 @@
 		FF3E664423AF8B17008A2419 /* FavoriteGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteGame.swift; sourceTree = "<group>"; };
 		FF3E664723AF8D90008A2419 /* FavoriteGame.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FavoriteGame.xcdatamodel; sourceTree = "<group>"; };
 		FF62B220239ED4C100D49985 /* FindViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindViewController.swift; sourceTree = "<group>"; };
-		FF65709323A93A300068FB7F /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		FF706431239FF3B40000EC61 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		FF706433239FFB7F0000EC61 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
 		FF706434239FFB7F0000EC61 /* CustomCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -141,7 +139,6 @@
 		FF01CDB623845A7E0081E16D = {
 			isa = PBXGroup;
 			children = (
-				FF65709323A93A300068FB7F /* Podfile */,
 				FF01CDC123845A7E0081E16D /* P12 */,
 				FFFF2A6D23B7C39D00793AD9 /* P12Tests */,
 				FF01CDC023845A7E0081E16D /* Products */,
@@ -153,7 +150,7 @@
 		FF01CDC023845A7E0081E16D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FF01CDBF23845A7E0081E16D /* Find my game.app */,
+				FF01CDBF23845A7E0081E16D /* P12.app */,
 				FFFF2A6C23B7C39D00793AD9 /* P12Tests.xctest */,
 			);
 			name = Products;
@@ -162,16 +159,15 @@
 		FF01CDC123845A7E0081E16D /* P12 */ = {
 			isa = PBXGroup;
 			children = (
+				FF01CDC223845A7E0081E16D /* AppDelegate.swift */,
+				FF01CDCE23845A800081E16D /* Assets.xcassets */,
+				FF01CDD323845A800081E16D /* Info.plist */,
+				FFE5D67023A7D592001D4C53 /* ApiKeys.plist */,
+				FFE5D67223A7D5B8001D4C53 /* ApiKeysManager.swift */,
 				FF14CA2D239E5C5C0099FA25 /* Extensions */,
 				FF01CDE72384622D0081E16D /* Model */,
 				FF01CDE8238462390081E16D /* View */,
 				FF01CDE9238462400081E16D /* Controller */,
-				FF01CDC223845A7E0081E16D /* AppDelegate.swift */,
-				FF01CDCE23845A800081E16D /* Assets.xcassets */,
-				FF01CDD023845A800081E16D /* LaunchScreen.storyboard */,
-				FF01CDD323845A800081E16D /* Info.plist */,
-				FFE5D67023A7D592001D4C53 /* ApiKeys.plist */,
-				FFE5D67223A7D5B8001D4C53 /* ApiKeysManager.swift */,
 			);
 			path = P12;
 			sourceTree = "<group>";
@@ -191,6 +187,7 @@
 		FF01CDE8238462390081E16D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FF01CDD023845A800081E16D /* LaunchScreen.storyboard */,
 				FF01CDC823845A7E0081E16D /* Main.storyboard */,
 				FF706433239FFB7F0000EC61 /* CustomCollectionViewCell.swift */,
 				FF706434239FFB7F0000EC61 /* CustomCollectionViewCell.xib */,
@@ -249,9 +246,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FF01CDBE23845A7E0081E16D /* Find my game */ = {
+		FF01CDBE23845A7E0081E16D /* P12 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FF01CDE123845A800081E16D /* Build configuration list for PBXNativeTarget "Find my game" */;
+			buildConfigurationList = FF01CDE123845A800081E16D /* Build configuration list for PBXNativeTarget "P12" */;
 			buildPhases = (
 				EFD8470F9AE9ED18D0F34444 /* [CP] Check Pods Manifest.lock */,
 				FF01CDBB23845A7E0081E16D /* Sources */,
@@ -262,9 +259,9 @@
 			);
 			dependencies = (
 			);
-			name = "Find my game";
+			name = P12;
 			productName = P12;
-			productReference = FF01CDBF23845A7E0081E16D /* Find my game.app */;
+			productReference = FF01CDBF23845A7E0081E16D /* P12.app */;
 			productType = "com.apple.product-type.application";
 		};
 		FFFF2A6B23B7C39D00793AD9 /* P12Tests */ = {
@@ -318,7 +315,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FF01CDBE23845A7E0081E16D /* Find my game */,
+				FF01CDBE23845A7E0081E16D /* P12 */,
 				FFFF2A6B23B7C39D00793AD9 /* P12Tests */,
 			);
 		};
@@ -329,7 +326,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF65709423A93A300068FB7F /* Podfile in Resources */,
 				FF01CDD223845A800081E16D /* LaunchScreen.storyboard in Resources */,
 				FF01CDCF23845A800081E16D /* Assets.xcassets in Resources */,
 				FF706436239FFB7F0000EC61 /* CustomCollectionViewCell.xib in Resources */,
@@ -440,7 +436,7 @@
 /* Begin PBXTargetDependency section */
 		FFFF2A7223B7C39D00793AD9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = FF01CDBE23845A7E0081E16D /* Find my game */;
+			target = FF01CDBE23845A7E0081E16D /* P12 */;
 			targetProxy = FFFF2A7123B7C39D00793AD9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -673,7 +669,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FF01CDE123845A800081E16D /* Build configuration list for PBXNativeTarget "Find my game" */ = {
+		FF01CDE123845A800081E16D /* Build configuration list for PBXNativeTarget "P12" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FF01CDE223845A800081E16D /* Debug */,
