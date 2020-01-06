@@ -14,6 +14,7 @@
 		FF01CDCF23845A800081E16D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF01CDCE23845A800081E16D /* Assets.xcassets */; };
 		FF01CDD223845A800081E16D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF01CDD023845A800081E16D /* LaunchScreen.storyboard */; };
 		FF01CDEB238463110081E16D /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF01CDEA238463110081E16D /* SearchViewController.swift */; };
+		FF0F162023C3A3A8006BAC27 /* ApiKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F161F23C3A3A8006BAC27 /* ApiKeys.swift */; };
 		FF14CA22239C42190099FA25 /* IGDBService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF14CA21239C42190099FA25 /* IGDBService.swift */; };
 		FF14CA24239D092C0099FA25 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF14CA23239D092C0099FA25 /* Game.swift */; };
 		FF14CA2F239E5C780099FA25 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF14CA2E239E5C780099FA25 /* UIViewController.swift */; };
@@ -66,6 +67,7 @@
 		FF01CDD123845A800081E16D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF01CDD323845A800081E16D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF01CDEA238463110081E16D /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		FF0F161F23C3A3A8006BAC27 /* ApiKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiKeys.swift; sourceTree = "<group>"; };
 		FF14CA21239C42190099FA25 /* IGDBService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGDBService.swift; sourceTree = "<group>"; };
 		FF14CA23239D092C0099FA25 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		FF14CA2E239E5C780099FA25 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 				FF01CDE72384622D0081E16D /* Model */,
 				FF01CDE8238462390081E16D /* View */,
 				FF01CDE9238462400081E16D /* Controller */,
+				FF0F161F23C3A3A8006BAC27 /* ApiKeys.swift */,
 			);
 			path = P12;
 			sourceTree = "<group>";
@@ -411,6 +414,7 @@
 				FF706435239FFB7F0000EC61 /* CustomCollectionViewCell.swift in Sources */,
 				FFD79DAA23B0126000D5DA59 /* FavoriteCollectionViewController.swift in Sources */,
 				FFEBB89623AB9004002991C0 /* RhythmGameViewController.swift in Sources */,
+				FF0F162023C3A3A8006BAC27 /* ApiKeys.swift in Sources */,
 				FFB1CFC123A97F4D00DE5714 /* ScreenshotCollectionViewCell.swift in Sources */,
 				FF14CA22239C42190099FA25 /* IGDBService.swift in Sources */,
 				FF14CA2F239E5C780099FA25 /* UIViewController.swift in Sources */,
