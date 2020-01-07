@@ -28,12 +28,11 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="732-iF-JaB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1209" y="121"/>
+            <point key="canvasLocation" x="-1845" y="79"/>
         </scene>
         <!--Find-->
         <scene sceneID="nH1-Re-JG5">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="55l-yr-NBl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController id="2yQ-p5-qg4" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Find" image="Find" id="XRj-Q7-IAU"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="vMT-Vt-7cz">
@@ -52,8 +51,9 @@
                         <segue destination="F8s-Bf-FcQ" kind="relationship" relationship="rootViewController" id="aux-kJ-RgX"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="55l-yr-NBl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-836" y="-679"/>
+            <point key="canvasLocation" x="-833" y="-392"/>
         </scene>
         <!--Find-->
         <scene sceneID="oFz-GI-sZR">
@@ -1592,7 +1592,6 @@
         <!--Search-->
         <scene sceneID="ER7-Bs-war">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5Qb-84-g3b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController id="wYb-2z-zlY" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Search" image="search-12-24" id="7q1-5M-liF"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="qEe-GO-GXP">
@@ -1611,8 +1610,9 @@
                         <segue destination="Sub-Yz-lQg" kind="relationship" relationship="rootViewController" id="8fP-93-PHj"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Qb-84-g3b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-139" y="326"/>
+            <point key="canvasLocation" x="-834" y="337"/>
         </scene>
         <!--RhythmGameController-->
         <scene sceneID="GMr-Ny-o6f">
@@ -2663,7 +2663,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5rU-Qv-OSz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-184" y="1125"/>
+            <point key="canvasLocation" x="-900" y="1132"/>
         </scene>
         <!--Favorite Results CollectionViewController-->
         <scene sceneID="QWR-Xa-DYN">
@@ -2941,6 +2941,6 @@
         <image name="white swipe" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="DF6-wI-NgC"/>
+        <segue reference="T6k-L1-ceF"/>
     </inferredMetricsTieBreakers>
 </document>

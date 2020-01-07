@@ -16,7 +16,7 @@ struct Game: Decodable {
     let name: String
     let summary: String?
     let genres: [Genre]?
-    let platforms: [Genre]
+    let platforms: [Genre]?
     let total_rating: Double?
     let themes: [Genre]?
     let screenshots: [Cover]?

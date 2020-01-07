@@ -41,18 +41,20 @@ class FindViewController: UIViewController {
         
         let httpBodyString = "fields *, cover.image_id, screenshots.image_id, genres.name, themes.name, platforms.name; sort total_rating desc; where platforms = (162,163,165) & total_rating > 70; limit 100;"
         igdbService.getResult(httpBody: httpBodyString) { (result: Result<[Game], Error>) in
-            
-            switch result {
-            case .success(let data):
-                self.gameList = data
-                if data.count >= 1{
-                    self.performSegue(withIdentifier: "segueToCollectionViewController", sender: self)
-                }else{
-                    self.presentAlert(message: "We have no result for your search")
+            DispatchQueue.main.async {
+                
+                switch result {
+                case .success(let data):
+                    self.gameList = data
+                    if data.count >= 1{
+                        self.performSegue(withIdentifier: "segueToCollectionViewController", sender: self)
+                    }else{
+                        self.presentAlert(message: "Nous avons aucun jeu à vous proposer")
+                    }
+                case .failure(let error):
+                    print(error.localizedDescription)
+                    self.presentAlert(message: "Network error")
                 }
-            case .failure(let error):
-                print(error.localizedDescription)
-                self.presentAlert(message: "Network error")
             }
         }
     }

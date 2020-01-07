@@ -41,8 +41,40 @@ class IGDBServiceTests: XCTestCase {
         wait(for: [expectation], timeout: 0.01)
     }
     
-    func testRequestMethod_whenCorrectDataAndResponseKO_ThenShouldReturnAFailedCallback(){
-        let urlSessionFake = URLSessionFake(data: FakeResponseData.correctData, response: FakeResponseData.responseKO, error: nil)
+    
+    func testRequestMethod_whenResponseKO_ThenShouldReturnAFailedCallback(){
+        let urlSessionFake = URLSessionFake(data: nil, response: FakeResponseData.responseKO, error: nil)
+        let igdbService = IGDBService(questionSession: urlSessionFake)
+        let expectation = XCTestExpectation(description: "wait for queue change.")
+        igdbService.getResult(httpBody: "fields *, cover.image_id, screenshots.image_id, genres.name, themes.name, platforms.name; sort total_rating desc; limit 100;"){ result in
+            guard case .failure(let error) = result else {
+                XCTFail("Test request method with an error failed.")
+                return
+            }
+            XCTAssertNotNil(error)
+            expectation.fulfill()
+        }
+        wait(for: [expectation], timeout: 0.01)
+    }
+    
+    func testRequestMethod_whenCorrectDataAndResponseArePassed_ThenShouldReturnASucceededCallback(){
+        let urlSessionFake = URLSessionFake(data: FakeResponseData.correctData, response: FakeResponseData.responseOK, error: nil)
+        let igdbService = IGDBService(questionSession: urlSessionFake)
+        let expectation = XCTestExpectation(description: "wait for queue change.")
+        igdbService.getResult(httpBody: "fields *, cover.image_id, screenshots.image_id, genres.name, themes.name, platforms.name; sort total_rating desc; limit 100;"){ result in
+            guard case .success(let results) = result else {
+                XCTFail("Test request method with an error failed.")
+                return
+            }
+            XCTAssertNotNil(results[0].name)
+            XCTAssertEqual(results[0].name, "Sunken Secrets")
+            expectation.fulfill()
+        }
+        wait(for: [expectation], timeout: 0.01)
+    }
+
+    func testRequestMethod_whenBadUrl_ThenShouldReturnAFailedCallback(){
+        let urlSessionFake = URLSessionFake(data: nil, response: nil, error: nil)
         let igdbService = IGDBService(questionSession: urlSessionFake)
         let expectation = XCTestExpectation(description: "wait for queue change.")
         igdbService.getResult(httpBody: "fields *, cover.image_id, screenshots.image_id, genres.name, themes.name, platforms.name; sort total_rating desc; limit 100;"){ result in
@@ -56,20 +88,5 @@ class IGDBServiceTests: XCTestCase {
         wait(for: [expectation], timeout: 0.01)
     }
 
-//    func testRequestMethod_whenCorrectDataAndResponseArePassed_ThenShouldReturnASucceededCallback(){
-//        let urlSessionFake = URLSessionFake(data: FakeResponseData.correctData, response: FakeResponseData.responseOK, error: nil)
-//        let igdbService = IGDBService(questionSession: urlSessionFake)
-//        let expectation = XCTestExpectation(description: "wait for queue change.")
-//        igdbService.getResult(httpBody: "fields *, cover.image_id, screenshots.image_id, genres.name, themes.name, platforms.name; sort total_rating desc; limit 100;"){ result in
-//            guard case .success(let results) = result else {
-//                XCTFail("Test request method with an error failed.")
-//                return
-//            }
-//            XCTAssertNotNil(results[0].name)
-//            XCTAssertEqual(results[0].name, "Moondust: Knuckles Tech Demos")
-//            expectation.fulfill()
-//        }
-//        wait(for: [expectation], timeout: 0.01)
-//    }
-
+    
 }

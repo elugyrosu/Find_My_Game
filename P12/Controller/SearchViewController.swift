@@ -151,20 +151,20 @@ class SearchViewController: UIViewController {
         let httpBodyString = bodyConstruction()
 
         igdbService.getResult(httpBody: httpBodyString) { result in
-            self.toggleActivityIndicator(shown: false)
-
-            switch result {
-            case .success(let data):
-                self.gameList = data
-                if data.count >= 1{
-                    self.performSegue(withIdentifier: "segueToCollectionViewController", sender: self)
-                }else{
-                    self.presentAlert(message: "We have no result for your search")
+            DispatchQueue.main.async {
+                self.toggleActivityIndicator(shown: false)
+                switch result {
+                case .success(let data):
+                    self.gameList = data
+                    if data.count >= 1{
+                        self.performSegue(withIdentifier: "segueToCollectionViewController", sender: self)
+                    }else{
+                        self.presentAlert(message: "Nous n'avons aucun jeu à vous proposer")
+                    }
+                case .failure(let error):
+                    print(error.localizedDescription)
+                    self.presentAlert(message: "Network error")
                 }
-            case .failure(let error):
-                print(error.localizedDescription)
-                self.presentAlert(message: "Network error")
-                
             }
         }
     }

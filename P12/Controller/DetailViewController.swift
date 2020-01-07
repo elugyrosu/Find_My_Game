@@ -131,14 +131,14 @@ extension DetailViewController: UICollectionViewDelegateFlowLayout {
 
 extension DetailViewController: UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        guard let game = game else {return 0}
-        return game.platforms.count
+        guard let platforms = game?.platforms else {return 0}
+        return platforms.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell = UITableViewCell()
         cell = tableView.dequeueReusableCell(withIdentifier: "platformCell", for: indexPath)
-        guard let platform = game?.platforms[indexPath.row].name else{
+        guard let platform = game?.platforms?[indexPath.row].name else{
             return cell
         }
         cell.textLabel?.text = platform

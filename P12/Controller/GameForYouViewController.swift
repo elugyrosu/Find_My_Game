@@ -212,18 +212,21 @@ class GameForYouViewController: UIViewController {
         toggleActivityIndicator(shown: true)
         let httpBodyString = "fields *, cover.image_id, screenshots.image_id, genres.name, themes.name, platforms.name; sort total_rating desc; where platforms = (\(platforms)) & total_rating > 70 & themes = (\(themes)) & genres = (\(genres)) & age_ratings.rating = (\(ageRating)); limit 100;"
         igdbService.getResult(httpBody: httpBodyString) { result in
-            self.toggleActivityIndicator(shown: false)
-            switch result {
-            case .success(let data):
-                self.gameList = data
-                if data.count >= 1{
-                    self.performSegue(withIdentifier: "segueToCollectionViewController", sender: self)
-                }else{
-                    self.presentAlert(message: "We have no results for your search")
+            
+            DispatchQueue.main.async {
+                self.toggleActivityIndicator(shown: false)
+                switch result {
+                case .success(let data):
+                    self.gameList = data
+                    if data.count >= 1{
+                        self.performSegue(withIdentifier: "segueToCollectionViewController", sender: self)
+                    }else{
+                        self.presentAlert(message: "Nous avons aucun jeu à vous proposer")
+                    }
+                case .failure(let error):
+                    print(error.localizedDescription)
+                    self.presentAlert(message: "Network error")
                 }
-            case .failure(let error):
-                print(error.localizedDescription)
-                self.presentAlert(message: "Network error")
             }
         }
     }

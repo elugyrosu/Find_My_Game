@@ -55,7 +55,7 @@ class FavoriteGame: NSManagedObject {
             favoriteGame.summary = summary
         }
         var platforms = [String]()
-        game.platforms.forEach { platform in
+        game.platforms?.forEach { platform in
             platforms.append(platform.name)
         }
         favoriteGame.platforms = platforms as [NSString]?

@@ -1,811 +1,396 @@
 [
   {
-    "id": 127835,
-    "category": 0,
-    "created_at": 1577491200,
-    "name": "Moondust: Knuckles Tech Demos",
-    "popularity": 1.0,
-    "slug": "moondust-knuckles-tech-demos",
-    "updated_at": 1577491200,
-    "url": "https://www.igdb.com/games/moondust-knuckles-tech-demos"
-  },
-  {
-    "id": 127834,
-    "category": 0,
-    "created_at": 1577491200,
-    "name": "Sin VR",
-    "popularity": 1.0,
-    "slug": "sin-vr",
-    "updated_at": 1577491200,
-    "url": "https://www.igdb.com/games/sin-vr"
-  },
-  {
-    "id": 127833,
-    "category": 0,
-    "created_at": 1577491200,
-    "name": "CRW : Metal Jacket",
-    "popularity": 1.0,
-    "slug": "crw-metal-jacket",
-    "updated_at": 1577491200,
-    "url": "https://www.igdb.com/games/crw-metal-jacket"
-  },
-  {
-    "id": 127832,
-    "alternative_names": [
-      28232
-    ],
+    "id": 69359,
     "category": 0,
     "cover": {
-      "id": 87520,
-      "image_id": "co1vj4"
+      "id": 34231,
+      "image_id": "bbboosegdval1pmsvm9n"
     },
-    "created_at": 1577404800,
-    "first_release_date": 1135987200,
-    "game_modes": [
-      1
+    "created_at": 1506470400,
+    "external_games": [
+      185946
     ],
+    "name": "Sunken Secrets",
+    "popularity": 1.0,
+    "slug": "sunken-secrets",
+    "summary": "A mobile fantasy game by Big Fish.",
+    "updated_at": 1507507200,
+    "url": "https://www.igdb.com/games/sunken-secrets"
+  },
+  {
+    "id": 69530,
+    "category": 0,
+    "created_at": 1506556800,
+    "external_games": [
+      146713
+    ],
+    "name": "Dai Senryaku VII: Modern Military Tactics",
+    "popularity": 1.0,
+    "slug": "dai-senryaku-vii-modern-military-tactics",
+    "updated_at": 1506556800,
+    "url": "https://www.igdb.com/games/dai-senryaku-vii-modern-military-tactics"
+  },
+  {
+    "id": 81332,
+    "category": 0,
+    "cover": {
+      "id": 82483,
+      "image_id": "co1rn7"
+    },
+    "created_at": 1515715200,
+    "external_games": [
+      151316,
+      1193389
+    ],
+    "name": "Stick Fighter II",
+    "popularity": 2.783100922875123,
+    "slug": "stick-fighter-ii",
+    "updated_at": 1570492800,
+    "url": "https://www.igdb.com/games/stick-fighter-ii"
+  },
+  {
+    "id": 50649,
+    "age_ratings": [
+      15512
+    ],
+    "category": 0,
+    "collection": 2343,
+    "cover": {
+      "id": 27639,
+      "image_id": "cgqjfvibf1uecfct90nr"
+    },
+    "created_at": 1499990400,
+    "external_games": [
+      114805
+    ],
+    "first_release_date": 1193961600,
     "genres": [
       {
-        "id": 14,
-        "name": "Sport"
+        "id": 9,
+        "name": "Puzzle"
+      },
+      {
+        "id": 26,
+        "name": "Quiz/Trivia"
       }
     ],
     "involved_companies": [
-      89014,
-      89015
+      85250
     ],
     "keywords": [
-      6795
+      2601,
+      4139,
+      4142,
+      4379
     ],
-    "name": "Final Fantasy VII: Snowboarding",
+    "name": "Who Wants to be a Millionaire: 1st Edition",
     "platforms": [
       {
-        "id": 55,
-        "name": "Mobile"
+        "id": 5,
+        "name": "Wii"
+      },
+      {
+        "id": 20,
+        "name": "Nintendo DS"
       }
-    ],
-    "player_perspectives": [
-      2
     ],
     "popularity": 1.0,
+    "rating": 43.0,
+    "rating_count": 0,
     "release_dates": [
-      182847,
-      182848
-    ],
-    "screenshots": [
-      {
-        "id": 348463,
-        "image_id": "sc7gvj"
-      },
-      {
-        "id": 348464,
-        "image_id": "sc7gvk"
-      },
-      {
-        "id": 348465,
-        "image_id": "sc7gvl"
-      }
+      96762,
+      121374
     ],
     "similar_games": [
-      14733,
-      109606,
-      114286,
-      116349,
-      116350,
-      116351,
-      116352,
-      116353,
-      119422,
-      120795
+      28472,
+      37112,
+      50741,
+      68045,
+      68397,
+      77768,
+      79428,
+      87056,
+      90839,
+      119412
     ],
-    "slug": "final-fantasy-vii-snowboarding",
-    "status": 5,
-    "storyline": "The main character is Cloud Strife, and the objective is to snowboard down tracks, dodging moogles, doing tricks off ramps, and collecting balloons. The \"Chocobo Theme\" song is played throughout the game.",
-    "summary": "Final Fantasy VII Snowboarding is a mobile port of the snowboard mini-game featured in the original game featuring different courses for the player to tackle.",
+    "slug": "who-wants-to-be-a-millionaire-1st-edition",
+    "summary": "Who Wants To Be A Millionaire? the video game features all the TV Show Quiz Game's assets and structure. There are 15 questions that will take you from a virtual 100 to 1 million. There are 4 answers to each question and only one of the answers is correct. Use the Wii Remote to choose the answer you think is correct. If you're right, you will win the virtual value for that question and move onto the next level.",
     "tags": [
-      268435470,
-      536877707
+      268435465,
+      268435482,
+      536873513,
+      536875051,
+      536875054,
+      536875291
     ],
-    "updated_at": 1577404800,
-    "url": "https://www.igdb.com/games/final-fantasy-vii-snowboarding",
-    "videos": [
-      32274
-    ]
+    "total_rating": 43.0,
+    "total_rating_count": 0,
+    "updated_at": 1570320000,
+    "url": "https://www.igdb.com/games/who-wants-to-be-a-millionaire-1st-edition"
   },
   {
-    "id": 127831,
+    "id": 22618,
     "category": 0,
-    "created_at": 1577404800,
-    "external_games": [
-      1840284
-    ],
-    "name": "Safe Climbing",
-    "popularity": 1.0,
-    "slug": "safe-climbing",
-    "updated_at": 1577404800,
-    "url": "https://www.igdb.com/games/safe-climbing"
-  },
-  {
-    "id": 127830,
-    "category": 0,
-    "created_at": 1577404800,
-    "external_games": [
-      1840244
-    ],
-    "name": "匿名信：失心者 / Stayer",
-    "popularity": 1.0,
-    "slug": "ni-ming-xin-shi-xin-zhe-slash-stayer",
-    "updated_at": 1577404800,
-    "url": "https://www.igdb.com/games/ni-ming-xin-shi-xin-zhe-slash-stayer"
-  },
-  {
-    "id": 127829,
-    "category": 0,
-    "created_at": 1577404800,
-    "external_games": [
-      1840243
-    ],
-    "name": "Mompreneur: Pizza Cooking Life Sim",
-    "popularity": 1.0,
-    "slug": "mompreneur-pizza-cooking-life-sim",
-    "updated_at": 1577404800,
-    "url": "https://www.igdb.com/games/mompreneur-pizza-cooking-life-sim"
-  },
-  {
-    "id": 127828,
-    "category": 0,
-    "created_at": 1577404800,
-    "external_games": [
-      1840232
-    ],
-    "name": "TAXIDERMY",
-    "popularity": 1.0,
-    "slug": "taxidermy",
-    "updated_at": 1577404800,
-    "url": "https://www.igdb.com/games/taxidermy"
-  },
-  {
-    "id": 127827,
-    "category": 0,
-    "created_at": 1577404800,
-    "external_games": [
-      1840228
-    ],
-    "name": "Axiel",
-    "popularity": 1.0,
-    "slug": "axiel",
-    "updated_at": 1577404800,
-    "url": "https://www.igdb.com/games/axiel"
-  },
-  {
-    "id": 127826,
-    "category": 0,
-    "created_at": 1577404800,
-    "external_games": [
-      1840227
-    ],
-    "name": "Herbalist simulator",
-    "popularity": 1.0,
-    "slug": "herbalist-simulator",
-    "updated_at": 1577404800,
-    "url": "https://www.igdb.com/games/herbalist-simulator"
-  },
-  {
-    "id": 127825,
-    "category": 0,
-    "created_at": 1577404800,
-    "external_games": [
-      1840224
-    ],
-    "name": "Aigor Escape from Bishop",
-    "popularity": 1.0,
-    "slug": "aigor-escape-from-bishop",
-    "updated_at": 1577404800,
-    "url": "https://www.igdb.com/games/aigor-escape-from-bishop"
-  },
-  {
-    "id": 127824,
-    "category": 0,
-    "created_at": 1577404800,
-    "external_games": [
-      1840225
-    ],
-    "name": "Adventure Boy Jailbreak",
-    "popularity": 1.0,
-    "slug": "adventure-boy-jailbreak",
-    "updated_at": 1577404800,
-    "url": "https://www.igdb.com/games/adventure-boy-jailbreak"
-  },
-  {
-    "id": 127823,
-    "category": 0,
-    "created_at": 1577404800,
-    "external_games": [
-      1840222
-    ],
-    "name": "Many Faces",
-    "popularity": 1.0,
-    "slug": "many-faces",
-    "updated_at": 1577404800,
-    "url": "https://www.igdb.com/games/many-faces"
-  },
-  {
-    "id": 127822,
-    "category": 0,
-    "created_at": 1577404800,
-    "external_games": [
-      1840218
-    ],
-    "name": "Position",
-    "popularity": 1.0,
-    "slug": "position",
-    "updated_at": 1577404800,
-    "url": "https://www.igdb.com/games/position"
-  },
-  {
-    "id": 127821,
-    "category": 0,
-    "created_at": 1577404800,
-    "external_games": [
-      1840215
-    ],
-    "name": "Talshard",
-    "popularity": 1.0,
-    "slug": "talshard",
-    "updated_at": 1577404800,
-    "url": "https://www.igdb.com/games/talshard"
-  },
-  {
-    "id": 127820,
-    "category": 0,
-    "created_at": 1577404800,
-    "external_games": [
-      1840211
-    ],
-    "name": "James Town Courier Frog MD",
-    "popularity": 1.0,
-    "slug": "james-town-courier-frog-md",
-    "updated_at": 1577404800,
-    "url": "https://www.igdb.com/games/james-town-courier-frog-md"
-  },
-  {
-    "id": 127819,
-    "category": 0,
-    "created_at": 1577404800,
-    "external_games": [
-      1840208
-    ],
-    "name": "Schrodinger's cat simulator",
-    "popularity": 1.0,
-    "slug": "schrodingers-cat-simulator",
-    "updated_at": 1577404800,
-    "url": "https://www.igdb.com/games/schrodingers-cat-simulator"
-  },
-  {
-    "id": 127818,
-    "category": 0,
-    "created_at": 1577404800,
-    "external_games": [
-      1840207
-    ],
-    "name": "Hop Step Sing! Astral Piece",
-    "popularity": 1.0,
-    "slug": "hop-step-sing-astral-piece",
-    "updated_at": 1577404800,
-    "url": "https://www.igdb.com/games/hop-step-sing-astral-piece"
-  },
-  {
-    "id": 127817,
-    "category": 0,
-    "created_at": 1577404800,
-    "external_games": [
-      1840831
-    ],
-    "name": "MONOBOT",
-    "popularity": 1.0,
-    "slug": "monobot",
-    "updated_at": 1577404800,
-    "url": "https://www.igdb.com/games/monobot"
-  },
-  {
-    "id": 127816,
-    "category": 0,
-    "created_at": 1577404800,
-    "external_games": [
-      1840836
-    ],
-    "name": "Paradise Killer",
-    "popularity": 1.0,
-    "slug": "paradise-killer",
-    "updated_at": 1577404800,
-    "url": "https://www.igdb.com/games/paradise-killer"
-  },
-  {
-    "id": 127815,
-    "category": 0,
-    "created_at": 1577404800,
-    "external_games": [
-      1840843
-    ],
-    "name": "God of Gym",
-    "popularity": 1.0,
-    "slug": "god-of-gym",
-    "updated_at": 1577404800,
-    "url": "https://www.igdb.com/games/god-of-gym"
-  },
-  {
-    "id": 127814,
-    "category": 0,
-    "created_at": 1577404800,
-    "external_games": [
-      1840847
-    ],
-    "name": "Ink Adventure",
-    "popularity": 1.0,
-    "slug": "ink-adventure",
-    "updated_at": 1577404800,
-    "url": "https://www.igdb.com/games/ink-adventure"
-  },
-  {
-    "id": 127813,
-    "category": 0,
-    "created_at": 1577404800,
-    "external_games": [
-      1840845
-    ],
-    "name": "Knight Dice",
-    "popularity": 1.0,
-    "slug": "knight-dice",
-    "updated_at": 1577404800,
-    "url": "https://www.igdb.com/games/knight-dice"
-  },
-  {
-    "id": 127812,
-    "category": 0,
-    "created_at": 1577404800,
-    "external_games": [
-      1840858
-    ],
-    "name": "Art Heist",
-    "popularity": 1.0,
-    "slug": "art-heist",
-    "updated_at": 1577404800,
-    "url": "https://www.igdb.com/games/art-heist"
-  },
-  {
-    "id": 127811,
-    "category": 0,
-    "created_at": 1577404800,
-    "external_games": [
-      1840859
-    ],
-    "name": "Shine's Adventures 3 (Sea Fight)",
-    "popularity": 1.0,
-    "slug": "shines-adventures-3-sea-fight",
-    "updated_at": 1577404800,
-    "url": "https://www.igdb.com/games/shines-adventures-3-sea-fight"
-  },
-  {
-    "id": 127810,
-    "category": 0,
-    "created_at": 1577404800,
-    "external_games": [
-      1840867
-    ],
-    "name": "PAPER TANKS",
-    "popularity": 1.0,
-    "slug": "paper-tanks",
-    "updated_at": 1577404800,
-    "url": "https://www.igdb.com/games/paper-tanks"
-  },
-  {
-    "id": 127809,
-    "category": 0,
-    "created_at": 1577404800,
-    "external_games": [
-      1840203
-    ],
-    "name": "Candera: The Forgotten Realm",
-    "popularity": 1.0,
-    "slug": "candera-the-forgotten-realm",
-    "updated_at": 1577404800,
-    "url": "https://www.igdb.com/games/candera-the-forgotten-realm"
-  },
-  {
-    "id": 127807,
-    "category": 0,
-    "created_at": 1577404800,
-    "external_games": [
-      1840199
-    ],
-    "name": "Mirage Online Classic",
-    "popularity": 1.0,
-    "slug": "mirage-online-classic",
-    "updated_at": 1577404800,
-    "url": "https://www.igdb.com/games/mirage-online-classic"
-  },
-  {
-    "id": 127806,
-    "category": 0,
-    "created_at": 1577404800,
-    "external_games": [
-      1840177
-    ],
-    "name": "Once More",
-    "popularity": 1.0,
-    "slug": "once-more",
-    "updated_at": 1577404800,
-    "url": "https://www.igdb.com/games/once-more"
-  },
-  {
-    "id": 127804,
-    "category": 0,
-    "created_at": 1577404800,
-    "external_games": [
-      1840133
-    ],
-    "name": "Coin Pickers",
-    "popularity": 1.0,
-    "slug": "coin-pickers",
-    "updated_at": 1577404800,
-    "url": "https://www.igdb.com/games/coin-pickers"
-  },
-  {
-    "id": 127803,
-    "category": 0,
-    "created_at": 1577404800,
-    "external_games": [
-      1840044
-    ],
-    "name": "Drunken Wrestlers",
-    "popularity": 1.0,
-    "slug": "drunken-wrestlers",
-    "updated_at": 1577404800,
-    "url": "https://www.igdb.com/games/drunken-wrestlers"
-  },
-  {
-    "id": 127802,
-    "category": 0,
-    "created_at": 1577404800,
-    "external_games": [
-      1840002
-    ],
-    "name": "OFFSIDE",
-    "popularity": 1.0,
-    "slug": "offside--1",
-    "updated_at": 1577404800,
-    "url": "https://www.igdb.com/games/offside--1"
-  },
-  {
-    "id": 127801,
-    "category": 0,
-    "created_at": 1577404800,
-    "external_games": [
-      1840020
-    ],
-    "name": "VolticPistol",
-    "popularity": 1.0,
-    "slug": "volticpistol",
-    "updated_at": 1577404800,
-    "url": "https://www.igdb.com/games/volticpistol"
-  },
-  {
-    "id": 127800,
-    "category": 0,
-    "created_at": 1577404800,
-    "external_games": [
-      1840061
-    ],
-    "name": "Blank",
-    "popularity": 1.0,
-    "slug": "blank",
-    "updated_at": 1577404800,
-    "url": "https://www.igdb.com/games/blank"
-  },
-  {
-    "id": 127799,
-    "category": 0,
-    "created_at": 1577404800,
-    "external_games": [
-      1840062
-    ],
-    "name": "Tower Of Heresy",
-    "popularity": 1.0,
-    "slug": "tower-of-heresy",
-    "updated_at": 1577404800,
-    "url": "https://www.igdb.com/games/tower-of-heresy"
-  },
-  {
-    "id": 127798,
-    "category": 0,
-    "created_at": 1577404800,
-    "name": "Super Real Mahjong Love 2~7!",
-    "popularity": 1.0,
-    "pulse_count": 1,
-    "slug": "super-real-mahjong-love-2-7",
-    "updated_at": 1577404800,
-    "url": "https://www.igdb.com/games/super-real-mahjong-love-2-7"
-  },
-  {
-    "id": 127797,
-    "category": 0,
-    "created_at": 1577404800,
-    "name": "Deemo II",
-    "popularity": 1.0,
-    "pulse_count": 1,
-    "slug": "deemo-ii",
-    "updated_at": 1577404800,
-    "url": "https://www.igdb.com/games/deemo-ii"
-  },
-  {
-    "id": 127796,
-    "category": 0,
-    "created_at": 1577404800,
-    "name": "Little Busters! Converted Edition",
-    "popularity": 1.0,
-    "pulse_count": 1,
-    "slug": "little-busters-converted-edition",
-    "updated_at": 1577404800,
-    "url": "https://www.igdb.com/games/little-busters-converted-edition",
-    "version_parent": 7364,
-    "version_title": "Converted Edition"
-  },
-  {
-    "id": 127795,
-    "age_ratings": [
-      26725
-    ],
-    "category": 0,
+    "collection": 163,
     "cover": {
-      "id": 87465,
-      "image_id": "co1vhl"
+      "id": 22634,
+      "image_id": "tw9asotr8uhlply71n6y"
     },
-    "created_at": 1577404800,
-    "first_release_date": 993772800,
-    "game_engines": [
-      819
-    ],
-    "game_modes": [
-      1
+    "created_at": 1471305600,
+    "external_games": [
+      150066
     ],
     "genres": [
       {
-        "id": 34,
-        "name": "Visual Novel"
+        "id": 15,
+        "name": "Strategy"
       }
     ],
-    "involved_companies": [
-      88958,
-      88959,
-      88960
+    "keywords": [
+      1351,
+      3782,
+      5497
     ],
-    "multiplayer_modes": [
-      10055
+    "name": "Battleground 7: Bull Run",
+    "popularity": 2.560213307515733,
+    "similar_games": [
+      17613,
+      23345,
+      30229,
+      36553,
+      55029,
+      55036,
+      55056,
+      77334,
+      78550,
+      79134
     ],
-    "name": "Chain ~ The Lost Footprints",
-    "platforms": [
+    "slug": "battleground-7-bull-run",
+    "tags": [
+      22,
+      39,
+      268435471,
+      536872263,
+      536874694,
+      536876409
+    ],
+    "themes": [
       {
-        "id": 6,
-        "name": "PC (Microsoft Windows)"
+        "id": 22,
+        "name": "Historical"
+      },
+      {
+        "id": 39,
+        "name": "Warfare"
       }
     ],
-    "player_perspectives": [
+    "updated_at": 1512950400,
+    "url": "https://www.igdb.com/games/battleground-7-bull-run"
+  },
+  {
+    "id": 104945,
+    "aggregated_rating": 70.0,
+    "aggregated_rating_count": 1,
+    "category": 0,
+    "cover": {
+      "id": 86159,
+      "image_id": "co1uhb"
+    },
+    "created_at": 1530662400,
+    "external_games": [
+      1170663,
+      1709850,
+      1743559
+    ],
+    "first_release_date": 1542844800,
+    "game_modes": [
       1,
-      5
-    ],
-    "popularity": 1.0,
-    "release_dates": [
-      182621,
-      182622
-    ],
-    "screenshots": [
-      {
-        "id": 348287,
-        "image_id": "sc7gqn"
-      },
-      {
-        "id": 348288,
-        "image_id": "sc7gqo"
-      },
-      {
-        "id": 348289,
-        "image_id": "sc7gqp"
-      },
-      {
-        "id": 348290,
-        "image_id": "sc7gqq"
-      },
-      {
-        "id": 348291,
-        "image_id": "sc7gqr"
-      },
-      {
-        "id": 348292,
-        "image_id": "sc7gqs"
-      },
-      {
-        "id": 348293,
-        "image_id": "sc7gqt"
-      },
-      {
-        "id": 348294,
-        "image_id": "sc7gqu"
-      },
-      {
-        "id": 348295,
-        "image_id": "sc7gqv"
-      },
-      {
-        "id": 348296,
-        "image_id": "sc7gqw"
-      },
-      {
-        "id": 348297,
-        "image_id": "sc7gqx"
-      },
-      {
-        "id": 348298,
-        "image_id": "sc7gqy"
-      }
-    ],
-    "similar_games": [
-      19075,
-      26163,
-      77745,
-      77884,
-      80809,
-      82944,
-      110779,
-      113283,
-      115737,
-      117665
-    ],
-    "slug": "chain-the-lost-footprints",
-    "storyline": "Takeshi Shinonome is a private detective. One day, he meets a girl named Ayumu out in the rain. Ayumu's sister, Marie, and Takeshi went to the same high school. She asks him to investigate rumors concerning her husband. Takeshi finds evidence that her husband is having an affair with Ako Sonomura. Later, Ayumu's father asks Takeshi to investigate her private life. He is a well known politician and is afraid of having a scandal during the upcoming general election. \n \nSoon after Takeshi starts investigating, Ayumu is confronted with an extremely dangerous situation. Is her father's enemy behind this? As Takeshi tries to find out who is putting Ayumu in danger, he discovers a new drug is behind the entire problem. Murders become rampant. The new drug is constantly tied to the murders, but there is not enough evidence to prove it. Will the beautiful girls he becomes involved with help him solve the mystery?",
-    "summary": "Takeshi Shinonome is a private detective. One day, he meets a girl named Ayumu out in the rain. Ayumu's sister, Marie, and Takeshi went to the same high school. She asks him to investigate rumors concerning her husband. Takeshi finds evidence that her husband is having an affair with Ako Sonomura. Later, Ayumu's father asks Takeshi to investigate her private life. He is a well known politician and is afraid of having a scandal during the upcoming general election. \n \nSoon after Takeshi starts investigating, Ayumu is confronted with an extremely dangerous situation. Is her father's enemy behind this? As Takeshi tries to find out who is putting Ayumu in danger, he discovers a new drug is behind the entire problem. Murders become rampant. The new drug is constantly tied to the murders, but there is not enough evidence to prove it. Will the beautiful girls he becomes involved with help him solve the mystery?",
-    "tags": [
-      42,
-      43,
-      268435490
-    ],
-    "themes": [
-      {
-        "id": 42,
-        "name": "Erotic"
-      },
-      {
-        "id": 43,
-        "name": "Mystery"
-      }
-    ],
-    "updated_at": 1577404800,
-    "url": "https://www.igdb.com/games/chain-the-lost-footprints",
-    "videos": [
-      32219
-    ],
-    "websites": [
-      128326
-    ]
-  },
-  {
-    "id": 127794,
-    "age_ratings": [
-      26724
-    ],
-    "alternative_names": [
-      28093
-    ],
-    "category": 0,
-    "cover": {
-      "id": 87467,
-      "image_id": "co1vhn"
-    },
-    "created_at": 1577404800,
-    "first_release_date": 994377600,
-    "game_modes": [
-      1
+      2,
+      3
     ],
     "genres": [
       {
-        "id": 34,
-        "name": "Visual Novel"
+        "id": 32,
+        "name": "Indie"
       }
     ],
-    "involved_companies": [
-      88954,
-      88955,
-      88956,
-      88957
-    ],
-    "multiplayer_modes": [
-      10054
-    ],
-    "name": "Target - Pheromone",
+    "name": "Woodpunk",
     "platforms": [
       {
         "id": 6,
         "name": "PC (Microsoft Windows)"
       }
     ],
-    "player_perspectives": [
-      1
-    ],
-    "popularity": 1.0,
+    "popularity": 1.668662846078171,
+    "pulse_count": 1,
+    "rating": 70.0,
+    "rating_count": 0,
     "release_dates": [
-      182619,
-      182620
+      177356
     ],
     "screenshots": [
       {
-        "id": 348281,
-        "image_id": "sc7gqh"
+        "id": 224545,
+        "image_id": "iuoqa8wh1ofl8lb52918"
       },
       {
-        "id": 348282,
-        "image_id": "sc7gqi"
+        "id": 224546,
+        "image_id": "girmoo2perijqrjxvjwf"
       },
       {
-        "id": 348283,
-        "image_id": "sc7gqj"
+        "id": 224547,
+        "image_id": "eruculpjbp4kmklg130l"
       },
       {
-        "id": 348284,
-        "image_id": "sc7gqk"
+        "id": 224548,
+        "image_id": "l7nw9wzwgzevamvi0nxl"
       },
       {
-        "id": 348285,
-        "image_id": "sc7gql"
+        "id": 224549,
+        "image_id": "qg9xt2esskjof9uxmzbr"
       },
       {
-        "id": 348286,
-        "image_id": "sc7gqm"
+        "id": 224550,
+        "image_id": "anyhdqyhv7renlung3fq"
+      },
+      {
+        "id": 224551,
+        "image_id": "ecyen1fsr0yvp6xvwwlp"
+      },
+      {
+        "id": 224552,
+        "image_id": "qyjgntazrmdlhxijaixk"
       }
     ],
     "similar_games": [
-      19075,
-      77745,
-      77884,
-      82944,
-      89937,
-      110779,
-      113283,
-      115737,
-      117665,
-      119119
+      32902,
+      37419,
+      40524,
+      43367,
+      103295,
+      105233,
+      111130,
+      113895,
+      119121,
+      119493
     ],
-    "slug": "target-pheromone",
-    "summary": "Sakuragi Takuya has recently moved to Tokyo in order to start his college studies. Conveniently, his cousin Takashi and Takashi's wife Ms. Silk live in the same area so Takuya has moved in with them while he is attending his classes. In exchange for free accommodation, Takuya started working as a part-time waiter at his cousin's cake shop. \n \nOne evening, while they were having dinner in the living room, a beautiful blond woman appeared before them out of nowhere. Soon, it was revealed that her name was Silk, the same name that Ms. Silk had, and that she was a trapped mage that was cursed to travel through alternate dimensions, never being able to return to her homeworld. Silk has informed Takuya and the couple that she needs a large amount of female elemental nature life energy to power up the spell that would return her to her own dimension, so she wants of Takuya to go out and seduce various women around him in order to gather the necessary sexual energy. To assist him in this task she has enchanted him with superhuman charism that will allow him to woo any women he desires. \n \nAnd so Takuya's ordinary life became ordinary no more.",
+    "slug": "woodpunk",
+    "summary": "Woodpunk is an exhiliarating rogue-like experience in a medieval Woodpunk universe, where the primary energy resource is WOOD.",
     "tags": [
-      42,
-      268435490
+      1,
+      268435488
     ],
     "themes": [
       {
-        "id": 42,
-        "name": "Erotic"
+        "id": 1,
+        "name": "Action"
       }
     ],
-    "updated_at": 1577404800,
-    "url": "https://www.igdb.com/games/target-pheromone",
+    "total_rating": 70.0,
+    "total_rating_count": 1,
+    "updated_at": 1575331200,
+    "url": "https://www.igdb.com/games/woodpunk",
+    "videos": [
+      31529
+    ],
     "websites": [
-      128325
+      83212,
+      83213
     ]
   },
   {
-    "id": 127793,
-    "age_ratings": [
-      26722,
-      26723
-    ],
+    "id": 91579,
     "category": 0,
+    "created_at": 1521072000,
+    "external_games": [
+      128240,
+      1189096
+    ],
+    "name": "Racing Live",
+    "popularity": 1.0,
+    "slug": "racing-live",
+    "updated_at": 1521072000,
+    "url": "https://www.igdb.com/games/racing-live"
+  },
+  {
+    "id": 22636,
+    "aggregated_rating": 75.6666666666667,
+    "aggregated_rating_count": 3,
+    "category": 1,
+    "collection": 1956,
     "cover": {
-      "id": 87461,
-      "image_id": "co1vhh"
+      "id": 22963,
+      "image_id": "a3u3ch20yoxshrwwykz4"
     },
-    "created_at": 1577318400,
-    "first_release_date": 1577836800,
-    "game_engines": [
-      448
+    "created_at": 1471305600,
+    "first_release_date": 1309219200,
+    "name": "Call of Duty: Black Ops - Annihilation",
+    "parent_game": 545,
+    "platforms": [
+      {
+        "id": 6,
+        "name": "PC (Microsoft Windows)"
+      },
+      {
+        "id": 9,
+        "name": "PlayStation 3"
+      },
+      {
+        "id": 12,
+        "name": "Xbox 360"
+      }
+    ],
+    "popularity": 2.944726245749825,
+    "release_dates": [
+      65132,
+      65133,
+      65134
+    ],
+    "screenshots": [
+      {
+        "id": 30318,
+        "image_id": "vvkbf46jc0kklkaxoanf"
+      }
+    ],
+    "similar_games": [
+      9760,
+      34024,
+      60360,
+      102868,
+      106805,
+      111650,
+      112078,
+      119177,
+      119436,
+      121009
+    ],
+    "slug": "call-of-duty-black-ops-annihilation",
+    "summary": "Annihilation is the third downloadable content (DLC) pack for Call of Duty: Black Ops.",
+    "tags": [
+      39
+    ],
+    "themes": [
+      {
+        "id": 39,
+        "name": "Warfare"
+      }
+    ],
+    "total_rating": 75.6666666666667,
+    "total_rating_count": 3,
+    "updated_at": 1499472000,
+    "url": "https://www.igdb.com/games/call-of-duty-black-ops-annihilation",
+    "websites": [
+      11966
+    ]
+  },
+  {
+    "id": 88041,
+    "category": 0,
+    "created_at": 1519171200,
+    "external_games": [
+      241576,
+      319461,
+      1617374
     ],
     "game_modes": [
       1
@@ -814,646 +399,92 @@
       {
         "id": 12,
         "name": "Role-playing (RPG)"
-      }
-    ],
-    "involved_companies": [
-      88953
-    ],
-    "keywords": [
-      24603,
-      24604,
-      24605
-    ],
-    "name": "Em-A-Li",
-    "platforms": [
-      {
-        "id": 6,
-        "name": "PC (Microsoft Windows)"
-      }
-    ],
-    "player_perspectives": [
-      2,
-      3
-    ],
-    "popularity": 1.0,
-    "release_dates": [
-      182618
-    ],
-    "screenshots": [
-      {
-        "id": 348279,
-        "image_id": "sc7gqf"
       },
       {
-        "id": 348280,
-        "image_id": "sc7gqg"
-      }
-    ],
-    "similar_games": [
-      18225,
-      26565,
-      27092,
-      49414,
-      89560,
-      99118,
-      102584,
-      105049,
-      107614,
-      116530
-    ],
-    "slug": "em-a-li",
-    "status": 2,
-    "storyline": "You wake up in a small, dark room with amnesia. On the nearby table, you see a computer monitor. Switching it on, it boots up and Em-a-li awakens. Em-a-li offers to help you escape, but the situation is much more sinister than the darkness that surrounds you. Can you trust her? What is she hiding?",
-    "summary": "My name is Em-A-Li. How about we get to know each other? I know it might be hard having a computer to tag along, but I think we need to work together to escape. You know, teamwork. \n \nThis is a horror RPG game with voice acting.",
-    "tags": [
-      19,
-      43,
-      268435468,
-      536895515,
-      536895516,
-      536895517
-    ],
-    "themes": [
-      {
-        "id": 19,
-        "name": "Horror"
-      },
-      {
-        "id": 43,
-        "name": "Mystery"
-      }
-    ],
-    "updated_at": 1577404800,
-    "url": "https://www.igdb.com/games/em-a-li",
-    "videos": [
-      32217
-    ],
-    "websites": [
-      128320,
-      128321,
-      128322,
-      128323,
-      128324
-    ]
-  },
-  {
-    "id": 127792,
-    "category": 0,
-    "cover": {
-      "id": 87496,
-      "image_id": "co1vig"
-    },
-    "created_at": 1577318400,
-    "first_release_date": 1569888000,
-    "genres": [
-      {
-        "id": 2,
-        "name": "Point-and-click"
+        "id": 31,
+        "name": "Adventure"
       },
       {
         "id": 32,
         "name": "Indie"
-      },
-      {
-        "id": 34,
-        "name": "Visual Novel"
       }
     ],
-    "involved_companies": [
-      88990
-    ],
-    "keywords": [
-      1714,
-      1991,
-      3586,
-      23342,
-      23345,
-      23711,
-      24206,
-      24411
-    ],
-    "name": "Man Of The House",
-    "platforms": [
-      {
-        "id": 6,
-        "name": "PC (Microsoft Windows)"
-      }
-    ],
+    "name": "Highway Wars",
     "popularity": 1.0,
-    "release_dates": [
-      182785
-    ],
     "screenshots": [
       {
-        "id": 348379,
-        "image_id": "sc7gt7"
+        "id": 196237,
+        "image_id": "dy1mafnsqjpw8wwvgryq"
       },
       {
-        "id": 348380,
-        "image_id": "sc7gt8"
+        "id": 196238,
+        "image_id": "twmowucpd6aqoswqxr2h"
       },
       {
-        "id": 348381,
-        "image_id": "sc7gt9"
+        "id": 196239,
+        "image_id": "rlnvvmuyykccat6ue2jr"
       },
       {
-        "id": 348382,
-        "image_id": "sc7gta"
+        "id": 196240,
+        "image_id": "rnz3yy7iagvvcvbc2pqu"
       },
       {
-        "id": 348383,
-        "image_id": "sc7gtb"
-      },
-      {
-        "id": 348384,
-        "image_id": "sc7gtc"
-      },
-      {
-        "id": 348385,
-        "image_id": "sc7gtd"
-      },
-      {
-        "id": 348386,
-        "image_id": "sc7gte"
+        "id": 196241,
+        "image_id": "kp6dodextdkaaa5detsl"
       }
     ],
     "similar_games": [
-      16309,
-      19075,
-      19809,
-      27301,
-      28465,
-      41895,
-      43097,
-      67166,
-      115735,
-      115737
+      80916,
+      81275,
+      94772,
+      96217,
+      108778,
+      109339,
+      111130,
+      111253,
+      112416,
+      113402
     ],
-    "slug": "man-of-the-house",
-    "storyline": "In Man of the House, you will play as a young adult, who is living together with 3 attractive women, in a city filled with even more gorgeous girls! \nEach girl has her own personality and storyline and you get to decide when and where you would like to explore and which girl you want to pursue. \n \nAre you going to help Ashley explore her sexuality? Will you be able to turn the tables on the dominant Veronica? Or will you help Claire embrace her inner desires and uncover her wild side? These are just some of things you will discover, if you make the right choices...",
-    "summary": "Man of the House is an adult game, in which you play a young man living in a city full of beautiful women. Experience around 30-40 hours of content, in this sandbox VN, filled with steamy sex scenes, amusing dialogs and some very unexpected plot twists.",
+    "slug": "highway-wars",
+    "summary": "Become a road warrior in the arid plains! Take the role of a Highway Marshall, in a bid to enforce the rule of civilization on a post-apocalyptic world. Will you prevent the sacking of the last remaining cities, rule over them as a Warlord, or attempt to seek a better future for humanity?",
     "tags": [
-      42,
-      268435458,
-      268435488,
-      268435490,
-      536872626,
-      536872903,
-      536874498,
-      536894254,
-      536894257,
-      536894623,
-      536895118,
-      536895323
-    ],
-    "themes": [
-      {
-        "id": 42,
-        "name": "Erotic"
-      }
-    ],
-    "updated_at": 1577404800,
-    "url": "https://www.igdb.com/games/man-of-the-house",
-    "websites": [
-      128425,
-      128426
-    ]
-  },
-  {
-    "id": 127791,
-    "category": 0,
-    "cover": {
-      "id": 87459,
-      "image_id": "co1vhf"
-    },
-    "created_at": 1577318400,
-    "game_modes": [
-      1
-    ],
-    "genres": [
-      {
-        "id": 31,
-        "name": "Adventure"
-      }
-    ],
-    "involved_companies": [
-      88949
-    ],
-    "keywords": [
-      1836,
-      23861
-    ],
-    "name": "Winter",
-    "platforms": [
-      {
-        "id": 5,
-        "name": "Wii"
-      }
-    ],
-    "player_perspectives": [
-      2
-    ],
-    "popularity": 1.0,
-    "release_dates": [
-      182613
-    ],
-    "similar_games": [
-      13189,
-      19817,
-      25646,
-      27266,
-      55282,
-      68271,
-      107614,
-      109550,
-      114455,
-      119247
-    ],
-    "slug": "winter--1",
-    "status": 6,
-    "storyline": "An unnatural snowstorm has settled over a small town in the Midwest, effectively closing it off from the outside world. The main character, Mia, begins the game inside a wrecked ambulance with no recollection of how she got there. As she treks off towards the small town, she starts to see signs of something monstrous that is traveling with the storm.",
-    "summary": "Cancelled survival horror game by N-Space.",
-    "tags": [
-      19,
+      268435468,
       268435487,
-      536872748,
-      536894773
+      268435488
     ],
-    "themes": [
-      {
-        "id": 19,
-        "name": "Horror"
-      }
-    ],
-    "updated_at": 1577404800,
-    "url": "https://www.igdb.com/games/winter--1"
-  },
-  {
-    "id": 127790,
-    "category": 0,
-    "collection": 273,
-    "created_at": 1577232000,
-    "first_release_date": 1089763200,
-    "name": "Xenosaga: Pied Piper",
-    "platforms": [
-      {
-        "id": 55,
-        "name": "Mobile"
-      }
-    ],
-    "popularity": 1.0,
-    "release_dates": [
-      182606
-    ],
-    "slug": "xenosaga-pied-piper",
-    "summary": "Xenosaga: Pied Piper is a role-playing video game co-developed by Monolith Soft, Namco Mobile, and Tom Create. The game was published by Namco in 2004 for mobile devices.",
-    "updated_at": 1577232000,
-    "url": "https://www.igdb.com/games/xenosaga-pied-piper",
+    "updated_at": 1522108800,
+    "url": "https://www.igdb.com/games/highway-wars",
     "websites": [
-      128280,
-      128281
+      74025,
+      74026
     ]
   },
   {
-    "id": 127789,
+    "id": 31258,
     "category": 0,
     "cover": {
-      "id": 87425,
-      "image_id": "co1vgh"
+      "id": 38355,
+      "image_id": "pbul2y6gy0byabvdwubv"
     },
-    "created_at": 1577232000,
-    "first_release_date": 1575158400,
-    "game_engines": [
-      63
+    "created_at": 1495584000,
+    "external_games": [
+      2948,
+      105372
     ],
-    "involved_companies": [
-      88936
-    ],
-    "name": "Crossdoku: Math Crossword Sudoku",
-    "platforms": [
-      {
-        "id": 34,
-        "name": "Android"
-      },
-      {
-        "id": 39,
-        "name": "iOS"
-      }
-    ],
-    "popularity": 1.0,
-    "release_dates": [
-      182599,
-      182600
-    ],
-    "screenshots": [
-      {
-        "id": 348250,
-        "image_id": "sc7gpm"
-      },
-      {
-        "id": 348251,
-        "image_id": "sc7gpn"
-      }
-    ],
-    "slug": "crossdoku-math-crossword-sudoku",
-    "storyline": "Crossdoku is a great Math Crossword Sudoku Puzzle to practice logic, math and deductive reasoning skills at the same time for the whole family adults and kids. It has many different Sudoku number junctions puzzles. \n \nIt is a challenging Math Cross Numbers Puzzle to improve memory, concentration and logical thinking skills. \n \nGoogle Play Store: \nhttps://play.google.com/store/apps/details?id=air.Ganaysa.SudokuOctangles \nApple App Store: https://itunes.apple.com/app/id1480851707 \nAmazon Appstore: https://www.amazon.com/dp/B081VVC1G9/ \n \nIt includes 2 separate games: \n- Sudoku Addition: the number between the four adjacent circles is the result of their sum. \n- Sudoku Multiplication: the number between the four adjacent circles is the result of their multiplication. \n \nHow to play: \n- Fill in the empty circles (octagons) so that the number between the four adjacent circles is the result of their sum or multiplication. \n- But be careful a number can't be used more than once in any column or row like in Sudoku. \n- To fill the empty circle: drag the number to it or touch that circle. \n- To clear the non-empty circle: touch it again. \n \nThe game has 7 different board sizes: 3X3, 4X4, 5X5, 6X6, 7X7, 8X8 and 9X9. Each size has many different puzzles. You have 60 minutes to solve each puzzle. \n \nYou can save your progress to resume it later. \n \nPlay, enjoy and have fun !",
-    "summary": "Crossdoku is a great Math Crossword Sudoku Puzzle to practice logic, math and deductive reasoning skills at the same time for the whole family adults and kids. It has many different Sudoku number junctions puzzles. \n \nIt is a challenging Math Cross Numbers Puzzle to improve memory, concentration and logical thinking skills.",
-    "updated_at": 1577404800,
-    "url": "https://www.igdb.com/games/crossdoku-math-crossword-sudoku",
-    "videos": [
-      32206
-    ],
-    "websites": [
-      128259,
-      128260,
-      128261,
-      128262
-    ]
-  },
-  {
-    "id": 127788,
-    "alternative_names": [
-      28066
-    ],
-    "category": 0,
-    "cover": {
-      "id": 87423,
-      "image_id": "co1vgf"
-    },
-    "created_at": 1577232000,
-    "first_release_date": 1575158400,
-    "game_engines": [
-      63
-    ],
+    "first_release_date": 1480032000,
     "game_modes": [
-      1
+      1,
+      2,
+      5
     ],
     "genres": [
       {
-        "id": 9,
-        "name": "Puzzle"
+        "id": 32,
+        "name": "Indie"
       }
     ],
-    "involved_companies": [
-      88935
-    ],
-    "keywords": [
-      3497,
-      23494,
-      24600,
-      24601,
-      24602
-    ],
-    "name": "Drag n Merge Numbers",
+    "name": "Slymes",
     "platforms": [
-      {
-        "id": 34,
-        "name": "Android"
-      }
-    ],
-    "popularity": 1.0,
-    "release_dates": [
-      182598
-    ],
-    "screenshots": [
-      {
-        "id": 348248,
-        "image_id": "sc7gpk"
-      },
-      {
-        "id": 348249,
-        "image_id": "sc7gpl"
-      }
-    ],
-    "similar_games": [
-      10603,
-      27266,
-      27725,
-      81416,
-      87507,
-      89132,
-      90788,
-      95776,
-      106992,
-      109129
-    ],
-    "slug": "drag-n-merge-numbers",
-    "storyline": "Drag n Merge is a new match 3 number game. Drag the bottom number to a number on the grid to be added or subtracted to match 3 or more same adjacent numbers horizontally and vertically, then they will be merged into the next higher number at their most far right-bottom tile. \n \n \nYou can place the number on the grid by 2 ways: \n- Drag and drop it. \n- Touch directly a number on the grid. \n \n \nFirst, You have 5 cards. Every match gives you 1 new card. The value of each card is selected randomly from the list [+1, +2, -1, -2]. \n \n \nYou will get bonus points when you match 3 or more different groups of numbers at the same time. \n \n \nSimple rules: \n- Every match gives 1 star & 1 new card. \n- It costs 100 stars to remove a number from the grid using the Remove button. \n- The game is over when you run out of cards and stars. \n- It is your responsibility to save your progress to resume it later by hitting the Save button. \n \n \nEvery new level: minimum and maximum generated numbers are increased by 1. \n \n \n \nPlay, enjoy and have fun !",
-    "summary": "Drag n Merge is a new match 3 number game. Drag the bottom number to a number on the grid to be added or subtracted to match 3 or more same adjacent numbers horizontally and vertically, then they will be merged into the next higher number at their most far right-bottom tile. \n \nYou can place the number on the grid by 2 ways: \n- Drag and drop it. \n- Touch directly a number on the grid. \n \nFirst, You have 5 cards. Every match gives you 1 new card. The value of each card is selected randomly from the list [+1, +2, -1, -2]. \n \nYou will get bonus points when you match 3 or more different groups of numbers at the same time. \n \nSimple rules: \n- Every match gives 1 star & 1 new card. \n- It costs 100 stars to remove a number from the grid using the Remove button. \n- The game is over when you run out of cards and stars. \n- It is your responsibility to save your progress to resume it later by hitting the Save button. \n \nEvery new level: minimum and maximum generated numbers are increased by 1. \n \n \nPlay, enjoy and have fun !",
-    "tags": [
-      34,
-      268435465,
-      536874409,
-      536894406,
-      536895512,
-      536895513,
-      536895514
-    ],
-    "themes": [
-      {
-        "id": 34,
-        "name": "Educational"
-      }
-    ],
-    "updated_at": 1577404800,
-    "url": "https://www.igdb.com/games/drag-n-merge-numbers",
-    "version_title": "v0.6",
-    "websites": [
-      128256,
-      128257,
-      128258
-    ]
-  },
-  {
-    "id": 127787,
-    "alternative_names": [
-      28060,
-      28061,
-      28062
-    ],
-    "category": 0,
-    "cover": {
-      "id": 87412,
-      "image_id": "co1vg4"
-    },
-    "created_at": 1577232000,
-    "first_release_date": 680832000,
-    "name": "Namachuukei 68",
-    "platforms": [
-      {
-        "id": 121,
-        "name": "Sharp X68000"
-      }
-    ],
-    "popularity": 1.0,
-    "release_dates": [
-      182597
-    ],
-    "screenshots": [
-      {
-        "id": 348277,
-        "image_id": "sc7gqd"
-      },
-      {
-        "id": 348278,
-        "image_id": "sc7gqe"
-      }
-    ],
-    "slug": "namachuukei-68",
-    "summary": "Namachuukei 68 is a Sports game, developed and published by Konami, which was released in Japan in 1991.",
-    "updated_at": 1577318400,
-    "url": "https://www.igdb.com/games/namachuukei-68",
-    "websites": [
-      128247
-    ]
-  },
-  {
-    "id": 127786,
-    "alternative_names": [
-      28063
-    ],
-    "category": 0,
-    "cover": {
-      "id": 87411,
-      "image_id": "co1vg3"
-    },
-    "created_at": 1577232000,
-    "first_release_date": 1576281600,
-    "game_engines": [
-      13
-    ],
-    "game_modes": [
-      1
-    ],
-    "genres": [
-      {
-        "id": 34,
-        "name": "Visual Novel"
-      }
-    ],
-    "involved_companies": [
-      88933,
-      88934
-    ],
-    "name": "WABISABI",
-    "platforms": [
-      {
-        "id": 6,
-        "name": "PC (Microsoft Windows)"
-      }
-    ],
-    "popularity": 1.0,
-    "release_dates": [
-      182596
-    ],
-    "screenshots": [
-      {
-        "id": 348243,
-        "image_id": "sc7gpf"
-      },
-      {
-        "id": 348257,
-        "image_id": "sc7gpt"
-      },
-      {
-        "id": 348258,
-        "image_id": "sc7gpu"
-      },
-      {
-        "id": 348259,
-        "image_id": "sc7gpv"
-      },
-      {
-        "id": 348260,
-        "image_id": "sc7gpw"
-      },
-      {
-        "id": 348261,
-        "image_id": "sc7gpx"
-      },
-      {
-        "id": 348262,
-        "image_id": "sc7gpy"
-      },
-      {
-        "id": 348263,
-        "image_id": "sc7gpz"
-      }
-    ],
-    "similar_games": [
-      19075,
-      77745,
-      77884,
-      82944,
-      89937,
-      110779,
-      113283,
-      115737,
-      117665,
-      119119
-    ],
-    "slug": "wabisabi",
-    "storyline": "Here is Our Hometown \n \nThe summer blue sky over a verdant mountain village. \nAcross endless rice fields as far as the eye can see, \nA refreshing breeze blows through. \n \n“Welcome home!!” \n \nKousuke comes home from studying at an art college in the city, \nand there to welcome him are adorable and kind goddesses who love him dearly. \n \nFeelings and emotions come together, \nand grow like budding leaves \nas this gentle and warm story begins.",
-    "tags": [
-      42,
-      268435490
-    ],
-    "themes": [
-      {
-        "id": 42,
-        "name": "Erotic"
-      }
-    ],
-    "updated_at": 1577318400,
-    "url": "https://www.igdb.com/games/wabisabi",
-    "videos": [
-      32204
-    ],
-    "websites": [
-      128248,
-      128249
-    ]
-  },
-  {
-    "id": 127785,
-    "alternative_names": [
-      28057
-    ],
-    "category": 0,
-    "created_at": 1577232000,
-    "first_release_date": 1547856000,
-    "game_engines": [
-      179
-    ],
-    "game_modes": [
-      1
-    ],
-    "genres": [
-      {
-        "id": 34,
-        "name": "Visual Novel"
-      }
-    ],
-    "involved_companies": [
-      88932
-    ],
-    "keywords": [
-      680,
-      1430,
-      1484,
-      4919,
-      23657,
-      23856,
-      24597,
-      24598,
-      24599
-    ],
-    "name": "Yearning: A Gay Story",
-    "platforms": [
-      {
-        "id": 3,
-        "name": "Linux"
-      },
       {
         "id": 6,
         "name": "PC (Microsoft Windows)"
@@ -1461,1100 +492,64 @@
       {
         "id": 14,
         "name": "Mac"
-      },
-      {
-        "id": 34,
-        "name": "Android"
       }
-    ],
-    "player_perspectives": [
-      2
     ],
     "popularity": 1.0,
     "release_dates": [
-      182589,
-      182590,
-      182591,
-      182592
-    ],
-    "similar_games": [
-      11367,
-      19164,
-      26845,
-      26870,
-      105059,
-      112750,
-      117139,
-      119305,
-      119412,
-      120434
-    ],
-    "slug": "yearning-a-gay-story",
-    "summary": "Come out in college! Meet people, make friends, and maybe find a boyfriend? \n \nYearning: A Gay Story (YAGS for short) is a coming-out-focused character-driven slice-of-life visual novel with dating sim elements (phew) where you play as a gay man starting his freshman year of college at a generic university somewhere in the midwestern United States. \n \nYou will interact with a cast of characters, each with their own personality and stories, as you navigate college life, develop friendships, play board games, and come out. With luck, you might even find a boyfriend.",
-    "tags": [
-      27,
-      268435490,
-      536871592,
-      536872342,
-      536872396,
-      536875831,
-      536894569,
-      536894768,
-      536895509,
-      536895510,
-      536895511
-    ],
-    "themes": [
-      {
-        "id": 27,
-        "name": "Comedy"
-      }
-    ],
-    "updated_at": 1577404800,
-    "url": "https://www.igdb.com/games/yearning-a-gay-story",
-    "videos": [
-      32200
-    ],
-    "websites": [
-      128238,
-      128239
-    ]
-  },
-  {
-    "id": 127784,
-    "category": 0,
-    "cover": {
-      "id": 87387,
-      "image_id": "co1vff"
-    },
-    "created_at": 1577145600,
-    "first_release_date": 978220800,
-    "game_modes": [
-      1
-    ],
-    "genres": [
-      {
-        "id": 31,
-        "name": "Adventure"
-      }
-    ],
-    "hypes": 1,
-    "involved_companies": [
-      88931
-    ],
-    "keywords": [
-      1375
-    ],
-    "name": "Lightslayer",
-    "platforms": [
-      {
-        "id": 6,
-        "name": "PC (Microsoft Windows)"
-      }
-    ],
-    "player_perspectives": [
-      1
-    ],
-    "popularity": 1.0,
-    "release_dates": [
-      182588
+      74419,
+      74420
     ],
     "screenshots": [
       {
-        "id": 348236,
-        "image_id": "sc7gp8"
+        "id": 76484,
+        "image_id": "q5wxpesnnb8devahlq1x"
       },
       {
-        "id": 348237,
-        "image_id": "sc7gp9"
+        "id": 76485,
+        "image_id": "y3ttt4c9quidnvksqw6p"
       },
       {
-        "id": 348238,
-        "image_id": "sc7gpa"
+        "id": 76486,
+        "image_id": "m23j5plbfdhzoj3ym0sn"
       },
       {
-        "id": 348239,
-        "image_id": "sc7gpb"
+        "id": 76487,
+        "image_id": "tsk9q09tfq5vntn0gbsq"
       },
       {
-        "id": 348240,
-        "image_id": "sc7gpc"
+        "id": 76488,
+        "image_id": "qizq4hy8iycbgzpedbg5"
       }
     ],
     "similar_games": [
-      236,
-      55984,
-      81249,
-      96217,
-      101608,
-      106987,
-      113360,
-      115653,
-      116530,
-      119171
-    ],
-    "slug": "lightslayer",
-    "storyline": "For five years you were apprenticed to the sorceress Calesstra when your apprenticeship was cut short. Never will you forget that fateful night, for it changed your life. \n \nYou were studying a particularily difficult spell when you felt a sudden surge of magical energy. You turned around and a flash of white light blinded you. When your eyes had recovered, Calesstra was gone. \n \nYou set out to find her, never guessing that your search would take you far beyond your world, through forests and mountains, through deserts of burning sand and deserts of eternal ice, through cities and swamps. Your quest would ultimately determine the fate of two world, for you are the Chosen, you are the Fated, you are the Lightslayer.",
-    "summary": "Lightslayer is an action role-playing game played in first person perspective. As a dark elven sorceress, you travel through a vast world, fighting monsters and completing quests in the search for your missing mentor. \n \nLightslayer was my first commercial game, originally released in the year 2000, almost 20 years ago. This is version 3, which I have upgraded for newer computers. Changes include: \n \n  OpenGL-accelerated rendering. \n  Run at the native full screen resolution, or in a resizeable window. \n  Full mouse support, in the menus and the actual game. \n  A few minor user interface and game balance improvements. \n  The original Wrath of Darkness game included as a bonus. \n \nHowever, the actual content of the game is untouched, in all of its primitive programmer-art glory. Overall, I think this game has held up incredibly well to the test of time, which is another way of saying that the ugly and clunky aspects of the game were already ugly and clunky when the game was first released.",
-    "tags": [
-      17,
-      268435487,
-      536872287
-    ],
-    "themes": [
-      {
-        "id": 17,
-        "name": "Fantasy"
-      }
-    ],
-    "updated_at": 1577404800,
-    "url": "https://www.igdb.com/games/lightslayer",
-    "videos": [
-      32199
-    ]
-  },
-  {
-    "id": 127783,
-    "category": 0,
-    "cover": {
-      "id": 87386,
-      "image_id": "co1vfe"
-    },
-    "created_at": 1577145600,
-    "first_release_date": 820368000,
-    "game_modes": [
-      1
-    ],
-    "genres": [
-      {
-        "id": 2,
-        "name": "Point-and-click"
-      },
-      {
-        "id": 31,
-        "name": "Adventure"
-      }
-    ],
-    "hypes": 1,
-    "involved_companies": [
-      88930
-    ],
-    "name": "Foul Play - Mystery at Awkward Manor",
-    "platforms": [
-      {
-        "id": 6,
-        "name": "PC (Microsoft Windows)"
-      }
-    ],
-    "player_perspectives": [
-      1
-    ],
-    "popularity": 1.0,
-    "release_dates": [
-      182586
-    ],
-    "screenshots": [
-      {
-        "id": 348227,
-        "image_id": "sc7goz"
-      },
-      {
-        "id": 348228,
-        "image_id": "sc7gp0"
-      },
-      {
-        "id": 348229,
-        "image_id": "sc7gp1"
-      },
-      {
-        "id": 348230,
-        "image_id": "sc7gp2"
-      },
-      {
-        "id": 348231,
-        "image_id": "sc7gp3"
-      },
-      {
-        "id": 348232,
-        "image_id": "sc7gp4"
-      },
-      {
-        "id": 348233,
-        "image_id": "sc7gp5"
-      },
-      {
-        "id": 348234,
-        "image_id": "sc7gp6"
-      },
-      {
-        "id": 348235,
-        "image_id": "sc7gp7"
-      }
-    ],
-    "similar_games": [
-      236,
-      13189,
-      25222,
-      27725,
-      55984,
-      103266,
-      106807,
-      109274,
-      116530,
-      121450
-    ],
-    "slug": "foul-play-mystery-at-awkward-manor--1",
-    "summary": "Something terrible has happened at Awkward Manor! For all those who love a good murder mystery, here is a new twist. Now you can explore an elegant English mansion, just as if you were there in person. Forget virtual reality- Virtual Travel makes it real! There are ten different game levels to satisfy every age and ability. As a gumshoe detective at Level 1, you'll get lots of help, but as a skilled detective at Level 10, it could take you an hour or more to solve each mystery! Awkward Manor has fourteen beautifully photographed rooms and thousands of places where suspects may have left clues... there's a clue now, under that chair! It looks as if Major Gallop was in the library! When was he there? Ring for the butler, he may be able to help you... Oh well, not this time! Let's go upstairs to the Royal Bedroom... Mrs. Thatcham's there! She may know more about the Major's movements! Let's ask her where she was at 7.45... Yes! As she walks away, she says she was with Major Gallop in the Ballroom! Maybe he was in here as well! Make a thorough search and... What's this above the wardrobe? Ah ha!, the murder weapon! Now we're on the murderer's trail! Who else was here?... Gallop! Again! It looks very bad indeed for the Major! The room, the weapon, the time, and finally- the Accusation! Gotcha! Now Sergeant Plod arrives to take him away! Shall we go on to a more difficult challenge? Yes! And next time you play, the mystery will be completely different. With over 4,000 different solutions, why not invite your friends over? Up to six players can take part- or you can solve the mystery yourself! The extensive on-line help and tutorial system is always just one click away. Much better than a manual, it actually shows you how the game works, and gives hints to help you solve each mystery. Virtual Travel incorporating over 5,000 color photographs. 14 Rooms: 7 Upstairs, 7 Downstairs. Over 2,000 sounds. Thousands of clue locations.",
-    "tags": [
-      20,
-      43,
-      268435458,
-      268435487
-    ],
-    "themes": [
-      {
-        "id": 20,
-        "name": "Thriller"
-      },
-      {
-        "id": 43,
-        "name": "Mystery"
-      }
-    ],
-    "updated_at": 1577404800,
-    "url": "https://www.igdb.com/games/foul-play-mystery-at-awkward-manor--1",
-    "videos": [
-      32198
-    ]
-  },
-  {
-    "id": 127782,
-    "alternative_names": [
-      28042,
-      28043,
-      28044
-    ],
-    "category": 0,
-    "cover": {
-      "id": 87346,
-      "image_id": "co1vea"
-    },
-    "created_at": 1577145600,
-    "first_release_date": 938649600,
-    "name": "Warcraft II: Battle.net Edition",
-    "platforms": [
-      {
-        "id": 6,
-        "name": "PC (Microsoft Windows)"
-      }
-    ],
-    "popularity": 1.0,
-    "release_dates": [
-      182568
-    ],
-    "screenshots": [
-      {
-        "id": 348214,
-        "image_id": "sc7gom"
-      },
-      {
-        "id": 348215,
-        "image_id": "sc7gon"
-      },
-      {
-        "id": 348216,
-        "image_id": "sc7goo"
-      }
-    ],
-    "slug": "warcraft-ii-battle-dot-net-edition",
-    "summary": "Return to the Age of Chaos and wage war against live Orc and Human opponents with the same skill and fearless intensity you lived and breathed in your Warcraft: Orcs and Humans career. Put your skills to the ultimate test in the most epic Warcraft II battles ever. \n \nChampions looking for the authentic experience can play the game as it was in 1999, with period-appropriate SVGA graphics, and the ability to matchmake through the classic version of Blizzard’s Battle.net® online-gaming service or LAN, allowing real-time combat with up to eight players.",
-    "updated_at": 1577145600,
-    "url": "https://www.igdb.com/games/warcraft-ii-battle-dot-net-edition",
-    "version_parent": 130,
-    "version_title": "Battle.net Edition",
-    "videos": [
-      32188
-    ],
-    "websites": [
-      128203,
-      128204
-    ]
-  },
-  {
-    "id": 127781,
-    "category": 3,
-    "cover": {
-      "id": 87475,
-      "image_id": "co1vhv"
-    },
-    "created_at": 1577145600,
-    "first_release_date": 851990400,
-    "name": "Diablo + Hellfire",
-    "platforms": [
-      {
-        "id": 6,
-        "name": "PC (Microsoft Windows)"
-      }
-    ],
-    "popularity": 1.0,
-    "release_dates": [
-      182567
-    ],
-    "slug": "diablo-plus-hellfire",
-    "summary": "raveler, stay awhile and listen... \n \nDarkness stirs beneath Tristram. An ancient evil sweeps across the land, plunging it into civil war and terrorizing the populace. A mad king, his missing son, and a mysterious archbishop are all pieces of the puzzle you need to hack through. You have journeyed to the source of this evil. The town of Tristram - now inhabited only by a handful of survivors, broken and twisted by the madness that has befallen them. A cathedral stands there, built over the ruins of an ancient monastery. Eerie lights and ungodly sounds are heard echoing through its abandoned halls, and that is where you shall venture. \n \nEmbark, if you dare, on a quest to destroy The Prime Evil… \n \n  Experience the legendary action/RPG that influenced an entire genre. \n  Storm Diablo's halls as either a Warrior, a Sorcerer or a Rogue - each with unique skills and abilities. \n  Unite to destroy Diablo - up to 4 players can band together via Internet, or play head-to-head via LAN. \n  Unprecedented replayability - over 200 different monsters inhabit Diablo's ever-changing labyrinth. Equip epic items to conquer fearsome bosses and their minions. \n  A spine-chilling story - experience the horror of a world held in the grasp of The Lord of Terror. \n \n \nAhhh, fresh meat! \n \nTravelers looking for the authentic Diablo experience can play the game as it was in 1996, with period-appropriate 20 FPS SVGA graphics, and the ability to matchmake through the classic version of Blizzard’s Battle.net® online-gaming service. \nFor those wanting something a bit more modern, Blizzard and GOG.COM have collaborated on an updated version of the game tuned for today’s gaming PCs, which includes out-of-the-box Windows 10 compatibility, a host of bug fixes and high-resolution support via aspect ratio-correct upscaling. \n \n  The most voted game on the GOG.com wishlist, finally trapped in a DRM-free soulstone! \n  Return to the beginning of this dark saga, now in digital format for the first time ever. \n  Better value than Wirt's wares, guaranteed.",
-    "updated_at": 1577491200,
-    "url": "https://www.igdb.com/games/diablo-plus-hellfire",
-    "websites": [
-      128201,
-      128369,
-      128370,
-      128371,
-      128372
-    ]
-  },
-  {
-    "id": 127780,
-    "category": 0,
-    "created_at": 1577059200,
-    "external_games": [
-      1839855
-    ],
-    "name": "The House In The Hollow",
-    "popularity": 1.0,
-    "slug": "the-house-in-the-hollow",
-    "updated_at": 1577059200,
-    "url": "https://www.igdb.com/games/the-house-in-the-hollow"
-  },
-  {
-    "id": 127779,
-    "category": 0,
-    "created_at": 1577059200,
-    "external_games": [
-      1839864
-    ],
-    "name": "Daemonic Runner",
-    "popularity": 1.0,
-    "slug": "daemonic-runner",
-    "updated_at": 1577059200,
-    "url": "https://www.igdb.com/games/daemonic-runner"
-  },
-  {
-    "id": 127778,
-    "category": 0,
-    "created_at": 1577059200,
-    "external_games": [
-      1839877
-    ],
-    "name": "Destructivator 2",
-    "popularity": 1.0,
-    "slug": "destructivator-2",
-    "updated_at": 1577059200,
-    "url": "https://www.igdb.com/games/destructivator-2"
-  },
-  {
-    "id": 127777,
-    "category": 0,
-    "created_at": 1577059200,
-    "external_games": [
-      1839891
-    ],
-    "name": "Temple Of Snek",
-    "popularity": 1.0,
-    "slug": "temple-of-snek",
-    "updated_at": 1577059200,
-    "url": "https://www.igdb.com/games/temple-of-snek"
-  },
-  {
-    "id": 127776,
-    "category": 0,
-    "created_at": 1577059200,
-    "external_games": [
-      1839944
-    ],
-    "name": "Taurus VR",
-    "popularity": 1.0,
-    "slug": "taurus-vr",
-    "updated_at": 1577059200,
-    "url": "https://www.igdb.com/games/taurus-vr"
-  },
-  {
-    "id": 127775,
-    "category": 0,
-    "created_at": 1577059200,
-    "external_games": [
-      1839976
-    ],
-    "name": "Merge Towers",
-    "popularity": 1.0,
-    "slug": "merge-towers",
-    "updated_at": 1577059200,
-    "url": "https://www.igdb.com/games/merge-towers"
-  },
-  {
-    "id": 127774,
-    "category": 0,
-    "created_at": 1577059200,
-    "external_games": [
-      1839794
-    ],
-    "name": "GraFi Lunar",
-    "popularity": 1.0,
-    "slug": "grafi-lunar",
-    "updated_at": 1577059200,
-    "url": "https://www.igdb.com/games/grafi-lunar"
-  },
-  {
-    "id": 127773,
-    "category": 0,
-    "created_at": 1577059200,
-    "external_games": [
-      1839795
-    ],
-    "name": "Forest Woodman",
-    "popularity": 1.0,
-    "slug": "forest-woodman",
-    "updated_at": 1577059200,
-    "url": "https://www.igdb.com/games/forest-woodman"
-  },
-  {
-    "id": 127772,
-    "category": 0,
-    "created_at": 1577059200,
-    "external_games": [
-      1839791
-    ],
-    "name": "Find Me: Horror Game",
-    "popularity": 1.0,
-    "slug": "find-me-horror-game",
-    "updated_at": 1577059200,
-    "url": "https://www.igdb.com/games/find-me-horror-game"
-  },
-  {
-    "id": 127771,
-    "category": 0,
-    "created_at": 1577059200,
-    "external_games": [
-      1839811
-    ],
-    "name": "Cut Smash Wrap",
-    "popularity": 1.0,
-    "slug": "cut-smash-wrap",
-    "updated_at": 1577059200,
-    "url": "https://www.igdb.com/games/cut-smash-wrap"
-  },
-  {
-    "id": 127770,
-    "category": 0,
-    "created_at": 1577059200,
-    "external_games": [
-      1839804
-    ],
-    "name": "Inertial Drift",
-    "popularity": 1.0,
-    "slug": "inertial-drift--1",
-    "updated_at": 1577059200,
-    "url": "https://www.igdb.com/games/inertial-drift--1"
-  },
-  {
-    "id": 127769,
-    "category": 0,
-    "created_at": 1577059200,
-    "external_games": [
-      1839807
-    ],
-    "name": "Drop Cat",
-    "popularity": 1.0,
-    "slug": "drop-cat",
-    "updated_at": 1577059200,
-    "url": "https://www.igdb.com/games/drop-cat"
-  },
-  {
-    "id": 127768,
-    "category": 0,
-    "created_at": 1577059200,
-    "external_games": [
-      1839800
-    ],
-    "name": "Zom Nom",
-    "popularity": 1.0,
-    "slug": "zom-nom",
-    "updated_at": 1577059200,
-    "url": "https://www.igdb.com/games/zom-nom"
-  },
-  {
-    "id": 127767,
-    "category": 0,
-    "created_at": 1577059200,
-    "external_games": [
-      1839797
-    ],
-    "name": "Granny: Chapter Two",
-    "popularity": 1.0,
-    "slug": "granny-chapter-two",
-    "updated_at": 1577059200,
-    "url": "https://www.igdb.com/games/granny-chapter-two"
-  },
-  {
-    "id": 127766,
-    "category": 0,
-    "created_at": 1577059200,
-    "external_games": [
-      1839796
-    ],
-    "name": "FLYING SHOT",
-    "popularity": 1.0,
-    "slug": "flying-shot",
-    "updated_at": 1577059200,
-    "url": "https://www.igdb.com/games/flying-shot"
-  },
-  {
-    "id": 127765,
-    "category": 0,
-    "created_at": 1577059200,
-    "external_games": [
-      1839720
-    ],
-    "name": "Undead zombies",
-    "popularity": 1.0,
-    "slug": "undead-zombies",
-    "updated_at": 1577059200,
-    "url": "https://www.igdb.com/games/undead-zombies"
-  },
-  {
-    "id": 127764,
-    "category": 0,
-    "created_at": 1577059200,
-    "external_games": [
-      1839717
-    ],
-    "name": "Samurai Simulator",
-    "popularity": 1.0,
-    "slug": "samurai-simulator",
-    "updated_at": 1577059200,
-    "url": "https://www.igdb.com/games/samurai-simulator"
-  },
-  {
-    "id": 127763,
-    "category": 0,
-    "created_at": 1577059200,
-    "external_games": [
-      1839712
-    ],
-    "name": "Fifo's Night",
-    "popularity": 1.0,
-    "slug": "fifos-night",
-    "updated_at": 1577059200,
-    "url": "https://www.igdb.com/games/fifos-night"
-  },
-  {
-    "id": 127762,
-    "category": 0,
-    "created_at": 1577059200,
-    "external_games": [
-      1839711
-    ],
-    "name": "Wrecker",
-    "popularity": 1.0,
-    "slug": "wrecker",
-    "updated_at": 1577059200,
-    "url": "https://www.igdb.com/games/wrecker"
-  },
-  {
-    "id": 127761,
-    "category": 0,
-    "created_at": 1577059200,
-    "external_games": [
-      1839707
-    ],
-    "name": "Summer Games Heroes",
-    "popularity": 1.0,
-    "slug": "summer-games-heroes",
-    "updated_at": 1577059200,
-    "url": "https://www.igdb.com/games/summer-games-heroes"
-  },
-  {
-    "id": 127760,
-    "category": 0,
-    "created_at": 1577059200,
-    "external_games": [
-      1839703
-    ],
-    "name": "Rat Racer",
-    "popularity": 1.0,
-    "slug": "rat-racer",
-    "updated_at": 1577059200,
-    "url": "https://www.igdb.com/games/rat-racer"
-  },
-  {
-    "id": 127759,
-    "category": 0,
-    "created_at": 1577059200,
-    "external_games": [
-      1839699
-    ],
-    "name": "Escalation: Aggressors",
-    "popularity": 1.0,
-    "slug": "escalation-aggressors",
-    "updated_at": 1577059200,
-    "url": "https://www.igdb.com/games/escalation-aggressors"
-  },
-  {
-    "id": 127758,
-    "category": 0,
-    "created_at": 1577059200,
-    "external_games": [
-      1839692
-    ],
-    "name": "Guiding Light",
-    "popularity": 1.0,
-    "slug": "guiding-light",
-    "updated_at": 1577059200,
-    "url": "https://www.igdb.com/games/guiding-light"
-  },
-  {
-    "id": 127757,
-    "category": 0,
-    "created_at": 1577059200,
-    "external_games": [
-      1839691
-    ],
-    "name": "Jane Westlake Adventures - The Mystery Train",
-    "popularity": 1.0,
-    "slug": "jane-westlake-adventures-the-mystery-train",
-    "updated_at": 1577059200,
-    "url": "https://www.igdb.com/games/jane-westlake-adventures-the-mystery-train"
-  },
-  {
-    "id": 127756,
-    "category": 0,
-    "created_at": 1577059200,
-    "external_games": [
-      1839683
-    ],
-    "name": "The GoD Unit",
-    "popularity": 1.0,
-    "slug": "the-god-unit",
-    "updated_at": 1577059200,
-    "url": "https://www.igdb.com/games/the-god-unit"
-  },
-  {
-    "id": 127755,
-    "category": 0,
-    "created_at": 1577059200,
-    "external_games": [
-      1839681
-    ],
-    "name": "FLS",
-    "popularity": 1.0,
-    "slug": "fls",
-    "updated_at": 1577059200,
-    "url": "https://www.igdb.com/games/fls"
-  },
-  {
-    "id": 127754,
-    "category": 0,
-    "created_at": 1577059200,
-    "external_games": [
-      1839676
-    ],
-    "name": "Heroes Of Maidan 3",
-    "popularity": 1.0,
-    "slug": "heroes-of-maidan-3",
-    "updated_at": 1577059200,
-    "url": "https://www.igdb.com/games/heroes-of-maidan-3"
-  },
-  {
-    "id": 127753,
-    "category": 0,
-    "created_at": 1577059200,
-    "external_games": [
-      1839675
-    ],
-    "name": "Guardians of the Ashes",
-    "popularity": 1.0,
-    "slug": "guardians-of-the-ashes",
-    "updated_at": 1577059200,
-    "url": "https://www.igdb.com/games/guardians-of-the-ashes"
-  },
-  {
-    "id": 127752,
-    "category": 0,
-    "created_at": 1577059200,
-    "external_games": [
-      1839674
-    ],
-    "name": "Ravesta Racing",
-    "popularity": 1.0,
-    "slug": "ravesta-racing",
-    "updated_at": 1577059200,
-    "url": "https://www.igdb.com/games/ravesta-racing"
-  },
-  {
-    "id": 127751,
-    "category": 0,
-    "created_at": 1577059200,
-    "external_games": [
-      1839673
-    ],
-    "name": "Mr. Fast",
-    "popularity": 1.0,
-    "slug": "mr-fast",
-    "updated_at": 1577059200,
-    "url": "https://www.igdb.com/games/mr-fast"
-  },
-  {
-    "id": 127750,
-    "category": 0,
-    "created_at": 1577059200,
-    "external_games": [
-      1839670
-    ],
-    "name": "Gala Collider",
-    "popularity": 1.0,
-    "slug": "gala-collider",
-    "updated_at": 1577059200,
-    "url": "https://www.igdb.com/games/gala-collider"
-  },
-  {
-    "id": 127749,
-    "category": 0,
-    "created_at": 1577059200,
-    "external_games": [
-      1839665
-    ],
-    "name": "Bunny Park",
-    "popularity": 1.0,
-    "slug": "bunny-park",
-    "updated_at": 1577059200,
-    "url": "https://www.igdb.com/games/bunny-park"
-  },
-  {
-    "id": 127748,
-    "category": 0,
-    "created_at": 1577059200,
-    "external_games": [
-      1839664
-    ],
-    "name": "Britannic",
-    "popularity": 1.0,
-    "slug": "britannic",
-    "updated_at": 1577059200,
-    "url": "https://www.igdb.com/games/britannic"
-  },
-  {
-    "id": 127747,
-    "category": 0,
-    "created_at": 1577059200,
-    "external_games": [
-      1839663
-    ],
-    "name": "Ring of Fire: Search for a Killer",
-    "popularity": 1.0,
-    "slug": "ring-of-fire-search-for-a-killer",
-    "updated_at": 1577059200,
-    "url": "https://www.igdb.com/games/ring-of-fire-search-for-a-killer"
-  },
-  {
-    "id": 127746,
-    "category": 0,
-    "created_at": 1577059200,
-    "external_games": [
-      1839662
-    ],
-    "name": "Counter-Fall",
-    "popularity": 1.0,
-    "slug": "counter-fall",
-    "updated_at": 1577059200,
-    "url": "https://www.igdb.com/games/counter-fall"
-  },
-  {
-    "id": 127745,
-    "category": 0,
-    "created_at": 1577059200,
-    "external_games": [
-      1839661
-    ],
-    "name": "Juken Jigoku | 受験地獄",
-    "popularity": 1.0,
-    "slug": "juken-jigoku-shou-yan-di-yu",
-    "updated_at": 1577059200,
-    "url": "https://www.igdb.com/games/juken-jigoku-shou-yan-di-yu"
-  },
-  {
-    "id": 127744,
-    "category": 0,
-    "created_at": 1577059200,
-    "external_games": [
-      1839660
-    ],
-    "name": "The Rat Project",
-    "popularity": 1.0,
-    "slug": "the-rat-project",
-    "updated_at": 1577059200,
-    "url": "https://www.igdb.com/games/the-rat-project"
-  },
-  {
-    "id": 127743,
-    "category": 0,
-    "created_at": 1577059200,
-    "external_games": [
-      1839659
-    ],
-    "name": "Lake",
-    "popularity": 1.0,
-    "slug": "lake",
-    "updated_at": 1577059200,
-    "url": "https://www.igdb.com/games/lake"
-  },
-  {
-    "id": 127742,
-    "age_ratings": [
-      26633,
-      26634
-    ],
-    "category": 0,
-    "collection": 5968,
-    "cover": {
-      "id": 87270,
-      "image_id": "co1vc6"
-    },
-    "created_at": 1577059200,
-    "first_release_date": 1578182400,
-    "franchise": 1690,
-    "franchises": [
-      1690
-    ],
-    "game_engines": [
-      443
-    ],
-    "game_modes": [
-      1
-    ],
-    "genres": [
-      {
-        "id": 5,
-        "name": "Shooter"
-      },
-      {
-        "id": 32,
-        "name": "Indie"
-      }
-    ],
-    "hypes": 1,
-    "involved_companies": [
-      88858
-    ],
-    "keywords": [
-      24594
-    ],
-    "name": "Way Back Home",
-    "platforms": [
-      {
-        "id": 34,
-        "name": "Android"
-      }
-    ],
-    "player_perspectives": [
-      1
-    ],
-    "popularity": 1.0,
-    "release_dates": [
-      182333
-    ],
-    "similar_games": [
-      27266,
       32902,
+      37419,
+      40524,
       43367,
-      55282,
-      76263,
-      89562,
-      109550,
-      110737,
-      115835,
-      120201
+      103295,
+      105233,
+      111130,
+      113895,
+      119121,
+      119493
     ],
-    "slug": "way-back-home",
-    "status": 2,
-    "storyline": "An outbreak follows the main Protagonist, Tenriyu Amuro. A father went to the manila for a job for his familly after he leaves their province. Only to find himself in the middle of chaos where a virus causes Agression, Hunger And Violence to humans. He must fight his way back home and escaped the quarantined city in the final battle of the story... Amuro and General Zeguire dukes it out to see who would win in a battle in the zombie infested city.",
-    "summary": "A post apocalyptic survival horror game in the middle of an outbreak follows the main Protagonist, Tenriyu Amuro. A father went to the manila for a job for his familly after he leaves their province. Only to find himself in the middle of chaos where a virus causes Agression, Hunger And Violence to humans. He must fight his way back home and escaped the quarantined city.",
+    "slug": "slymes",
+    "summary": "Slymes is a 3D multiplayer arena cell-game. It is inspired by games like agar.io and Osmos, but with a focus on exploring a plethora of unique maps and interacting with the world around you. As a Slyme, you must absorb small blobs to grow massive enough to trample your insignificant but oh-so-tasty opponents.",
     "tags": [
-      19,
-      21,
-      268435461,
-      268435488,
-      536895506
+      1,
+      268435488
     ],
     "themes": [
       {
-        "id": 19,
-        "name": "Horror"
-      },
-      {
-        "id": 21,
-        "name": "Survival"
+        "id": 1,
+        "name": "Action"
       }
     ],
-    "updated_at": 1577059200,
-    "url": "https://www.igdb.com/games/way-back-home",
-    "videos": [
-      32118
-    ],
+    "updated_at": 1523318400,
+    "url": "https://www.igdb.com/games/slymes",
     "websites": [
-      127972
+      29770,
+      29771
     ]
-  },
-  {
-    "id": 127741,
-    "age_ratings": [
-      26631,
-      26632
-    ],
-    "category": 0,
-    "created_at": 1576972800,
-    "first_release_date": 1527033600,
-    "game_modes": [
-      1
-    ],
-    "genres": [
-      {
-        "id": 7,
-        "name": "Music"
-      },
-      {
-        "id": 31,
-        "name": "Adventure"
-      }
-    ],
-    "involved_companies": [
-      88856,
-      88857
-    ],
-    "name": "Thapster TV: 2nd Wave",
-    "platforms": [
-      {
-        "id": 48,
-        "name": "PlayStation 4"
-      },
-      {
-        "id": 49,
-        "name": "Xbox One"
-      }
-    ],
-    "player_perspectives": [
-      1
-    ],
-    "popularity": 1.0,
-    "release_dates": [
-      182323,
-      182324
-    ],
-    "similar_games": [
-      63933,
-      75240,
-      81275,
-      86847,
-      104008,
-      106992,
-      108778,
-      110594,
-      111130,
-      112416
-    ],
-    "slug": "thapster-tv-2nd-wave",
-    "summary": "The sequel to the PS4/XB1 edition of the rhythm video game Thapster TV.",
-    "tags": [
-      268435463,
-      268435487
-    ],
-    "updated_at": 1577059200,
-    "url": "https://www.igdb.com/games/thapster-tv-2nd-wave"
-  },
-  {
-    "id": 127739,
-    "category": 0,
-    "created_at": 1576972800,
-    "name": "10101 \"Will\" The Starship",
-    "popularity": 1.0,
-    "slug": "10101-will-the-starship",
-    "updated_at": 1576972800,
-    "url": "https://www.igdb.com/games/10101-will-the-starship"
-  },
-  {
-    "id": 127738,
-    "category": 0,
-    "created_at": 1576972800,
-    "external_games": [
-      1839658
-    ],
-    "name": "Yuletide Legends: Who Framed Santa Claus",
-    "popularity": 1.0,
-    "slug": "yuletide-legends-who-framed-santa-claus",
-    "updated_at": 1576972800,
-    "url": "https://www.igdb.com/games/yuletide-legends-who-framed-santa-claus"
-  },
-  {
-    "id": 127737,
-    "category": 0,
-    "created_at": 1576972800,
-    "external_games": [
-      1839654
-    ],
-    "name": "Coloniam",
-    "popularity": 1.0,
-    "slug": "coloniam",
-    "updated_at": 1576972800,
-    "url": "https://www.igdb.com/games/coloniam"
-  },
-  {
-    "id": 127736,
-    "category": 0,
-    "created_at": 1576972800,
-    "external_games": [
-      1839631
-    ],
-    "name": "Prens Cavid The Game",
-    "popularity": 1.0,
-    "slug": "prens-cavid-the-game",
-    "updated_at": 1576972800,
-    "url": "https://www.igdb.com/games/prens-cavid-the-game"
-  },
-  {
-    "id": 127735,
-    "category": 0,
-    "created_at": 1576972800,
-    "external_games": [
-      1839633
-    ],
-    "name": "KANNA",
-    "popularity": 1.0,
-    "slug": "kanna",
-    "updated_at": 1576972800,
-    "url": "https://www.igdb.com/games/kanna"
-  },
-  {
-    "id": 127734,
-    "category": 0,
-    "created_at": 1576972800,
-    "external_games": [
-      1839638
-    ],
-    "name": "Arida: Rise of the Brave",
-    "popularity": 1.0,
-    "slug": "arida-rise-of-the-brave",
-    "updated_at": 1576972800,
-    "url": "https://www.igdb.com/games/arida-rise-of-the-brave"
-  },
-  {
-    "id": 127733,
-    "category": 0,
-    "created_at": 1576972800,
-    "external_games": [
-      1839645
-    ],
-    "name": "Gericonia 2",
-    "popularity": 1.0,
-    "slug": "gericonia-2",
-    "updated_at": 1576972800,
-    "url": "https://www.igdb.com/games/gericonia-2"
   }
 ]

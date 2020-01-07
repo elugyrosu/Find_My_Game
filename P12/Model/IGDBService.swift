@@ -45,23 +45,24 @@ class IGDBService {
         requestHeader.setValue("application/json", forHTTPHeaderField: "Accept")
         
         questionTask = questionSession.dataTask(with: requestHeader) { (data, response, error) in
-            DispatchQueue.main.async {
-                
-                if let error = error {
-                    callback(.failure(error))
-                    return
-                }
-                guard let data = data else {
-                    callback(.failure(NetworkError.dataError))
-                    return
-                }
-                guard let responseJSON = try? JSONDecoder().decode([Game].self, from: data) else{
-                    callback(.failure(NetworkError.decodeError))
-                    return
-                }
+            
+            if let error = error {
+                callback(.failure(error))
+                return
+            }
+            guard let data = data else {
+                callback(.failure(NetworkError.dataError))
+                return
+            }
+            do {
+                let responseJSON = try JSONDecoder().decode([Game].self, from: data)
                 callback(.success(responseJSON))
+            }catch{
+                print(error.localizedDescription)
+                callback(.failure(NetworkError.decodeError))
             }
         }
+        
         questionTask?.resume()
         
     }
