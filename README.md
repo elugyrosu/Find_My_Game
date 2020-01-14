@@ -10,6 +10,7 @@ Cette application a pour but de mettre en avant certaines catégories de jeux et
 - La récupération et le cache des images (covers, screenshots) sont gérés par le POD SDWebImage
 - Les favoris (persistance des données) sont gérés par CoreData.
 - Utilisation de ScrollView, CollectionView, TableView, VisualEffect (Blur, Vibrancy) dans le StoryBoard avec AutoLayout.
+- Tests unitaires
 
 Find my game a été écrit sous Xcode 11 en Swift 5 selon le pattern de conception MVC et supporte les iPhones en mode portrait à partir de iOS11
 
