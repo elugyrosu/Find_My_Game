@@ -5,9 +5,13 @@ Cette application a pour but de mettre en avant certaines catégories de jeux et
 
 ## Architecture
 
-L’application est basée sur l’API IGDB (Internet Game DataBase), les appels réseaux sont passés avec URLSession et le type Result(), la récupération et le cache des images (covers, screenshots) sont gérés par le POD SDWebImage, les favoris (persistance des données) sont gérés par CoreData.
+- L’application est basée sur l’API IGDB (Internet Game DataBase)
+- Les appels réseaux sont passés avec URLSession et le type Result()
+- La récupération et le cache des images (covers, screenshots) sont gérés par le POD SDWebImage
+- Les favoris (persistance des données) sont gérés par CoreData.
+- Utilisation de ScrollView, CollectionView, TableView, VisualEffect (Blur, Vibrancy) dans le StoryBoard avec AutoLayout.
 
-Find my game a été écrit sous Xcode 11 en Swift 5 et supporte les iPhones en mode portrait à partir de iOS11
+Find my game a été écrit sous Xcode 11 en Swift 5 selon le pattern de conception MVC et supporte les iPhones en mode portrait à partir de iOS11
 
 ## Description
 
