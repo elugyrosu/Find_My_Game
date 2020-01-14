@@ -197,15 +197,11 @@
 		FF01CDE9238462400081E16D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				FF62B220239ED4C100D49985 /* FindViewController.swift */,
-				FF307AC823A3DD5000C24198 /* GameForYouViewController.swift */,
-				FFEBB89723AB9014002991C0 /* MultiplayerViewController.swift */,
-				FFEBB89523AB9004002991C0 /* RhythmGameViewController.swift */,
+				FF5BB8C023CDFCDC002A55FA /* Find */,
+				FF5BB8C123CDFDD9002A55FA /* Search */,
+				FF5BB8C223CDFDF2002A55FA /* Favorite */,
 				FF706431239FF3B40000EC61 /* CollectionViewController.swift */,
 				FF14CA30239E60D40099FA25 /* DetailViewController.swift */,
-				FF01CDEA238463110081E16D /* SearchViewController.swift */,
-				FFD79DA923B0126000D5DA59 /* FavoriteCollectionViewController.swift */,
-				FFD79DA723B00A4900D5DA59 /* FavoriteDetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -217,6 +213,34 @@
 				FFE5D66E23A7B0E2001D4C53 /* UICollectionViewCell+Identifier.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FF5BB8C023CDFCDC002A55FA /* Find */ = {
+			isa = PBXGroup;
+			children = (
+				FF62B220239ED4C100D49985 /* FindViewController.swift */,
+				FF307AC823A3DD5000C24198 /* GameForYouViewController.swift */,
+				FFEBB89723AB9014002991C0 /* MultiplayerViewController.swift */,
+				FFEBB89523AB9004002991C0 /* RhythmGameViewController.swift */,
+			);
+			path = Find;
+			sourceTree = "<group>";
+		};
+		FF5BB8C123CDFDD9002A55FA /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				FF01CDEA238463110081E16D /* SearchViewController.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		FF5BB8C223CDFDF2002A55FA /* Favorite */ = {
+			isa = PBXGroup;
+			children = (
+				FFD79DA923B0126000D5DA59 /* FavoriteCollectionViewController.swift */,
+				FFD79DA723B00A4900D5DA59 /* FavoriteDetailViewController.swift */,
+			);
+			path = Favorite;
 			sourceTree = "<group>";
 		};
 		FFFF2A2623B7B72700793AD9 /* Helpers */ = {
